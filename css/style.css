@@ -1,0 +1,100 @@
+@keyframes appear {
+    from {opacity: 0; top: -20px;}
+    to {opacity: 1; top: 50px}
+}
+
+@keyframes lookout {
+    from {height: 300px}
+    to {height: 800px}
+}
+
+@keyframes lookout {
+    from {height: 800px}
+    to {height: 300px}
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+.welcome {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("../img/ash.jpg");
+    background-size: cover;
+    background-position: 50% 0%;
+    min-width: 1024px;
+    min-heigth: 768px;
+    z-index: 100;
+}
+
+.navigation {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    min-width: 1024px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    animation-name: appear;
+    animation-duration: 2s;
+    z-index: 200;
+}
+
+.nav_item {
+    padding: 0;
+    margin: 0 30px;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    color: #444;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.nav_item:hover {
+    text-decoration: underline;
+}
+
+.page {
+    margin-top: 100px;
+    width: 100%;
+    min-width: 1024px;
+    display: none;
+}
+
+.models {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.model {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 300px;
+    background-position: 50% 0%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.model:hover {
+    height: 700px;
+}
+
+.model_title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    color: #444;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
