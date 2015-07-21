@@ -1,3 +1,15 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background: url("https://pp.vk.me/c618627/v618627383/85c9/BMxPxB887Y0.jpg") no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
 #welcome {
   position: absolute;
   top: 0;
@@ -23,6 +35,8 @@
   animation-name: appear3;
   animation-duration: 2s;
   cursor: pointer;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
 }
 #instruments {
   position: absolute;
@@ -36,9 +50,11 @@
   animation-name: appear3;
   animation-duration: 2s;
   cursor: pointer;
+  color: #fff;
+  text-shadow: 0 0 10px #000;
 }
 #tree_large {
-  background: url("../img/tree.jpg") no-repeat center center;
+  background: url("../img/tree_white.png") no-repeat center center;
   background-size: 100%;
   width: 150px;
   height: 150px;
