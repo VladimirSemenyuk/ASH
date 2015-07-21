@@ -1,0 +1,10 @@
+[
+  {
+    "id": "faberge",
+    "name": "faberge",
+    "type": "guitar",
+    "images": {
+      "previewImage": "img/faberge/preview.jpg"
+    }
+  }
+]

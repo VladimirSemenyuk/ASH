@@ -1,0 +1,30 @@
+[
+  {
+    "id": "index",
+    "htmlPath": "index.html",
+    "name": "index",
+    "nameRus": "index",
+    "templateName": "welcomePage"
+  },
+  {
+    "id": "guitars",
+    "htmlPath": "guitars.html",
+    "name": "guitars",
+    "nameRus": "гитары",
+    "templateName": "guitarModelsPage"
+  },
+  {
+    "id": "basses",
+    "htmlPath": "basses.html",
+    "name": "basses",
+    "nameRus": "бассы",
+    "templateName": "bassModelsPage"
+  },
+  {
+    "id": "about",
+    "htmlPath": "about.html",
+    "name": "about",
+    "nameRus": "O мастере",
+    "templateName": "about.md"
+  }
+]
