@@ -1,14 +1,28 @@
 html {
-  width: 100%;
-  height: 100%;
-}
-body {
-  background: url("https://pp.vk.me/c618627/v618627383/85c9/BMxPxB887Y0.jpg") no-repeat;
-  background-size: cover;
-  padding: 0;
-  margin: 0;
   min-width: 100%;
   min-height: 100%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+body {
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+#page {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: 1200px;
+  max-width: 1200px;
+  min-width: 1200px;
+  min-height: 100%;
+  height: 100%;
 }
 #welcome {
   position: absolute;
@@ -32,11 +46,12 @@ body {
   margin-top: -8px;
   left: 50%;
   margin-left: -130px;
-  animation-name: appear3;
-  animation-duration: 2s;
+  animation-name: appear;
+  animation-duration: 3s;
   cursor: pointer;
   color: #fff;
   text-shadow: 0 0 10px #000;
+  opacity: 0;
 }
 #instruments {
   position: absolute;
@@ -47,11 +62,12 @@ body {
   margin-top: -8px;
   left: 50%;
   margin-left: 100px;
-  animation-name: appear3;
-  animation-duration: 2s;
+  animation-name: appear;
+  animation-duration: 3s;
   cursor: pointer;
   color: #fff;
   text-shadow: 0 0 10px #000;
+  opacity: 0;
 }
 #tree_large {
   background: url("../img/tree_white.png") no-repeat center center;
@@ -64,22 +80,22 @@ body {
   margin-left: -62px;
   margin-top: -62px;
   animation-name: appear2;
-  animation-duration: 1s;
+  animation-duration: 3s;
   cursor: pointer;
+  opacity: 0;
 }
 #nav {
-  position: relative;
   min-width: 1024px;
   list-style: none;
   padding: 0;
-  margin: 50px 0;
+  margin: 0;
   text-align: center;
   z-index: 200;
   padding: 0;
 }
 .nav_item {
   padding: 0;
-  margin: 0 30px;
+  margin: 10px 30px;
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
@@ -93,86 +109,182 @@ body {
 .nav_item a:hover {
   color: #000;
 }
-#content {
-  padding: 20px;
+.slider {
+  position: absolute;
+  padding: 0;
+  margin: 50px auto;
+  list-style: none;
+  width: 1200px;
+  height: 600px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.4);
+}
+.slider__prev {
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  margin-top: -25px;
+  left: 0;
+  text-align: center;
+  line-height: 43px;
+  cursor: pointer;
+  opacity: 0.5;
+  font-size: 60px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #333, -1px 1px 1px #333, 1px -1px 1px #333, -1px -1px 1px #333;
+}
+.slider__prev:hover {
+  opacity: 1;
+}
+.slider__next {
+  position: absolute;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  margin-top: -25px;
+  right: 0;
+  text-align: center;
+  line-height: 43px;
+  cursor: pointer;
+  opacity: 0.5;
+  font-size: 60px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #333, -1px 1px 1px #333, 1px -1px 1px #333, -1px -1px 1px #333;
+}
+.slider__next:hover {
+  opacity: 1;
+}
+.slide {
+  border: none;
+  width: 1200px;
+  height: 600px;
+  background-position: middle 50%;
+  background-size: cover;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  list-style: none;
 }
 @-moz-keyframes appear {
-  from {
+  0% {
     opacity: 0;
-    margin-top: -20px;
   }
-  to {
+  60% {
     opacity: 1;
-    margin-top: 50px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @-webkit-keyframes appear {
-  from {
+  0% {
     opacity: 0;
-    margin-top: -20px;
   }
-  to {
+  60% {
     opacity: 1;
-    margin-top: 50px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @-o-keyframes appear {
-  from {
+  0% {
     opacity: 0;
-    margin-top: -20px;
   }
-  to {
+  60% {
     opacity: 1;
-    margin-top: 50px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @keyframes appear {
-  from {
+  0% {
     opacity: 0;
-    margin-top: -20px;
   }
-  to {
+  60% {
     opacity: 1;
-    margin-top: 50px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @-moz-keyframes appear2 {
-  from {
+  0% {
     opacity: 0;
   }
-  to {
+  20% {
     opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @-webkit-keyframes appear2 {
-  from {
+  0% {
     opacity: 0;
   }
-  to {
+  20% {
     opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @-o-keyframes appear2 {
-  from {
+  0% {
     opacity: 0;
   }
-  to {
+  20% {
     opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @keyframes appear2 {
-  from {
+  0% {
     opacity: 0;
   }
-  to {
+  20% {
     opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @-moz-keyframes appear3 {
   0% {
     opacity: 0;
   }
-  50% {
+  90% {
     opacity: 0;
   }
   100% {
@@ -183,7 +295,7 @@ body {
   0% {
     opacity: 0;
   }
-  50% {
+  90% {
     opacity: 0;
   }
   100% {
@@ -194,7 +306,7 @@ body {
   0% {
     opacity: 0;
   }
-  50% {
+  90% {
     opacity: 0;
   }
   100% {
@@ -205,7 +317,7 @@ body {
   0% {
     opacity: 0;
   }
-  50% {
+  90% {
     opacity: 0;
   }
   100% {

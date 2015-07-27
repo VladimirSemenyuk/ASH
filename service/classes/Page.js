@@ -10,6 +10,8 @@ var Page = function(name, nameRus, templateName) {
     this.name = name;
     this.nameRus = nameRus;
     this.templateName = templateName;
+
+    this.welcomeSlideshow = JSON.parse(fs.readFileSync('data/config.json')).welcomeSlideshow;
 };
 
 Page.prototype = {
@@ -43,7 +45,7 @@ Page.prototype = {
 
     template: function() {
         if (this.templateName.indexOf('.md') !== -1) {
-            var markdown = require('jstransformer')(require('jstransformer-markdown'))
+            var markdown = require('jstransformer')(require('jstransformer-markdown'));
 
             return markdown.render(fs.readFileSync(this.templatePath()).toString()).body;
         }

@@ -9,27 +9,44 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <ul id="nav">
-      <li class="nav_item"><a href="guitars.html">guitars</a></li>
-      <li class="nav_item"><a href="basses.html">basses</a></li>
-      <li class="nav_item"><a href="about.html">about</a></li>
-    </ul>
-    <div id="content">
+    <div id="page">
+      <ul id="nav">
+        <li class="nav_item"><a href="guitars.html">guitars</a></li>
+        <li class="nav_item"><a href="basses.html">basses</a></li>
+        <li class="nav_item"><a href="about.html">about</a></li>
+      </ul>
+      <div id="content">
 <style>
   #nav {
-      position: absolute;
-      bottom: 0;
       width: 100%;
       text-align: center;
       animation-name: appear3;
       animation-duration: 3s;
   }
+  
+  #welcome-content {
+      opacity: 0;
+  }
+  
+  
+  
 </style>
 <script src="js/index.js"></script>
 <div id="welcome2">
   <div id="ash">Ash</div>
   <div id="tree_large"></div>
   <div id="instruments">Instruments</div>
+</div>
+<div id="welcome-content">
+  <div class="js-slider slider">
+    <ul id="welcome-slideshow">
+      <li style="background-image: url(https://pp.vk.me/c621927/v621927713/2bb60/bjkmkDbb3Yw.jpg)" class="slide js-slide"></li>
+      <li style="background-image: url(https://pp.vk.me/c629419/v629419383/90bf/5xgCQDgB-os.jpg)" class="slide js-slide"></li>
+    </ul>
+    <div class="js-prev slider__prev">&#8249;</div>
+    <div class="js-next slider__next">&#8250;</div>
+  </div>
 </div></div>
+    </div>
   </body>
 </html>

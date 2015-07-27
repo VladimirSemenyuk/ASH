@@ -1,15 +1,29 @@
 style.
     #nav {
-        position: absolute;
-        bottom: 0;
         width: 100%;
         text-align: center;
         animation-name: appear3;
         animation-duration: 3s;
     }
+
+    #welcome-content {
+        opacity: 0;
+    }
+
+
+
 script(src='js/index.js')
 
 #welcome2
     #ash Ash
     #tree_large
     #instruments Instruments
+
+#welcome-content
+    .js-slider.slider
+        ul#welcome-slideshow
+            each slide in welcomeSlideshow
+                li.slide.js-slide(style='background-image: url(' + slide + ')')
+
+        .js-prev.slider__prev!= '&#8249;'
+        .js-next.slider__next!= '&#8250;'
