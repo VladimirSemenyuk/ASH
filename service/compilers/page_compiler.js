@@ -11,6 +11,7 @@ module.exports = {
 
             var data = JSON.parse(fs.readFileSync('data/config.json')),
                 html = jade.renderFile('service/templates/main.jade', {
+                    currentPage: page.name,
                     pretty: true,
                     title: data.siteTitle + ' &mdash; ' + page.name,
                     pages: ash.contentPages,

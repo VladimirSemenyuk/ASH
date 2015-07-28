@@ -6,6 +6,11 @@ style.
         animation-duration: 3s;
     }
 
+    #logo {
+        animation-name: appear3;
+        animation-duration: 3s;
+    }
+
     #welcome-content {
         opacity: 0;
     }
@@ -15,15 +20,19 @@ style.
 script(src='js/index.js')
 
 #welcome2
-    #ash Ash
-    #tree_large
-    #instruments Instruments
+    .ash.ash_large Ash
+    .tree.tree_large
+    .instruments.instruments_large Instruments
 
 #welcome-content
     .js-slider.slider
         ul#welcome-slideshow
-            each slide in welcomeSlideshow
-                li.slide.js-slide(style='background-image: url(' + slide + ')')
+            each slide, index in welcomeSlideshow
+                li.slide.js-slide(data-id='' + index + '', style='background-image: url(' + slide + ')')
 
         .js-prev.slider__prev!= '&#8249;'
         .js-next.slider__next!= '&#8250;'
+        .js-dots.slider__dots
+            each slide, index in welcomeSlideshow
+                div.slider__dot.js-slider-dot(data-id='' + index + '')
+

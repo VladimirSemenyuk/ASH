@@ -21,10 +21,25 @@
     "templateName": "bassModelsPage"
   },
   {
+    "id": "gallery",
+    "htmlPath": "gallery.html",
+    "name": "gallery",
+    "nameRus": "Галерея",
+    "templateName": "bassModelsPage"
+  },
+  {
     "id": "about",
     "htmlPath": "about.html",
     "name": "about",
     "nameRus": "O мастере",
     "templateName": "about.md"
+  },
+  {
+    "id": "FAQ",
+    "htmlPath": "faq.html",
+    "name": "faq",
+    "nameRus": "FAQ",
+    "templateName": "bassModelsPage"
   }
+
 ]

@@ -41,6 +41,17 @@ body
   min-height 100%
   height 100%
 
+#logo
+  position relative
+  height 60px
+  padding 20px 0 10px
+  margin 0 auto
+  width: 272px;
+  cursor pointer
+
+#content
+  padding 20px 0;
+
 #welcome
   position: absolute;
   top: 0;
@@ -54,53 +65,76 @@ body
   min-heigth: 768px;
   z-index: 100;
 
-#ash
-  position: absolute;
-  font-family: 'Dancing Script', cursive;
-  font-size: 40px;
-  letter-spacing: 0px;
-  top: 50%;
-  margin-top: -8px;
-  left: 50%;
-  margin-left: -130px;
-  animation-name: appear;
-  animation-duration: 3s;
-  cursor pointer
-  color: #fff
-  text-shadow 0 0 10px #000
-  opacity 0
+.ash
+  font-family: 'Rochester', cursive;
+  display: inline-block;
+  text-align: center;
+  font-size: 34px;
+  top: -18px;
+  position: relative;
+  margin-right: 10px;
 
-#instruments
-  position: absolute;
-  font-family: 'Dancing Script', cursive;
-  font-size: 40px;
-  letter-spacing: 0px;
-  top: 50%;
-  margin-top: -8px;
-  left: 50%;
-  margin-left: 100px;
-  animation-name: appear;
-  animation-duration: 3s;
-  cursor pointer
-  color: #fff
-  text-shadow 0 0 10px #000
-  opacity 0
+  &_large
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 40px;
+    letter-spacing: 0px;
+    margin-top: -17px;
+    margin-left: -140px;
+    animation-name: appear;
+    animation-duration: 3s;
+    cursor pointer
+    color: #00
+    opacity 0
+    width: 61px;
 
 
-#tree_large
-  background: url("../img/tree_white.png") no-repeat center center;
+.instruments
+  font-family: 'Rochester', cursive;
+  text-align: center;
+  display: inline-block;
+  font-size: 34px;
+  top: -18px;
+  position: relative;
+  margin-left: 10px;
+
+  &_large
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 164px;
+    font-size: 40px;
+    letter-spacing: 0px;
+    margin-top: -17px;
+    margin-left: 83px;
+    animation-name: appear;
+    animation-duration: 3s;
+    color: #000
+    opacity 0
+    display: inline-block;
+
+.tree
+  background: url("../img/tree.png") no-repeat center center;
   background-size 100%
-  width: 150px;
-  height 150px;
-  position absolute
-  top: 50%;
-  left: 50%;
-  margin-left -62px;
-  margin-top -62px;
-  animation-name: appear2;
-  animation-duration: 3s;
-  cursor pointer
-  opacity 0
+  width: 60px;
+  height 60px;
+  display inline-block
+
+  &_large
+    position absolute
+    margin-left -30px;
+    margin-top -30px;
+    top: 50%;
+    left: 50%;
+    opacity 0
+    width: 130px;
+    height 130px;
+    margin-left -65px;
+    margin-top -65px;
+    animation-name: appear2;
+    animation-duration: 3s;
+    cursor pointer
 
 
 #nav
@@ -114,11 +148,14 @@ body
 
 .nav_item
   padding: 0;
-  margin: 10px 30px;
+  margin: 10px 20px;
   display: inline-block;
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   letter-spacing: 0px;
+
+  &_current
+    border-bottom: 1px dashed;
 
   & a
     color: #222
@@ -128,10 +165,12 @@ body
     &:hover
       color: #000
 
+
+
 .slider
   position absolute
   padding 0
-  margin 50px auto
+  margin 0 auto
   list-style none
   width: 1200px
   height 600px

@@ -4,11 +4,16 @@ html(lang="ru")
         title!= title
         script(type='text/javascript' src='//code.jquery.com/jquery-1.11.3.min.js')
         link(rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300&subset=latin,cyrillic-ext')
-        link(href='http://fonts.googleapis.com/css?family=Neucha&subset=latin,cyrillic' rel='stylesheet' type='text/css')
-        link(href='http://fonts.googleapis.com/css?family=Dancing+Script&subset=latin,cyrillic' rel='stylesheet' type='text/css')
+        link(href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css')
         link(rel="stylesheet" href="css/style.css")
+        script(src='js/script.js')
     body
         #page
+            #logo
+                .ash.ash_small Ash
+                .tree.tree_small
+                .instruments.instruments_small Instruments
+
             include ./navigation.jade
             #content!= content
 

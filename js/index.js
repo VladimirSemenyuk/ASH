@@ -19,6 +19,7 @@ $(function() {
         });
 
         this.items = items;
+        this.dots = el.find('.js-dots');
         this.index = 0;
         this.currentItem = $(items[0]);
 
@@ -39,7 +40,7 @@ $(function() {
                 this.index ++;
             }
 
-            this.currentItem = $(this.items[this.index])
+            this.currentItem = $(this.items[this.index]);
 
             this.currentItem.animate({
                 opacity: 1
@@ -48,6 +49,8 @@ $(function() {
             prevItem.animate({
                 opacity: 0
             }, 300);
+
+            this.checkDot();
         },
 
         prev: function() {
@@ -68,6 +71,14 @@ $(function() {
             prevItem.animate({
                 opacity: 0
             }, 300);
+
+            this.checkDot();
+        },
+
+        checkDot: function() {
+            this.dots.removeClass('active');
+
+            this.dots.find('[data-id=' + this.index + ']').addClass('active');
         },
 
         start: function() {
