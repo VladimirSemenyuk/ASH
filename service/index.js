@@ -63,8 +63,7 @@ var compilers = {
 
 if (args.length) {
     if (args[2] === 'compile') {
-        fs.removeSync('output');
-        fs.mkdirSync('output');
+        fs.removeSync('output/*');
         fs.copySync('js', 'output/js');
         fs.copySync('css', 'output/css');
         fs.copySync('manifest.json', 'output/manifest.json');
