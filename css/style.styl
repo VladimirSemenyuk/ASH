@@ -1,0 +1,404 @@
+@keyframes appear
+  0% {opacity: 0}
+  60% {opacity: 1}
+  80% {opacity: 1}
+  100% {opacity: 0}
+
+@keyframes appear2
+  0% {opacity: 0}
+  20% {opacity: 1}
+  80% {opacity: 1}
+  100% {opacity: 0}
+
+@keyframes appear3
+  0% {opacity: 0}
+  90% {opacity: 0}
+  100% {opacity: 1}
+
+html
+  min-width 100%
+  min-height 100%
+  width 100%
+  height 100%
+  padding 0
+  margin 0
+
+body
+  min-width 100%
+  min-height 100%
+  width 100%
+  height 100%
+  padding 0
+  margin 0
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px
+  line-height 23px
+
+a {
+  text-decoration underline
+  color: #333
+}
+
+h2
+  color: #444;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: 400;
+
+h3
+  color: #666;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin-top 40px
+
+#page
+  position relative
+  margin 0 auto
+  padding 0
+  width 1200px
+  max-width 1200px
+  min-width 1200px
+  min-height 100%
+  height 100%
+
+#logo
+  position relative
+  height 60px
+  padding 20px 0 10px
+  margin 0 auto
+  width: 272px;
+  cursor pointer
+
+#content
+  padding 20px 0;
+
+#welcome
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("../img/ash.jpg");
+  background-size: cover;
+  background-position: 50% 0%;
+  min-width: 1024px;
+  min-heigth: 768px;
+  z-index: 100;
+
+.ash
+  font-family: 'Rochester', cursive;
+  display: inline-block;
+  text-align: center;
+  font-size: 34px;
+  top: -18px;
+  position: relative;
+  margin-right: 10px;
+
+  &_large
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 40px;
+    letter-spacing: 0px;
+    margin-top: -17px;
+    margin-left: -140px;
+    animation-name: appear;
+    animation-duration: 3s;
+    cursor pointer
+    color: #00
+    opacity 0
+    width: 61px;
+
+
+.instruments
+  font-family: 'Rochester', cursive;
+  text-align: center;
+  display: inline-block;
+  font-size: 34px;
+  top: -18px;
+  position: relative;
+  margin-left: 10px;
+
+  &_large
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 164px;
+    font-size: 40px;
+    letter-spacing: 0px;
+    margin-top: -17px;
+    margin-left: 83px;
+    animation-name: appear;
+    animation-duration: 3s;
+    color: #000
+    opacity 0
+    display: inline-block;
+
+.tree
+  background: url("../img/tree.png") no-repeat center center;
+  background-size 100%
+  width: 53px;
+  height 60px;
+  display inline-block
+
+  &_large
+    position absolute
+    top: 50%;
+    left: 50%;
+    opacity 0
+    width: 120px;
+    height 130px;
+    margin-left: -59px;
+    margin-top: -70px;
+    animation-name: appear2;
+    animation-duration: 3s;
+    cursor pointer
+
+.footer
+  color: #555
+  font-size: 12px;
+  line-height 20px;
+  width: 100%;
+  text-align: center;
+  margin-bottom 20px
+
+.nav
+  min-width: 1024px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  z-index: 200;
+  padding 0;
+
+.nav_item
+  padding: 0;
+  margin: 10px 20px;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  letter-spacing: 0px;
+  border-bottom: 1px dotted;
+
+  .small-nav &
+    font-size: 12px;
+    color: #666
+    border-color: #888
+    margin-bottom 20px;
+
+    & a
+      color: #444444
+      text-decoration none
+      text-transform capitalize
+
+  &_current
+    border-bottom: 1px solid;
+
+  & a
+    color: #222
+    text-decoration none
+    text-transform uppercase
+
+    &:hover
+      color: #000
+
+
+
+.slider
+  position relative
+  padding 0
+  margin 0 auto 100px
+  list-style none
+  width: 1200px
+  height 600px
+  box-shadow 0 1px 2px rgba(0,0,0,0.4)
+
+  & ul
+    width: 1200px
+    height 600px
+    padding 0
+    margin 0
+    list-style none
+
+  &__prev
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    margin-top: -25px;
+    left: 0;
+    text-align: center;
+    line-height: 43px;
+    cursor: pointer;
+    opacity: 0.5;
+    font-size: 60px;
+    color: white;
+    text-shadow 1px 1px 1px #333, -1px 1px 1px #333, 1px -1px 1px #333, -1px -1px 1px #333;
+
+    &:hover
+      opacity 1
+
+  &__dots
+    text-align center
+    margin 10px auto
+
+  &__dot
+    width: 10px
+    height 10px
+    border-radius 10px
+    border 1px solid #333333
+    box-shadow 0 1px 1px rgba(0,0,0,0.3)
+    display inline-block
+    margin 10px
+    cursor pointer
+
+    &.active
+      background-color #333333
+
+  &__next
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    margin-top: -25px;
+    right: 0;
+    text-align: center;
+    line-height: 43px;
+    cursor: pointer;
+    opacity: 0.5;
+    font-size: 60px;
+    color: white;
+    text-shadow 1px 1px 1px #333, -1px 1px 1px #333, 1px -1px 1px #333, -1px -1px 1px #333;
+
+    &:hover
+      opacity 1
+
+
+.model-list
+  list-style none
+  padding 0
+  text-align center
+
+  &_lined
+    overflow-x auto
+
+  &__item
+    display inline-block
+    width: 220px
+    margin 5px
+    height: 30px
+    margin-bottom 50px
+    background-position: 50% 10px;
+    background-repeat: no-repeat;
+    cursor pointer
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    padding-top: 580px
+
+    &:hover
+      background-position: 50% top;
+
+    &__name
+      text-transform capitalize
+
+
+
+.slide
+  border none
+  width: 1200px
+  height 600px
+  background-position middle 50%
+  background-size cover
+  opacity 0;
+  position absolute
+  top: 0;
+  left 0;
+  list-style none
+
+.model
+  &__description
+    font-size: 16px
+    font-style italic
+    text-align center
+    color: #555555
+
+  &__specs
+    margin 30px auto
+
+  &__preview
+    width: 540px
+    height: 1050px
+    background-position center top;
+    background-repeat no-repeat
+
+    &_hor
+      width: 100%
+      height 390px
+      background-position center center;
+      background-repeat no-repeat
+
+  &__image-link
+    text-decoration none
+
+  &__image
+    width: 130px
+    height: 130px
+    display inline-block
+    box-shadow 0 2px 4px rgba(0,0,0,0.3)
+    border 10px solid #ffffff
+    margin 15px
+    background-size cover
+    background-position center center
+    cursor pointer
+
+    &:hover
+      box-shadow 0 2px 4px rgba(0,0,0,0.6)
+
+  &__video
+    width 800px
+    height 450px
+    margin 30px auto
+    box-shadow 0 4px 10px rgba(0,0,0,0.3)
+
+
+
+.spec
+  &__name
+    text-align: right
+    color: #555
+    font-weight bold
+    padding-right 20px
+
+.left
+  width 560px
+  min-width: 560px
+  max-width: 560px
+  padding 20px
+  display inline-block
+  vertical-align top
+
+.left-small
+.right-small
+.middle
+  width 360px
+  min-width: 360px
+  max-width: 360px
+  padding 20px
+  display inline-block
+  vertical-align top
+
+.right
+  width 550px
+  min-width: 550px
+  max-width: 550px
+  padding 20px
+  display inline-block
+  vertical-align top
+
+  &:after
+    display block;
