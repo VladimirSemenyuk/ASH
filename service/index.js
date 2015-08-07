@@ -28,8 +28,7 @@ function create(dataFile, Constr) {
     return res;
 }
 
-var models = create('models', require('./classes/Model.js')),
-    pages = create('pages', require('./classes/Page.js')),
+var pages = create('pages', require('./classes/Page.js')),
     instruments = create('instruments', require('./classes/Instrument.js'));
 
 global.ash = {
@@ -37,16 +36,19 @@ global.ash = {
     contentPages: _.filter(pages, function(page) {
         return page.id !== 'index';
     }),
-    models: models,
-    guitarModels: _.where(models, {type: 'guitar'}),
-    bassModels: _.where(models, {type: 'bass'}),
     instruments: instruments,
-    guitar: _.where(instruments, {type: 'guitar'}),
-    bass: _.where(instruments, {type: 'bass'}),
+    guitars: _.where(instruments, {type: 'guitar'}),
+    basses: _.where(instruments, {type: 'bass'}),
     templates: _.map(fs.readdirSync('service/templates'), function(templateFile) {
         return templateFile.replace('.jade', '');
     })
 };
+
+var models = create('models', require('./classes/Model.js'));
+
+ash.models = models;
+ash.guitarModels = _.where(models, {type: 'guitar'});
+ash.bassModels = _.where(models, {type: 'bass'});
 
 var args = process.argv;
 

@@ -2,32 +2,62 @@ var _ = require('lodash'),
     fs = require('fs-extra'),
     path = require('path');
 
-var Instrument = function(serial, model) {
-    this.id = serial;
-    this.serial = serial;
-    this.model = model;
+var Page = require('./Page.js');
+
+function p() {
+    return path.join('data/instruments.json');
 };
 
-Instrument.prototype = {
-    path: function() {
-        return path.join('data/instruments/' + this.id + '_instrument.json');
-    },
+function save() {
+    if (_.where(ash.instruments, {id: this.id}).length) {
+        throw new Error('Инструмент уже существует');
+    }
 
-    save: function() {
-        if (_.where(ash.instruments, {id: this.id}).length) {
-            throw new Error('Инструмент уже существует');
+    var pagesData = JSON.parse(fs.readFileSync(this.path()));
+
+    pagesData.push(this);
+
+    fs.writeFileSync(this.path(), JSON.stringify(pagesData, null, 2));
+
+    console.log('Инструмент', this.serial, 'создан');
+
+    return this;
+}
+
+var Instrument = function(name, type) {
+    var I = function() {
+        this.id = name.toUnderscore();
+
+        this.name = name;
+        this.type = type;
+
+        this.images = {
+            listImage: 'img/' + this.name + '/list.jpg'
         }
 
-        var pagesData = JSON.parse(fs.readFileSync(this.path()));
+        this.href = "instruments/" + this.id + '.html';
 
-        pagesData.push(this);
+        this.specs = {
+            serial: '',
+            bodyWood: '',
+            topWood: '',
+            neckWood: '',
+            fingerboardWood: '',
+            fingerboardRadius: '',
+            fretsCount: '',
+            scaleLength: '',
+            bridge: '',
+            tuners: '',
+            pickups: '',
+            controls: ''
+        };
+    };
 
-        fs.writeFileSync(this.path(), JSON.stringify(pagesData, null, 2));
+    I.prototype = new Page(name, name, 'instrumentPage');
+    I.prototype.path = p;
+    I.prototype.save = save;
 
-        console.log('Инструмент', this.serial, 'создан');
-
-        return this;
-    }
+    return new I();
 };
 
 module.exports = Instrument;

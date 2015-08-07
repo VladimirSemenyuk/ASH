@@ -34,6 +34,11 @@ body
   font-size: 13px
   line-height 23px
 
+a {
+  text-decoration underline
+  color: #333
+}
+
 h2
   color: #444;
   text-align: center;
@@ -47,6 +52,7 @@ h3
   font-size: 20px;
   letter-spacing: 1px;
   font-weight: 400;
+  margin-top 40px
 
 #page
   position relative
@@ -278,6 +284,9 @@ h3
   padding 0
   text-align center
 
+  &_lined
+    overflow-x auto
+
   &__item
     display inline-block
     width: 220px
@@ -293,6 +302,9 @@ h3
 
     &:hover
       background-position: 50% top;
+
+    &__name
+      text-transform capitalize
 
 
 
@@ -323,6 +335,12 @@ h3
     height: 1050px
     background-position center top;
     background-repeat no-repeat
+
+    &_hor
+      width: 100%
+      height 390px
+      background-position center center;
+      background-repeat no-repeat
 
   &__image-link
     text-decoration none
@@ -364,10 +382,20 @@ h3
   display inline-block
   vertical-align top
 
+.left-small
+.right-small
+.middle
+  width 360px
+  min-width: 360px
+  max-width: 360px
+  padding 20px
+  display inline-block
+  vertical-align top
+
 .right
-  width 540px
-  min-width: 540px
-  max-width: 540px
+  width 550px
+  min-width: 550px
+  max-width: 550px
   padding 20px
   display inline-block
   vertical-align top

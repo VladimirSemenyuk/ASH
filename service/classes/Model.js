@@ -1,6 +1,7 @@
 var _ = require('lodash'),
     fs = require('fs-extra'),
-    path = require('path');
+    path = require('path'),
+    jade = require('jade');
 
 var Page = require('./Page.js');
 
