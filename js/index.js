@@ -20,6 +20,13 @@ $(function() {
 
         this.items = items;
         this.dots = el.find('.js-dots');
+
+        el.find('.js-slider-dot').on('click', function(e) {
+            self.stop();
+            self.setIndex($(e.target).data('id'));
+            self.start()
+        });
+
         this.index = 0;
         this.currentItem = $(items[0]);
 
@@ -31,6 +38,23 @@ $(function() {
     };
 
     SlideShow.prototype = {
+        setIndex: function(index) {
+            var prevItem = this.currentItem;
+
+            this.index = index;
+
+            this.currentItem = $(this.items[this.index]);
+
+            this.currentItem.animate({
+                opacity: 1
+            }, 300);
+
+            prevItem.animate({
+                opacity: 0
+            }, 300);
+
+            this.checkDot();
+        },
         next: function() {
             var prevItem = this.currentItem;
 
@@ -76,7 +100,7 @@ $(function() {
         },
 
         checkDot: function() {
-            this.dots.removeClass('active');
+            this.dots.children().removeClass('active');
 
             this.dots.find('[data-id=' + this.index + ']').addClass('active');
         },
@@ -85,6 +109,8 @@ $(function() {
             var self = this;
 
             this.stop();
+
+            this.checkDot();
 
             this.thread = setInterval(function() {
                 self.next();

@@ -3,11 +3,18 @@ var fs = require('fs-extra'),
     _ = require('lodash');
 
 function create(dataFile, Constr) {
-    var res = [];
+    var res = [],
+        data;
 
     try {
-        var data = JSON.parse(fs.readFileSync('data/' + dataFile + '.json'));
+        data = JSON.parse(fs.readFileSync('data/' + dataFile + '.json'));
+    } catch(e) {
+        console.log(e)
 
+        fs.writeFileSync('data/' + dataFile + '.json', '[]');
+    }
+
+    if (data) {
         for (var i = 0; i < data.length; i++) {
             var id = data[i].id,
                 instance = new Constr(id);
@@ -16,8 +23,6 @@ function create(dataFile, Constr) {
 
             res.push(instance);
         }
-    } catch(e) {
-        fs.writeFileSync('data/' + dataFile + '.json', '[]');
     }
 
     return res;
@@ -63,6 +68,9 @@ if (args.length) {
         fs.copySync('js', 'output/js');
         fs.copySync('css', 'output/css');
         fs.copySync('img', 'output/img');
+        fs.copySync('manifest.json', 'output/manifest.json');
+        fs.copySync('browserconfig.xml', 'output/browserconfig.xml');
+        fs.copySync('favicon.ico', 'output/favicon.ico');
 
         compilers.pageCompiler.compile();
     } else {

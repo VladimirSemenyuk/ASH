@@ -5,7 +5,6 @@ var _ = require('lodash'),
 
 var Page = function(name, nameRus, templateName) {
     this.id = name.toUnderscore();
-    this.htmlPath = this.id + '.html';
 
     this.name = name;
     this.nameRus = nameRus;

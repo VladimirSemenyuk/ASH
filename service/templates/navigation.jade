@@ -2,7 +2,7 @@ ul#nav
     each page in pages
         if (page.name == currentPage)
             li.nav_item.nav_item_current
-                a(href=page.htmlPath)= page.name
+                a(href='/' + page.id + '.html')= page.name
         else
             li.nav_item
-                a(href=page.htmlPath)= page.name
+                a(href='/' + page.id + '.html')= page.name
