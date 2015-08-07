@@ -67,7 +67,6 @@ if (args.length) {
         fs.mkdirSync('output');
         fs.copySync('js', 'output/js');
         fs.copySync('css', 'output/css');
-        fs.copySync('img', 'output/img');
         fs.copySync('manifest.json', 'output/manifest.json');
         fs.copySync('browserconfig.xml', 'output/browserconfig.xml');
         fs.copySync('favicon.ico', 'output/favicon.ico');
