@@ -1,0 +1,39 @@
+[
+  {
+    "id": "index",
+    "name": "index",
+    "nameRus": "index",
+    "templateName": "welcomePage"
+  },
+  {
+    "id": "guitars",
+    "name": "guitars",
+    "nameRus": "гитары",
+    "templateName": "guitarModelsPage"
+  },
+  {
+    "id": "basses",
+    "name": "basses",
+    "nameRus": "бассы",
+    "templateName": "bassModelsPage"
+  },
+  {
+    "id": "instruments",
+    "name": "instruments",
+    "nameRus": "Галерея",
+    "templateName": "bassModelsPage"
+  },
+  {
+    "id": "about",
+    "name": "about",
+    "nameRus": "O мастере",
+    "templateName": "about.md"
+  },
+  {
+    "id": "FAQ",
+    "name": "faq",
+    "nameRus": "FAQ",
+    "templateName": "bassModelsPage"
+  }
+
+]

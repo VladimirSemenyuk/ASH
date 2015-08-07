@@ -1,0 +1,69 @@
+[
+  {
+    "id": "faberge",
+    "name": "Faberge",
+    "type": "guitar",
+    "href": "guitars/faberge.html",
+    "video": "UUutr1a9ABQ",
+    "images": [
+      "https://pp.vk.me/c625217/v625217383/429b9/mouxOvR8Mdk.jpg",
+      "https://pp.vk.me/c625217/v625217383/429cb/ta5IRqVSrDg.jpg",
+      "https://pp.vk.me/c624728/v624728383/2248a/0429HkHZwKo.jpg",
+      "https://pp.vk.me/c618627/v618627383/864c/LgOglWmQM4M.jpg",
+      "https://pp.vk.me/c322830/v322830383/4866/vG-0cRdqoM4.jpg",
+      "https://pp.vk.me/c625217/v625217383/429b9/mouxOvR8Mdk.jpg",
+      "https://pp.vk.me/c625217/v625217383/429cb/ta5IRqVSrDg.jpg",
+      "https://pp.vk.me/c624728/v624728383/2248a/0429HkHZwKo.jpg",
+      "https://pp.vk.me/c322830/v322830383/4866/vG-0cRdqoM4.jpg"
+    ],
+    "description": "Tradition, Luxury and Style.",
+    "specs": {
+      "serial": "",
+      "bodyWood": "any wood",
+      "topWood": "any wood",
+      "neckWood": "any wood",
+      "neckProfile": "any of your choice",
+      "fingerboardWood": "any wood",
+      "fingerboardRadius": "any radius, 12\" by default",
+      "fretsCount": "22",
+      "scaleLength": "24.75\"",
+      "bridge": "any bridge, Schaller Roller Bridge by default",
+      "tuners": "any tuners, Gotoh 510 by default",
+      "pickups": "any pickups",
+      "controls": "any controls, Volume / Tone / Pickup selector by default  "
+    }
+  },
+  {
+    "id": "punisher",
+    "name": "Punisher",
+    "type": "guitar",
+    "href": "guitars/punisher.html",
+    "video": "0GBzaGSUjQc",
+    "images": [
+      "https://pp.vk.me/c625625/v625625383/35671/SEcRXJYqF-w.jpg",
+      "https://pp.vk.me/c625625/v625625383/3568c/npL1aF683E0.jpg",
+      "https://pp.vk.me/c625625/v625625383/35695/jeJ8Gj7bX5M.jpg",
+      "https://pp.vk.me/c625625/v625625383/3569e/q8XG5tZSpsM.jpg",
+      "https://pp.vk.me/c625625/v625625383/356a7/jLfpQBakmgQ.jpg",
+      "https://pp.vk.me/c625625/v625625383/356b0/rhvWYxrUGjU.jpg",
+      "https://pp.vk.me/c625625/v625625383/356b9/zYzeMvm3kDA.jpg",
+      "https://pp.vk.me/c625625/v625625383/356c2/aRnt3pfaS3M.jpg"
+    ],
+    "description": "Brutal rythm machine. <br />Use with caution, 'cause it has pure metal in it's DNA.",
+    "specs": {
+      "serial": "",
+      "bodyWood": "any wood",
+      "topWood": "any wood",
+      "neckWood": "any wood",
+      "neckProfile": "any of your choice",
+      "fingerboardWood": "any wood",
+      "fingerboardRadius": "any radius, 12\" by default",
+      "fretsCount": "24",
+      "scaleLength": "25.5\"",
+      "bridge": "any bridge, Gotoh fixed bridge by default",
+      "tuners": "any tuners, Hipshot by default",
+      "pickups": "any pickups",
+      "controls": "any controls, Volume / Tone / Pickup selector by default"
+    }
+  }
+]
