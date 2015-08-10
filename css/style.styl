@@ -1,6 +1,7 @@
 @keyframes appear
   0% {opacity: 0}
-  60% {opacity: 1}
+  20% {opacity: 0}
+  40% {opacity: 1}
   80% {opacity: 1}
   100% {opacity: 0}
 
@@ -53,6 +54,12 @@ h3
   letter-spacing: 1px;
   font-weight: 400;
   margin-top 40px
+
+i
+  color: #666;
+
+.center
+  text-align center
 
 #page
   position relative
@@ -278,14 +285,20 @@ h3
     &:hover
       opacity 1
 
+.model-scroller
+  overflow-x auto
+  width 1150px
+  margin 0 auto
+
 
 .model-list
   list-style none
   padding 0
   text-align center
+  margin 0
 
   &_lined
-    overflow-x auto
+    display: flex
 
   &__item
     display inline-block

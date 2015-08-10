@@ -88,7 +88,7 @@ module.exports = {
                 html = jade.renderFile('service/templates/main.jade', {
                     currentPage: instrument.name,
                     pretty: true,
-                    title: data.siteTitle + ' &mdash; ' + instrument.model,
+                    title: data.siteTitle + ' &mdash; ' + instrument.model.name + ' &mdash; ' + instrument.id ,
                     pages: ash.contentPages,
                     content: instrument.template()
                 });

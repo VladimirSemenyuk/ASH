@@ -1,6 +1,3 @@
-script(src="/js/lightbox.min.js")
-link(href="/css/lightbox.css" rel="stylesheet" type="text/css")
-
 mixin spec(spec, specText)
     if (spec)
         tr.spec
@@ -15,10 +12,11 @@ mixin image(src)
     h2= serial || name
     .model__description!= description
 
+    .model__preview_hor(style="background-image: url(/img/"+id+"/preview.jpg)")
+
     .left
+        h3 Specs
         table.model__specs
-            if (serial)
-                +spec(model, 'Model')
             +spec(specs.bodyWood, 'Body')
             +spec(specs.topWood, 'Top')
             +spec(specs.neckWood, 'Neck wood')
@@ -32,14 +30,16 @@ mixin image(src)
             +spec(specs.pickups, 'Pickups')
             +spec(specs.controls, 'Controls')
 
+        .center
+            i You can customize any option to create your dream instrument.
+
+    .right
         if (images && images.length)
             .model__images
                 each src in images
                     +image(src)
 
-
-    .right
-        .model__preview(style="background-image: url(/img/"+id+"/preview.jpg)")
+    .model__preview_hor(style="background-image: url(/img/"+id+"/preview_back.jpg)")
 
     if (video)
         h3 Video
@@ -48,7 +48,14 @@ mixin image(src)
 
     if (instruments.length)
         h3 Produced Instruments
-        ul.model-list.model-list_lined
-            each instrument in instruments
-                include ./instrumentListItem.jade
+        .model-scroller
+            if (instruments.length > 5)
+                ul.model-list.model-list_lined(style="width:" + instruments.length * 230 + "px;")
+                    each instrument in instruments
+                        include ./instrumentListItem.jade
+            else
+                ul.model-list.model-list
+                    each instrument in instruments
+                        include ./instrumentListItem.jade
 
+script(src="/js/lightbox.min.js")

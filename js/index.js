@@ -114,7 +114,7 @@ $(function() {
 
             this.thread = setInterval(function() {
                 self.next();
-            }, 8000);
+            }, 4000);
         },
 
         stop: function() {

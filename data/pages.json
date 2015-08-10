@@ -1,19 +1,19 @@
 [
   {
     "id": "index",
-    "name": "index",
+    "name": "Home",
     "nameRus": "index",
     "templateName": "welcomePage"
   },
   {
     "id": "guitars",
-    "name": "guitars",
+    "name": "Guitars",
     "nameRus": "гитары",
     "templateName": "guitarModelsPage"
   },
   {
     "id": "basses",
-    "name": "basses",
+    "name": "Basses",
     "nameRus": "бассы",
     "templateName": "bassModelsPage"
   },
@@ -25,13 +25,13 @@
   },
   {
     "id": "about",
-    "name": "about",
+    "name": "About",
     "nameRus": "O мастере",
     "templateName": "about.md"
   },
   {
     "id": "FAQ",
-    "name": "faq",
+    "name": "FAQ",
     "nameRus": "FAQ",
     "templateName": "bassModelsPage"
   }

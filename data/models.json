@@ -4,7 +4,7 @@
     "name": "Faberge",
     "type": "guitar",
     "href": "guitars/faberge.html",
-    "video": "UUutr1a9ABQ",
+    "video": "d48U572bdvE",
     "images": [
       "https://pp.vk.me/c625217/v625217383/429b9/mouxOvR8Mdk.jpg",
       "https://pp.vk.me/c625217/v625217383/429cb/ta5IRqVSrDg.jpg",
@@ -19,18 +19,18 @@
     "description": "Tradition, Luxury and Style.",
     "specs": {
       "serial": "",
-      "bodyWood": "any wood",
-      "topWood": "any wood",
-      "neckWood": "any wood",
-      "neckProfile": "any of your choice",
-      "fingerboardWood": "any wood",
-      "fingerboardRadius": "any radius, 12\" by default",
+      "bodyWood": "Sapele",
+      "topWood": "Buckeye burl",
+      "neckWood": "Sapele",
+      "neckProfile": "22mm &mdash; 21mm",
+      "fingerboardWood": "White ebony",
+      "fingerboardRadius": "12\"",
       "fretsCount": "22",
       "scaleLength": "24.75\"",
-      "bridge": "any bridge, Schaller Roller Bridge by default",
-      "tuners": "any tuners, Gotoh 510 by default",
-      "pickups": "any pickups",
-      "controls": "any controls, Volume / Tone / Pickup selector by default  "
+      "bridge": "Schaller Roller Bridge",
+      "tuners": "Gotoh 510",
+      "pickups": "Gibson 490R/490T",
+      "controls": "Volume, Tone, pickup switch, pickup coil splitting"
     }
   },
   {

@@ -1,6 +1,3 @@
-script(src="/js/lightbox.min.js")
-link(href="/css/lightbox.css" rel="stylesheet" type="text/css")
-
 mixin spec(spec, specText)
     if (spec)
         tr.spec
@@ -15,14 +12,12 @@ mixin image(src)
     h2= serial || name
     .model__description!= description
 
-    .model__preview_hor(style="background-image: url(/img/"+id+"/preview.jpg)")
-
     .left
         table.model__specs
             if (model)
                 tr.spec
                     td.spec__name= "Model: "
-                    td.spec__value(style="text-transform: capitalize")
+                    td.spec__value
                         a(href="/" + model.href)!= model.name
             +spec(specs.bodyWood, 'Body')
             +spec(specs.topWood, 'Top')
@@ -37,16 +32,18 @@ mixin image(src)
             +spec(specs.pickups, 'Pickups')
             +spec(specs.controls, 'Controls')
 
-    .right
         if (images && images.length)
             .model__images
                 each src in images
                     +image(src)
 
-    .model__preview_hor(style="background-image: url(/img/"+id+"/preview_back.jpg)")
+
+    .right
+        .model__preview(style="background-image: url(/img/"+id+"/preview.jpg)")
 
     if (video)
         h3 Video
         .model__video
             iframe(width="800" height="450" src="https://www.youtube.com/embed/"+video frameborder="0" allowfullscreen)
 
+script(src="/js/lightbox.min.js")

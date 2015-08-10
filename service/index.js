@@ -33,9 +33,7 @@ var pages = create('pages', require('./classes/Page.js')),
 
 global.ash = {
     pages: pages,
-    contentPages: _.filter(pages, function(page) {
-        return page.id !== 'index';
-    }),
+    contentPages: pages,
     instruments: instruments,
     guitars: _.where(instruments, {type: 'guitar'}),
     basses: _.where(instruments, {type: 'bass'}),
@@ -71,6 +69,7 @@ if (args.length) {
         fs.copySync('manifest.json', 'output/manifest.json');
         fs.copySync('browserconfig.xml', 'output/browserconfig.xml');
         fs.copySync('favicon.ico', 'output/favicon.ico');
+        fs.writeFileSync('output/CNAME', 'ash-instruments.com');
 
         compilers.pageCompiler.compile();
     } else {
