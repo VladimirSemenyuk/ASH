@@ -22,9 +22,11 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,300&amp;subset=latin,cyrillic-ext">
     <link href="http://fonts.googleapis.com/css?family=Rochester" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css">
     <link href="/css/lightbox.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="/js/script.js"></script>
+    <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
   </head>
   <body>
     <div id="page">
@@ -45,89 +47,154 @@
 <div class="model-page">
   <h2>Faberge</h2>
   <div class="model__description">Tradition, Luxury and Style.</div>
-  <div style="background-image: url(/img/faberge/preview.jpg)" class="model__preview_hor"></div>
-  <div class="left">
-    <h3>Specs</h3>
-    <table class="model__specs">
-      <tr class="spec">
-        <td class="spec__name">Body: </td>
-        <td class="spec__value">Sapele</td>
-      </tr>
-      <tr class="spec">
-        <td class="spec__name">Top: </td>
-        <td class="spec__value">Buckeye burl</td>
-      </tr>
-      <tr class="spec">
-        <td class="spec__name">Neck wood: </td>
-        <td class="spec__value">Sapele</td>
-      </tr>
-      <tr class="spec">
-        <td class="spec__name">Neck profile: </td>
-        <td class="spec__value">22mm &mdash; 21mm</td>
-      </tr>
-      <tr class="spec">
-        <td class="spec__name">Fingerboard wood: </td>
-        <td class="spec__value">White ebony</td>
-      </tr>
-      <tr class="spec">
-        <td class="spec__name">Fingerboard radius: </td>
-        <td class="spec__value">12"</td>
-      </tr>
-      <tr class="spec">
-        <td class="spec__name">Frets: </td>
-        <td class="spec__value">22</td>
-      </tr>
-      <tr class="spec">
-        <td class="spec__name">Scale length: </td>
-        <td class="spec__value">24.75"</td>
-      </tr>
-      <tr class="spec">
-        <td class="spec__name">Bridge: </td>
-        <td class="spec__value">Schaller Roller Bridge</td>
-      </tr>
-      <tr class="spec">
-        <td class="spec__name">Tuners: </td>
-        <td class="spec__value">Gotoh 510</td>
-      </tr>
-      <tr class="spec">
-        <td class="spec__name">Pickups: </td>
-        <td class="spec__value">Gibson 490R/490T</td>
-      </tr>
-      <tr class="spec">
-        <td class="spec__name">Controls: </td>
-        <td class="spec__value">Volume, Tone, pickup switch, pickup coil splitting</td>
-      </tr>
-    </table>
+</div>
+<div id="preview" class="model__preview_hor">
+  <style>
+    #preview {
+        background: url(/img/150302/preview.jpg) no-repeat;
+    }
+    
+  </style>
+  <style>
+    @media (-webkit-min-device-pixel-ratio: 2) {
+        #preview {
+            background-image: url(/img/150302/preview.2x.jpg);
+            background-size: contain;
+        }
+    }
+    
+  </style>
+</div>
+<div class="left">
+  <h3>Specs</h3>
+  <table class="model__specs">
+    <tr class="spec">
+      <td class="spec__name">Scale length: </td>
+      <td class="spec__value">24.75"</td>
+    </tr>
+    <tr class="spec">
+      <td class="spec__name">Frets: </td>
+      <td class="spec__value">22</td>
+    </tr>
+    <tr class="spec">
+      <td class="spec__name">FB radius: </td>
+      <td class="spec__value">12"</td>
+    </tr>
+    <tr class="spec">
+      <td class="spec__name">Body wood: </td>
+      <td class="spec__value">Sapele</td>
+    </tr>
+    <tr class="spec">
+      <td class="spec__name">Top wood: </td>
+      <td class="spec__value">Buckeye burl</td>
+    </tr>
+    <tr class="spec">
+      <td class="spec__name">Neck wood: </td>
+      <td class="spec__value">Sapele</td>
+    </tr>
+    <tr class="spec">
+      <td class="spec__name">Fingerboard wood: </td>
+      <td class="spec__value">Black & White Ebony</td>
+    </tr>
+    <tr class="spec">
+      <td class="spec__name">Nut: </td>
+      <td class="spec__value">Bone</td>
+    </tr>
+    <tr class="spec">
+      <td class="spec__name">Hardware Color: </td>
+      <td class="spec__value">Gold</td>
+    </tr>
+    <tr class="spec">
+      <td class="spec__name">Tuners: </td>
+      <td class="spec__value">Gotoh 510</td>
+    </tr>
+    <tr class="spec">
+      <td class="spec__name">Bridge: </td>
+      <td class="spec__value">Schaller</td>
+    </tr>
+    <tr class="spec">
+      <td class="spec__name">Pickups: </td>
+      <td class="spec__value">Gibson 490R/T</td>
+    </tr>
+    <tr class="spec">
+      <td class="spec__name">Switching: </td>
+      <td class="spec__value">Hamb/Coils</td>
+    </tr>
+    <tr class="spec">
+      <td class="spec__name">Finish: </td>
+      <td class="spec__value">Transparent High Gloss &mdash; Handpolished</td>
+    </tr>
+  </table>
+  <div class="center"><i>You can customize any option to create your dream instrument.</i></div>
+</div>
+<div class="right">
+  <div class="model__images"><a data-lightbox="model_image" href="/img/150302/g2.jpg" class="model__image-link">
+      <div style="background-image: url(/img/150302/g2.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150302/g3.jpg" class="model__image-link">
+      <div style="background-image: url(/img/150302/g3.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150302/g4.jpg" class="model__image-link">
+      <div style="background-image: url(/img/150302/g4.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150302/g6.jpg" class="model__image-link">
+      <div style="background-image: url(/img/150302/g6.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150302/g7.jpg" class="model__image-link">
+      <div style="background-image: url(/img/150302/g7.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150302/g10.jpg" class="model__image-link">
+      <div style="background-image: url(/img/150302/g10.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150302/g11.jpg" class="model__image-link">
+      <div style="background-image: url(/img/150302/g11.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150302/g5.jpg" class="model__image-link">
+      <div style="background-image: url(/img/150302/g5.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150302/g8.jpg" class="model__image-link">
+      <div style="background-image: url(/img/150302/g8.jpg)" class="model__image"></div></a>
   </div>
-  <div class="right">
-    <div class="model__images"><a data-lightbox="model_image" href="https://pp.vk.me/c625217/v625217383/429b9/mouxOvR8Mdk.jpg" class="model__image-link">
-        <div style="background-image: url(https://pp.vk.me/c625217/v625217383/429b9/mouxOvR8Mdk.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="https://pp.vk.me/c625217/v625217383/429cb/ta5IRqVSrDg.jpg" class="model__image-link">
-        <div style="background-image: url(https://pp.vk.me/c625217/v625217383/429cb/ta5IRqVSrDg.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="https://pp.vk.me/c624728/v624728383/2248a/0429HkHZwKo.jpg" class="model__image-link">
-        <div style="background-image: url(https://pp.vk.me/c624728/v624728383/2248a/0429HkHZwKo.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="https://pp.vk.me/c618627/v618627383/864c/LgOglWmQM4M.jpg" class="model__image-link">
-        <div style="background-image: url(https://pp.vk.me/c618627/v618627383/864c/LgOglWmQM4M.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="https://pp.vk.me/c322830/v322830383/4866/vG-0cRdqoM4.jpg" class="model__image-link">
-        <div style="background-image: url(https://pp.vk.me/c322830/v322830383/4866/vG-0cRdqoM4.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="https://pp.vk.me/c625217/v625217383/429b9/mouxOvR8Mdk.jpg" class="model__image-link">
-        <div style="background-image: url(https://pp.vk.me/c625217/v625217383/429b9/mouxOvR8Mdk.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="https://pp.vk.me/c625217/v625217383/429cb/ta5IRqVSrDg.jpg" class="model__image-link">
-        <div style="background-image: url(https://pp.vk.me/c625217/v625217383/429cb/ta5IRqVSrDg.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="https://pp.vk.me/c624728/v624728383/2248a/0429HkHZwKo.jpg" class="model__image-link">
-        <div style="background-image: url(https://pp.vk.me/c624728/v624728383/2248a/0429HkHZwKo.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="https://pp.vk.me/c322830/v322830383/4866/vG-0cRdqoM4.jpg" class="model__image-link">
-        <div style="background-image: url(https://pp.vk.me/c322830/v322830383/4866/vG-0cRdqoM4.jpg)" class="model__image"></div></a>
-    </div>
-  </div>
-  <div style="background-image: url(/img/faberge/preview_back.jpg)" class="model__preview_hor"></div>
-  <h3>Video</h3>
-  <div class="model__video">
-    <iframe width="800" height="450" src="https://www.youtube.com/embed/d48U572bdvE" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-  </div>
-  <h3>Produced Instruments</h3>
-  <div class="model-scroller">
-    <ul style="width:1380px;" class="model-list model-list_lined">
-      <li style="background-image: url(/img/12221/list.jpg)" data-href="/instruments/12221.html" class="model-list__item"><span class="model-list__item__name">faberge &mdash; 12221</span></li>
-      <li style="background-image: url(/img/12222/list.jpg)" data-href="/instruments/12222.html" class="model-list__item"><span class="model-list__item__name">faberge &mdash; 12222</span></li>
-      <li style="background-image: url(/img/12221/list.jpg)" data-href="/instruments/12221.html" class="model-list__item"><span class="model-list__item__name">faberge &mdash; 12221</span></li>
-      <li style="background-image: url(/img/12222/list.jpg)" data-href="/instruments/12222.html" class="model-list__item"><span class="model-list__item__name">faberge &mdash; 12222</span></li>
-      <li style="background-image: url(/img/12221/list.jpg)" data-href="/instruments/12221.html" class="model-list__item"><span class="model-list__item__name">faberge &mdash; 12221</span></li>
-      <li style="background-image: url(/img/12222/list.jpg)" data-href="/instruments/12222.html" class="model-list__item"><span class="model-list__item__name">faberge &mdash; 12222</span></li>
-    </ul>
-  </div>
+</div>
+<div id="preview-back" class="model__preview_hor">
+  <style>
+    #preview-back {
+        background: url(/img/150302/preview.back.jpg) no-repeat;
+    }
+    
+  </style>
+  <style>
+    @media (-webkit-min-device-pixel-ratio: 2) {
+        #preview-back {
+            background-image: url(/img/150302/preview.back.2x.jpg);
+            background-size: contain;
+        }
+    }
+    
+  </style>
+</div>
+<h3>Video</h3>
+<div class="model__video">
+  <iframe width="800" height="450" src="https://www.youtube.com/embed/d48U572bdvE" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+</div>
+<h3>Produced Instruments</h3>
+<div class="model-scroller">
+  <ul class="model-list model-list">
+    <li id="item-150704" data-href="/instruments/150704.html" class="model-list__item">
+          <style>
+            #item-150704 {
+                background: url(/img/150704/list.jpg) no-repeat;
+            }
+          </style>
+          <style>
+            @media (-webkit-min-device-pixel-ratio: 2) {
+                #item-150704 {
+                    background-image: url(/img/150704/list.2x.jpg);
+                    background-size: contain;
+                }
+            }
+          </style><span class="model-list__item__name">S/N 150704</span>
+    </li>
+    <li id="item-150302" data-href="/instruments/150302.html" class="model-list__item">
+          <style>
+            #item-150302 {
+                background: url(/img/150302/list.jpg) no-repeat;
+            }
+          </style>
+          <style>
+            @media (-webkit-min-device-pixel-ratio: 2) {
+                #item-150302 {
+                    background-image: url(/img/150302/list.2x.jpg);
+                    background-size: contain;
+                }
+            }
+          </style><span class="model-list__item__name">S/N 150302</span>
+    </li>
+  </ul>
 </div>
 <script src="/js/lightbox.min.js"></script></div>
       <div class="small-nav">

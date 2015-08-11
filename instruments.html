@@ -22,9 +22,11 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,300&amp;subset=latin,cyrillic-ext">
     <link href="http://fonts.googleapis.com/css?family=Rochester" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css">
     <link href="/css/lightbox.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="/js/script.js"></script>
+    <script src="/js/jquery.mCustomScrollbar.concat.min.js"></script>
   </head>
   <body>
     <div id="page">
@@ -43,8 +45,36 @@
       </ul>
       <div id="content">
 <ul class="model-list">
-  <li style="background-image: url(/img/12221/list.jpg)" data-href="/instruments/12221.html" class="model-list__item"><span class="model-list__item__name">faberge &mdash; 12221</span></li>
-  <li style="background-image: url(/img/12222/list.jpg)" data-href="/instruments/12222.html" class="model-list__item"><span class="model-list__item__name">faberge &mdash; 12222</span></li>
+  <li id="item-150704" data-href="/instruments/150704.html" class="model-list__item">
+      <style>
+        #item-150704 {
+            background: url(/img/150704/list.jpg) no-repeat;
+        }
+      </style>
+      <style>
+        @media (-webkit-min-device-pixel-ratio: 2) {
+            #item-150704 {
+                background-image: url(/img/150704/list.2x.jpg);
+                background-size: contain;
+            }
+        }
+      </style><span class="model-list__item__name">S/N 150704</span>
+  </li>
+  <li id="item-150302" data-href="/instruments/150302.html" class="model-list__item">
+      <style>
+        #item-150302 {
+            background: url(/img/150302/list.jpg) no-repeat;
+        }
+      </style>
+      <style>
+        @media (-webkit-min-device-pixel-ratio: 2) {
+            #item-150302 {
+                background-image: url(/img/150302/list.2x.jpg);
+                background-size: contain;
+            }
+        }
+      </style><span class="model-list__item__name">S/N 150302</span>
+  </li>
 </ul></div>
       <div class="small-nav">
         <ul class="nav">
