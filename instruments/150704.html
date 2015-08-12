@@ -47,12 +47,26 @@
 <div class="model-page">
   <h2>S/N 150704</h2>
   <div class="model__description"></div>
+  <div id="preview" class="model__preview_hor">
+    <style>
+      #preview {
+          background: url(/img/150704/preview.jpg) no-repeat;
+      }
+      
+    </style>
+    <style>
+      @media (-webkit-min-device-pixel-ratio: 2) {
+          #preview {
+              background-image: url(/img/150704/preview.2x.jpg);
+              background-size: contain;
+          }
+      }
+      
+    </style>
+  </div>
   <div class="left">
+    <h3>Specs</h3>
     <table class="model__specs">
-      <tr class="spec">
-        <td class="spec__name">Model: </td>
-        <td class="spec__value"><a href="/guitars/faberge.html">Faberge</a></td>
-      </tr>
       <tr class="spec">
         <td class="spec__name">Scale length: </td>
         <td class="spec__value">24.75"</td>
@@ -78,7 +92,7 @@
         <td class="spec__value">Maple</td>
       </tr>
       <tr class="spec">
-        <td class="spec__name">Fingerboard wood: </td>
+        <td class="spec__name">Fretboard wood: </td>
         <td class="spec__value">Rosewood</td>
       </tr>
       <tr class="spec">
@@ -106,44 +120,66 @@
         <td class="spec__value">3 Way Switch</td>
       </tr>
       <tr class="spec">
+        <td class="spec__name">Color: </td>
+        <td class="spec__value">Purple</td>
+      </tr>
+      <tr class="spec">
         <td class="spec__name">Finish: </td>
         <td class="spec__value">Transparent High Gloss &mdash; Handpolished</td>
       </tr>
     </table>
-    <div class="model__images"><a data-lightbox="model_image" href="/img/150704/preview.2x.jpg" class="model__image-link">
-        <div style="background-image: url(/img/150704/preview.2x.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150704/g2.jpg" class="model__image-link">
-        <div style="background-image: url(/img/150704/g2.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150704/g3.jpg" class="model__image-link">
-        <div style="background-image: url(/img/150704/g3.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150704/g5.jpg" class="model__image-link">
-        <div style="background-image: url(/img/150704/g5.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150704/g11.jpg" class="model__image-link">
-        <div style="background-image: url(/img/150704/g11.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150704/g7.jpg" class="model__image-link">
-        <div style="background-image: url(/img/150704/g7.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150704/g9.jpg" class="model__image-link">
-        <div style="background-image: url(/img/150704/g9.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150704/g10.jpg" class="model__image-link">
-        <div style="background-image: url(/img/150704/g10.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150704/g8.jpg" class="model__image-link">
-        <div style="background-image: url(/img/150704/g8.jpg)" class="model__image"></div></a>
-    </div>
   </div>
   <div class="right">
-    <div id="preview" class="model__preview">
-      <style>
-        #preview {
-            background: url(/img/150704/preview.vertical.jpg) no-repeat;
-        }
-        
-      </style>
-      <style>
-        @media (-webkit-min-device-pixel-ratio: 2) {
-            #preview {
-                background-image: url(/img/150704/preview.vertical.2x.jpg);
-                background-size: contain;
-            }
-        }
-        
-      </style>
+    <div class="model__images"><a data-lightbox="model_image" href="/img/150704/preview.2x.jpg" class="model__image-link">
+        <div style="background-image: url(/img/150704/preview.2x.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150704/g2.jpg" class="model__image-link">
+        <div style="background-image: url(/img/150704/small/g2.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150704/g3.jpg" class="model__image-link">
+        <div style="background-image: url(/img/150704/small/g3.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150704/g5.jpg" class="model__image-link">
+        <div style="background-image: url(/img/150704/small/g5.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150704/g11.jpg" class="model__image-link">
+        <div style="background-image: url(/img/150704/small/g11.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150704/g7.jpg" class="model__image-link">
+        <div style="background-image: url(/img/150704/small/g7.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150704/g8.jpg" class="model__image-link">
+        <div style="background-image: url(/img/150704/small/g8.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150704/g9.jpg" class="model__image-link">
+        <div style="background-image: url(/img/150704/small/g9.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150704/g10.jpg" class="model__image-link">
+        <div style="background-image: url(/img/150704/small/g10.jpg)" class="model__image"></div></a>
     </div>
   </div>
   <h3>Video</h3>
   <div class="model__video">
     <iframe width="800" height="450" src="https://www.youtube.com/embed/UUutr1a9ABQ" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+  </div>
+  <h3>More Instruments</h3>
+  <div class="model-scroller">
+    <ul class="model-list model-list">
+      <li id="item-150704" data-href="/instruments/150704.html" class="model-list__item">
+              <style>
+                #item-150704 {
+                    background: url(/img/150704/list.jpg) no-repeat;
+                }
+              </style>
+              <style>
+                @media (-webkit-min-device-pixel-ratio: 2) {
+                    #item-150704 {
+                        background-image: url(/img/150704/list.2x.jpg);
+                        background-size: contain;
+                    }
+                }
+              </style><span class="model-list__item__name">S/N 150704</span>
+      </li>
+      <li id="item-150302" data-href="/instruments/150302.html" class="model-list__item">
+              <style>
+                #item-150302 {
+                    background: url(/img/150302/list.jpg) no-repeat;
+                }
+              </style>
+              <style>
+                @media (-webkit-min-device-pixel-ratio: 2) {
+                    #item-150302 {
+                        background-image: url(/img/150302/list.2x.jpg);
+                        background-size: contain;
+                    }
+                }
+              </style><span class="model-list__item__name">S/N 150302</span>
+      </li>
+    </ul>
   </div>
 </div>
 <script src="/js/lightbox.min.js"></script></div>
