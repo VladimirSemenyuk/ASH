@@ -1,5 +1,44 @@
 [
   {
+    "id": "150805",
+    "model": "dc_sb",
+    "type": "bass",
+    "href": "instruments/150805.html",
+    "images": {
+      "list": "/img/150805/list.jpg",
+      "list2x": "/img/150805/list.2x.jpg",
+      "preview": "/img/150805/preview.jpg",
+      "preview2x": "/img/150805/preview.2x.jpg",
+      "gallery": [
+        "/img/150805/g2.jpg",
+        "/img/150805/g3.jpg",
+        "/img/150805/g4.jpg",
+        "/img/150805/g5.jpg",
+        "/img/150805/g7.jpg",
+        "/img/150805/g8.jpg"
+      ]
+    },
+    "description": "",
+    "specs": {
+      "scaleLength": "35\"",
+      "fretsCount": "24 (Fretless)",
+      "fingerboardRadius": "20\"",
+      "bodyWood": "Movingui",
+      "topWood": "Ash",
+      "neckWood": "Through 5-ps.  Venge/Padauk ",
+      "fingerboardWood": "Ebony",
+      "nut": "Bone",
+      "hardwareColor": "Black",
+      "tuners": "Gotoh GB 707",
+      "bridge": "Hipshot",
+      "pickups": "EMG",
+      "electronics": "Volume/Tone",
+      "knobs": "Ebony/Padauk/Movingui",
+      "switching": "3 Way Switch",
+      "finish": "Frosted Transparent"
+    }
+  },
+  {
     "id": "150704",
     "model": "faberge",
     "type": "guitar",
@@ -11,11 +50,10 @@
       "preview": "/img/150704/preview.jpg",
       "preview2x": "/img/150704/preview.2x.jpg",
       "gallery": [
-        "/img/150704/preview.2x.jpg",
         "/img/150704/g2.jpg",
         "/img/150704/g3.jpg",
         "/img/150704/g5.jpg",
-        "/img/150704/g11.jpg",
+        "/img/150704/g6.jpg",
         "/img/150704/g7.jpg",
         "/img/150704/g8.jpg",
         "/img/150704/g9.jpg",

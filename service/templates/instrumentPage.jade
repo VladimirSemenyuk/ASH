@@ -35,6 +35,7 @@ mixin media(selector, src, srcRetina)
     .left
         h3 Specs
         table.model__specs
+            +spec(model.name, 'Model')
             +spec(specs.scaleLength, 'Scale length')
             +spec(specs.fretsCount, 'Frets')
             +spec(specs.fingerboardRadius, 'FB radius')
@@ -48,6 +49,8 @@ mixin media(selector, src, srcRetina)
             +spec(specs.tuners, 'Tuners')
             +spec(specs.bridge, 'Bridge')
             +spec(specs.pickups, 'Pickups')
+            +spec(specs.electronics, 'Electronics')
+            +spec(specs.knobs, 'Knobs')
             +spec(specs.switching, 'Switching')
             +spec(specs.color, 'Color')
             +spec(specs.finish, 'Finish')
