@@ -1,61 +1,9 @@
-mixin spec(spec, specText)
-    if (spec)
-        tr.spec
-            td.spec__name= specText + ": "
-            td.spec__value!= spec
-
-mixin image(src)
-    a.model__image-link(data-lightbox="model_image" href=src)
-        .model__image(style="background-image: url("+src+")")
-
 .model-page
-    h2= serial || name
+    h2= name
     .model__description!= description
 
-    .model__preview_hor(style="background-image: url(/img/"+id+"/preview.jpg)")
-
-    .left
-        h3 Specs
-        table.model__specs
-            +spec(specs.bodyWood, 'Body')
-            +spec(specs.topWood, 'Top')
-            +spec(specs.neckWood, 'Neck wood')
-            +spec(specs.neckProfile, 'Neck profile')
-            +spec(specs.fingerboardWood, 'Fingerboard wood')
-            +spec(specs.fingerboardRadius, 'Fingerboard radius')
-            +spec(specs.fretsCount, 'Frets')
-            +spec(specs.scaleLength, 'Scale length')
-            +spec(specs.bridge, 'Bridge')
-            +spec(specs.tuners, 'Tuners')
-            +spec(specs.pickups, 'Pickups')
-            +spec(specs.controls, 'Controls')
-
-        .center
-            i You can customize any option to create your dream instrument.
-
-    .right
-        if (images && images.length)
-            .model__images
-                each src in images
-                    +image(src)
-
-    .model__preview_hor(style="background-image: url(/img/"+id+"/preview_back.jpg)")
-
-    if (video)
-        h3 Video
-        .model__video
-            iframe(width="800" height="450" src="https://www.youtube.com/embed/"+video frameborder="0" allowfullscreen)
-
     if (instruments.length)
-        h3 Produced Instruments
-        .model-scroller
-            if (instruments.length > 5)
-                ul.model-list.model-list_lined(style="width:" + instruments.length * 230 + "px;")
-                    each instrument in instruments
-                        include ./instrumentListItem.jade
-            else
-                ul.model-list.model-list
-                    each instrument in instruments
-                        include ./instrumentListItem.jade
+        ul.model-list.model-list
+            each instrument in instruments
+                include ./instrumentListItem.jade
 
-script(src="/js/lightbox.min.js")

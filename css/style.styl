@@ -2,7 +2,8 @@
   0% {opacity: 0}
   20% {opacity: 0}
   40% {opacity: 1}
-  80% {opacity: 1}
+  60% {opacity: 1}
+  80% {opacity: 0}
   100% {opacity: 0}
 
 @keyframes appear2
@@ -113,7 +114,7 @@ i
     margin-top: -17px;
     margin-left: -140px;
     animation-name: appear;
-    animation-duration: 3s;
+    animation-duration: 6s;
     cursor pointer
     color: #00
     opacity 0
@@ -139,7 +140,7 @@ i
     margin-top: -17px;
     margin-left: 83px;
     animation-name: appear;
-    animation-duration: 3s;
+    animation-duration: 6s;
     color: #000
     opacity 0
     display: inline-block;
@@ -161,7 +162,7 @@ i
     margin-left: -59px;
     margin-top: -70px;
     animation-name: appear2;
-    animation-duration: 3s;
+    animation-duration: 6s;
     cursor pointer
 
 .footer
@@ -302,11 +303,11 @@ i
 
   &__item
     display inline-block
-    width: 220px
-    margin 5px
+    width: 190px
+    margin 5px 15px
     height: 30px
     margin-bottom 50px
-    background-position: 50% 10px;
+    background-position: 50% 10px !important;
     background-repeat: no-repeat;
     cursor pointer
     font-family: 'Open Sans', sans-serif;
@@ -314,7 +315,7 @@ i
     padding-top: 580px
 
     &:hover
-      background-position: 50% top;
+      background-position: 50% top !important;
 
     &__name
       text-transform capitalize
@@ -345,15 +346,16 @@ i
 
   &__preview
     width: 540px
-    height: 1050px
+    height: 1200px
     background-position center top;
     background-repeat no-repeat
 
     &_hor
       width: 100%
-      height 390px
+      height 415px
       background-position center center;
       background-repeat no-repeat
+      margin 15px 0
 
   &__image-link
     text-decoration none

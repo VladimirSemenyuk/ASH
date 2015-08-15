@@ -5,45 +5,83 @@ mixin spec(spec, specText)
             td.spec__value!= spec
 
 mixin image(src)
+    - var smallSrc = src.replace('/g', '/small/g');
     a.model__image-link(data-lightbox="model_image" href=src)
-        .model__image(style="background-image: url("+src+")")
+        .model__image(style="background-image: url("+smallSrc+")")
+
+mixin media(selector, src, srcRetina)
+    style.
+        !{selector} {
+            background: url(!{src}) no-repeat;
+        }
+
+    if (srcRetina)
+        style.
+            @media (-webkit-min-device-pixel-ratio: 2) {
+                !{selector} {
+                    background-image: url(!{srcRetina});
+                    background-size: contain;
+                }
+            }
 
 .model-page
-    h2= serial || name
+    h2= 'S/N ' + id
     .model__description!= description
 
+    if (images.preview)
+        .model__preview_hor#preview
+            +media('#preview', images.preview, images.preview2x)
+
     .left
+        h3 Specs
         table.model__specs
-            if (model)
-                tr.spec
-                    td.spec__name= "Model: "
-                    td.spec__value
-                        a(href="/" + model.href)!= model.name
-            +spec(specs.bodyWood, 'Body')
-            +spec(specs.topWood, 'Top')
-            +spec(specs.neckWood, 'Neck wood')
-            +spec(specs.neckProfile, 'Neck profile')
-            +spec(specs.fingerboardWood, 'Fingerboard wood')
-            +spec(specs.fingerboardRadius, 'Fingerboard radius')
-            +spec(specs.fretsCount, 'Frets')
             +spec(specs.scaleLength, 'Scale length')
-            +spec(specs.bridge, 'Bridge')
+            +spec(specs.fretsCount, 'Frets')
+            +spec(specs.fingerboardRadius, 'FB radius')
+            +spec(specs.bodyWood, 'Body wood')
+            +spec(specs.topWood, 'Top wood')
+            +spec(specs.neckWood, 'Neck wood')
+            +spec(specs.fingerboardWood, 'Fretboard wood')
+            +spec(specs.dots, 'Dots')
+            +spec(specs.nut, 'Nut')
+            +spec(specs.hardwareColor, 'Hardware Color')
             +spec(specs.tuners, 'Tuners')
+            +spec(specs.bridge, 'Bridge')
             +spec(specs.pickups, 'Pickups')
-            +spec(specs.controls, 'Controls')
-
-        if (images && images.length)
-            .model__images
-                each src in images
-                    +image(src)
-
+            +spec(specs.switching, 'Switching')
+            +spec(specs.color, 'Color')
+            +spec(specs.finish, 'Finish')
 
     .right
-        .model__preview(style="background-image: url(/img/"+id+"/preview.jpg)")
+        if (images.gallery && images.gallery.length)
+            .model__images
+                each src in images.gallery
+                    +image(src)
+
+    if (images.previewBack || images.previewBack2x)
+        .model__preview_hor#preview-back
+            +media('#preview-back', images.previewBack, images.previewBack2x)
 
     if (video)
         h3 Video
         .model__video
-            iframe(width="800" height="450" src="https://www.youtube.com/embed/"+video frameborder="0" allowfullscreen)
+            iframe(width="800" height="450" src="https://www.youtube.com/embed/" + video frameborder="0" allowfullscreen)
+
+    if (model.instruments.length)
+        h3 More Instruments
+        .model-scroller
+            if (model.instruments.length > 5)
+                ul.model-list.model-list_lined(style="width:" + instruments.length * 230 + "px;")
+                    each instrument in model.instruments
+                        include ./instrumentListItem.jade
+            else
+                ul.model-list.model-list
+                    each instrument in model.instruments
+                        include ./instrumentListItem.jade
 
 script(src="/js/lightbox.min.js")
+script.
+    lightbox.option({
+        'resizeDuration': 0,
+        'fadeDuration': 0
+    })

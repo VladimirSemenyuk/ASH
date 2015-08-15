@@ -4,7 +4,7 @@
   "description": "ASH Instruments Site Generator",
   "main": "service/generator.js",
   "scripts": {
-    "build": "node service/generator.js",
+    "build": "grunt && grunt image_resize",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +22,7 @@
     "grunt": "^0.4.5",
     "grunt-contrib-connect": "^0.11.2",
     "grunt-image": "^1.0.5",
+    "grunt-image-resize": "^1.0.0",
     "jade": "^1.11.0",
     "jstransformer": "0.0.3",
     "jstransformer-markdown": "^1.1.0",

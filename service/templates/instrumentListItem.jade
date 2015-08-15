@@ -1,4 +1,18 @@
-li.model-list__item(style="background-image: url(/img/" + instrument.id + "/list.jpg)" data-href='/' + instrument.href)
-    span.model-list__item__name!= instrument.model + " &mdash; " + instrument.id
 
+mixin media(selector, src, srcRetina)
+    style.
+        !{selector} {
+            background: url(!{src}) no-repeat;
+        }
+    if (srcRetina)
+        style.
+            @media (-webkit-min-device-pixel-ratio: 2) {
+                !{selector} {
+                    background-image: url(!{srcRetina});
+                    background-size: contain;
+                }
+            }
+li.model-list__item(id='item-' + instrument.id  data-href='/' + instrument.href)
+    +media('#item-' + instrument.id, instrument.images.list, instrument.images.list2x)
+    span.model-list__item__name= "S/N " + instrument.id
 
