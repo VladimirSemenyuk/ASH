@@ -333,13 +333,16 @@ i {
 .model__image-link {
   text-decoration: none;
 }
+.model__images {
+  text-align: center;
+}
 .model__image {
-  width: 130px;
-  height: 130px;
+  width: 200px;
+  height: 200px;
   display: inline-block;
   box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-  border: 10px solid #fff;
-  margin: 15px;
+  border: 15px solid #fff;
+  margin: 10px;
   background-size: cover;
   background-position: center center;
   cursor: pointer;
