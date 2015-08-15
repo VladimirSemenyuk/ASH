@@ -42,8 +42,8 @@ module.exports = function(grunt) {
         image_resize: {
             resize: {
                 options: {
-                    width: 150,
-                    height: 150,
+                    width: 400,
+                    height: 400,
                     crop: true
                 },
                 files: imgFiles
