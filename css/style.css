@@ -333,9 +333,6 @@ i {
 .model__image-link {
   text-decoration: none;
 }
-.model__images {
-  text-align: center;
-}
 .model__image {
   width: 200px;
   height: 200px;
