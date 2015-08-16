@@ -1,0 +1,7 @@
+.model-page
+    if (_ash.availableInstruments.length)
+        ul.model-list.model-list
+            each instrument in _ash.availableInstruments
+                include ./instrumentListItem.jade
+    else
+        .model__info-text No instruments are available yet.

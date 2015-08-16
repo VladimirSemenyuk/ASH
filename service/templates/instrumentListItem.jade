@@ -18,4 +18,6 @@ mixin media(selector, src, srcRetina)
 
 li.model-list__item(id='item-' + instrument.id  data-href=instrument.href)
     +media('#item-' + instrument.id, instrument.images.list, instrument.images.list2x)
+    if (instrument.isAvailable)
+        .model-list__item__info Available Now!
 

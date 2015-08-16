@@ -3,7 +3,6 @@
     "id": "150805",
     "model": "dc_sb",
     "type": "bass",
-    "href": "instruments/150805.html",
     "images": {
       "list": "/img/150805/list.jpg",
       "list2x": "/img/150805/list.2x.jpg",
@@ -41,7 +40,6 @@
     "id": "150704",
     "model": "faberge",
     "type": "guitar",
-    "href": "instruments/150704.html",
     "video": "UUutr1a9ABQ",
     "images": {
       "list": "/img/150704/list.jpg",
@@ -53,7 +51,7 @@
         "/img/150704/g3.jpg",
         "/img/150704/g5.jpg",
         "/img/150704/g6.jpg",
-        "/img/150704/g7.jpg",
+        "/img/150704/g12.jpg",
         "/img/150704/g8.jpg",
         "/img/150704/g9.jpg",
         "/img/150704/g10.jpg"
@@ -83,7 +81,6 @@
     "id": "150302",
     "model": "faberge",
     "type": "guitar",
-    "href": "instruments/150302.html",
     "video": "d48U572bdvE",
     "images": {
       "list": "/img/150302/list.jpg",
@@ -99,7 +96,8 @@
         "/img/150302/g11.jpg",
         "/img/150302/g5.jpg",
         "/img/150302/g8.jpg",
-        "/img/150302/g10.jpg"
+        "/img/150302/g10.jpg",
+        "/img/150302/g9.jpg"
       ]
     },
     "description": "",
@@ -122,10 +120,55 @@
     }
   },
   {
+    "id": "140502",
+    "model": "faberge",
+    "type": "guitar",
+    "video": "YpdBSGvhpwU",
+    "images": {
+      "list": "/img/140502/list.jpg",
+      "list2x": "/img/140502/list.2x.jpg",
+      "preview": "/img/140502/preview.jpg",
+      "preview2x": "/img/140502/preview.2x.jpg",
+      "gallery": [
+        "/img/140502/g2.jpg",
+        "/img/140502/g3.jpg",
+        "/img/140502/g4.jpg",
+        "/img/140502/g5.jpg",
+        "/img/140502/g6.jpg",
+        "/img/140502/g7.jpg",
+        "/img/140502/g8.jpg",
+        "/img/140502/g9.jpg",
+        "/img/140502/g10.jpg"
+      ]
+    },
+    "description": "",
+    "specs": {
+      "scaleLength": "24.75\"",
+      "fretsCount": "22",
+      "fingerboardRadius": "12\"",
+      "bodyWood": "Walnut",
+      "topWood": "Buckeye Burl",
+      "neckWood": "Walnut",
+      "fingerboardWood": "Black & White Ebony",
+      "nut": "Bone",
+      "hardwareColor": "Gold",
+      "tuners": "Gotoh 510",
+      "bridge": "Schaller",
+      "pickups": "Lollar",
+      "electronics": "Volume/Tone/Balance",
+      "switching": [
+        "N+B Parallel both cols on.",
+        "N+B outer coils on.",
+        "N+B inner coils on.",
+        "N+B series hamb."
+      ],
+      "finish": "Transparent High Gloss &mdash; Handpolished"
+    }
+  },
+  {
     "id": "130905",
     "model": "faberge",
     "type": "guitar",
-    "href": "instruments/130905.html",
     "video": "__jLzW4cVng",
     "images": {
       "list": "/img/130905/list.jpg",
@@ -133,7 +176,6 @@
       "preview": "/img/130905/preview.jpg",
       "preview2x": "/img/130905/preview.2x.jpg",
       "gallery": [
-        "/img/130905/g1.jpg",
         "/img/130905/g2.jpg",
         "/img/130905/g3.jpg",
         "/img/130905/g4.jpg",

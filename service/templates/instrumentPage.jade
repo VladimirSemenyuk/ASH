@@ -2,7 +2,13 @@ mixin spec(spec, specText)
     if (spec)
         tr.spec
             td.spec__name= specText + ": "
-            td.spec__value!= spec
+            if (typeof spec == 'string')
+                td.spec__value!= spec
+            else
+                td.spec__value
+                    ol.spec__value__list
+                        each s in spec
+                            li!= s
 
 mixin image(src)
     - var smallSrc = src.replace('/g', '/small/g');
@@ -32,6 +38,9 @@ mixin media(selector, src, srcRetina)
         .model__preview_hor#preview
             +media('#preview', images.preview, images.preview2x)
 
+    if (isAvailable)
+        .model__available-text This instrument is available now!
+
     .left
         h3 Specs
         table.model__specs
@@ -58,9 +67,14 @@ mixin media(selector, src, srcRetina)
 
     .right
         if (images.gallery && images.gallery.length)
-            .model__images
-                each src in images.gallery
-                    +image(src)
+            if (images.gallery.length > 6)
+                .model__images_small
+                    each src in images.gallery
+                        +image(src)
+            else
+                .model__images
+                    each src in images.gallery
+                        +image(src)
 
     if (images.previewBack || images.previewBack2x)
         .model__preview_hor#preview-back
@@ -75,7 +89,7 @@ mixin media(selector, src, srcRetina)
         h3 More Instruments
         .model-scroller
             if (model.instruments.length > 6)
-                ul.model-list.model-list_lined(style="width:" + instruments.length * 230 + "px;")
+                ul.model-list.model-list_lined(style="width:" + model.instruments.length * 230 + "px;")
                     each instrument in model.instruments
                         if (instrument.id !== id)
                             include ./instrumentListItem.jade

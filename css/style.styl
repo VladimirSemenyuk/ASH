@@ -62,6 +62,16 @@ i
 .center
   text-align center
 
+#error404
+  font-size: 50px;
+  color: #555;
+  text-align: center;
+  line-height: 60px;
+  margin: 150px;
+
+.text-404
+  font-size: 26px;
+
 #page
   position relative
   margin 0 auto
@@ -304,7 +314,7 @@ i
   &__item
     display inline-block
     width: 190px
-    margin 5px 15px
+    margin 5px 20px
     height: 30px
     margin-bottom 50px
     background-position: 50% 10px !important;
@@ -313,12 +323,16 @@ i
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     padding-top: 580px
+    vertical-align top
 
     &:hover
       background-position: 50% top !important;
 
     &__name
       text-transform capitalize
+
+    &__info
+      color: crimson
 
 
 
@@ -335,11 +349,23 @@ i
   list-style none
 
 .model
+  &__info-text
+    font-size: 16px
+    font-style italic
+    text-align center
+    color: #555555
+    margin 150px 0
+
   &__description
     font-size: 16px
     font-style italic
     text-align center
     color: #555555
+
+  &__available-text
+    color: crimson
+    text-align center
+    font-size 16px
 
   &__specs
     margin 30px auto
@@ -371,6 +397,12 @@ i
     background-position center center
     cursor pointer
 
+    .model__images_small &
+      width 150px
+      height 150px
+      border 10px solid #fff
+      margin 5px
+
     &:hover
       box-shadow 0 2px 4px rgba(0,0,0,0.6)
 
@@ -383,11 +415,18 @@ i
 
 
 .spec
+  vertical-align top
+
   &__name
     text-align: right
     color: #555
     font-weight bold
     padding-right 20px
+
+  &__value
+    &__list
+      padding-left 18px
+      margin 0
 
 .left
   width 560px
@@ -417,3 +456,6 @@ i
 
   &:after
     display block;
+
+.lightboxOverlay
+  position fixed !important

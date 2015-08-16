@@ -37,6 +37,7 @@ global.ash = {
         return page.id !== '404';
     }),
     instruments: instruments,
+    availableInstruments: _.where(instruments, {isAvailable: true}),
     guitars: _.where(instruments, {type: 'guitar'}),
     basses: _.where(instruments, {type: 'bass'}),
     templates: _.map(fs.readdirSync('service/templates'), function(templateFile) {

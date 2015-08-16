@@ -18,6 +18,12 @@
     "templateName": "bassModelsPage"
   },
   {
+    "id": "available",
+    "name": "Available",
+    "nameRus": "Доступные сейчас",
+    "templateName": "availableInstrumentsPage"
+  },
+  {
     "id": "about",
     "name": "About",
     "nameRus": "O мастере",
