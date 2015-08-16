@@ -42,6 +42,16 @@ i {
 .center {
   text-align: center;
 }
+#error404 {
+  font-size: 50px;
+  color: #555;
+  text-align: center;
+  line-height: 60px;
+  margin: 150px;
+}
+.text-404 {
+  font-size: 26px;
+}
 #page {
   position: relative;
   margin: 0 auto;
@@ -289,12 +299,16 @@ i {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   padding-top: 580px;
+  vertical-align: top;
 }
 .model-list__item:hover {
   background-position: 50% top !important;
 }
 .model-list__item__name {
   text-transform: capitalize;
+}
+.model-list__item__info {
+  color: #dc143c;
 }
 .slide {
   border: none;
@@ -308,11 +322,23 @@ i {
   left: 0;
   list-style: none;
 }
+.model__info-text {
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+  color: #555;
+  margin: 150px 0;
+}
 .model__description {
   font-size: 16px;
   font-style: italic;
   text-align: center;
   color: #555;
+}
+.model__available-text {
+  color: #dc143c;
+  text-align: center;
+  font-size: 16px;
 }
 .model__specs {
   margin: 30px auto;

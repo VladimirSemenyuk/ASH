@@ -62,6 +62,16 @@ i
 .center
   text-align center
 
+#error404
+  font-size: 50px;
+  color: #555;
+  text-align: center;
+  line-height: 60px;
+  margin: 150px;
+
+.text-404
+  font-size: 26px;
+
 #page
   position relative
   margin 0 auto
@@ -313,12 +323,16 @@ i
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     padding-top: 580px
+    vertical-align top
 
     &:hover
       background-position: 50% top !important;
 
     &__name
       text-transform capitalize
+
+    &__info
+      color: crimson
 
 
 
@@ -335,11 +349,23 @@ i
   list-style none
 
 .model
+  &__info-text
+    font-size: 16px
+    font-style italic
+    text-align center
+    color: #555555
+    margin 150px 0
+
   &__description
     font-size: 16px
     font-style italic
     text-align center
     color: #555555
+
+  &__available-text
+    color: crimson
+    text-align center
+    font-size 16px
 
   &__specs
     margin 30px auto
