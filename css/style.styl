@@ -415,11 +415,18 @@ i
 
 
 .spec
+  vertical-align top
+
   &__name
     text-align: right
     color: #555
     font-weight bold
     padding-right 20px
+
+  &__value
+    &__list
+      padding-left 18px
+      margin 0
 
 .left
   width 560px
@@ -449,3 +456,6 @@ i
 
   &:after
     display block;
+
+.lightboxOverlay
+  position fixed !important

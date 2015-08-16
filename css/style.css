@@ -385,11 +385,18 @@ i {
   margin: 30px auto;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
+.spec {
+  vertical-align: top;
+}
 .spec__name {
   text-align: right;
   color: #555;
   font-weight: bold;
   padding-right: 20px;
+}
+.spec__value__list {
+  padding-left: 18px;
+  margin: 0;
 }
 .left {
   width: 560px;
@@ -419,6 +426,9 @@ i {
 }
 .right:after {
   display: block;
+}
+.lightboxOverlay {
+  position: fixed !important;
 }
 @-moz-keyframes appear {
   0% {
