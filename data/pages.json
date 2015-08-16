@@ -18,12 +18,6 @@
     "templateName": "bassModelsPage"
   },
   {
-    "id": "instruments",
-    "name": "instruments",
-    "nameRus": "Галерея",
-    "templateName": "instrumentsPage"
-  },
-  {
     "id": "about",
     "name": "About",
     "nameRus": "O мастере",

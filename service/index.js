@@ -50,6 +50,26 @@ ash.models = models;
 ash.guitarModels = _.where(models, {type: 'guitar'});
 ash.bassModels = _.where(models, {type: 'bass'});
 
+for (var i = 0; i < instruments.length; i++) {
+    instruments[i].model = _.where(models, {id: instruments[i].model})[0];
+
+    if (instruments[i].model.type == 'guitar') {
+        instruments[i].href = '/guitars/' + instruments[i].model.id + '/' + instruments[i].id + '.html';
+    } else {
+        instruments[i].href = '/basses/' + instruments[i].model.id + '/' + instruments[i].id + '.html';
+    }
+}
+
+for (var j = 0; j < models.length; j++) {
+    models[j].instruments = _.where(instruments, {model: models[j]});
+
+    if (models[j].type == 'guitar') {
+        models[j].href = '/guitars/' + models[j].id + '.html';
+    } else {
+        models[j].href = '/basses/' + models[j].id + '.html';
+    }
+}
+
 var args = process.argv;
 
 var generators = {

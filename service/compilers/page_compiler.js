@@ -4,22 +4,6 @@ var fs = require('fs-extra'),
 
 module.exports = {
     compile: function() {
-        for (var i = 0; i < ash.pages.length; i++) {
-            var page = ash.pages[i];
-
-            page._ash = ash;
-
-            var data = JSON.parse(fs.readFileSync('data/config.json')),
-                html = jade.renderFile('service/templates/main.jade', {
-                    currentPage: page.name,
-                    pretty: true,
-                    title: data.siteTitle + ' &mdash; ' + page.name,
-                    pages: ash.contentPages,
-                    content: page.template()
-                });
-
-            fs.writeFileSync('output/' + page.id + '.html', html);
-        }
 
         try {
             fs.mkdirSync('output/guitars');
@@ -38,7 +22,9 @@ module.exports = {
 
             model._ash = ash;
 
-            model.instruments = _.where(ash.instruments, {model: model.id});
+            //model.instruments = _.where(ash.instruments, {model: model});
+
+            //var href = model.href = 'guitars/' + model.id + '.html';
 
             var data = JSON.parse(fs.readFileSync('data/config.json')),
                 html = jade.renderFile('service/templates/main.jade', {
@@ -49,7 +35,8 @@ module.exports = {
                     content: model.template()
                 });
 
-            fs.writeFileSync('output/guitars/' + model.id + '.html', html);
+            fs.writeFileSync('output/' + model.href, html);
+            fs.mkdirSync('output/guitars/' + model.id);
         }
 
         for (var i = 0; i < ash.bassModels.length; i++) {
@@ -57,7 +44,9 @@ module.exports = {
 
             model._ash = ash;
 
-            model.instruments = _.where(ash.instruments, {model: model.id});
+            //model.instruments = _.where(ash.instruments, {model: model});
+
+            //var href = model.href = 'basses/' + model.id + '.html';
 
             var data = JSON.parse(fs.readFileSync('data/config.json')),
                 html = jade.renderFile('service/templates/main.jade', {
@@ -68,7 +57,8 @@ module.exports = {
                     content: model.template()
                 });
 
-            fs.writeFileSync('output/basses/' + model.id + '.html', html);
+            fs.writeFileSync('output/' + model.href, html);
+            fs.mkdirSync('output/basses/' + model.id);
         }
 
         try {
@@ -82,7 +72,7 @@ module.exports = {
 
             instrument._ash = ash;
 
-            instrument.model = _.findWhere(ash.models, {id: instrument.model});
+            //instrument.model = _.findWhere(ash.models, {id: instrument.model});
 
             var data = JSON.parse(fs.readFileSync('data/config.json')),
                 html = jade.renderFile('service/templates/main.jade', {
@@ -93,7 +83,24 @@ module.exports = {
                     content: instrument.template()
                 });
 
-            fs.writeFileSync('output/instruments/' + instrument.id + '.html', html);
+            fs.writeFileSync('output/' + instrument.href, html);
+        }
+
+        for (var i = 0; i < ash.pages.length; i++) {
+            var page = ash.pages[i];
+
+            page._ash = ash;
+
+            var data = JSON.parse(fs.readFileSync('data/config.json')),
+                html = jade.renderFile('service/templates/main.jade', {
+                    currentPage: page.name,
+                    pretty: true,
+                    title: data.siteTitle + ' &mdash; ' + page.name,
+                    pages: ash.contentPages,
+                    content: page.template()
+                });
+
+            fs.writeFileSync('output/' + page.id + '.html', html);
         }
     }
 }

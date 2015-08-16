@@ -25,7 +25,7 @@ mixin media(selector, src, srcRetina)
             }
 
 .model-page
-    h2= 'S/N ' + id
+    h2= model.name
     .model__description!= description
 
     if (images.preview)
@@ -35,6 +35,7 @@ mixin media(selector, src, srcRetina)
     .left
         h3 Specs
         table.model__specs
+            +spec(id, 'S/N')
             +spec(model.name, 'Model')
             +spec(specs.scaleLength, 'Scale length')
             +spec(specs.fretsCount, 'Frets')
@@ -70,17 +71,19 @@ mixin media(selector, src, srcRetina)
         .model__video
             iframe(width="800" height="450" src="https://www.youtube.com/embed/" + video frameborder="0" allowfullscreen)
 
-    if (model.instruments.length)
+    if (model.instruments.length > 1)
         h3 More Instruments
         .model-scroller
-            if (model.instruments.length > 5)
+            if (model.instruments.length > 6)
                 ul.model-list.model-list_lined(style="width:" + instruments.length * 230 + "px;")
                     each instrument in model.instruments
-                        include ./instrumentListItem.jade
+                        if (instrument.id !== id)
+                            include ./instrumentListItem.jade
             else
                 ul.model-list.model-list
                     each instrument in model.instruments
-                        include ./instrumentListItem.jade
+                        if (instrument.id !== id)
+                            include ./instrumentListItem.jade
 
 script(src="/js/lightbox.min.js")
 script.
