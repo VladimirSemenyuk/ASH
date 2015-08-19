@@ -290,19 +290,21 @@ i {
 .model-list__item {
   display: inline-block;
   width: 190px;
-  margin: 5px 20px;
-  height: 30px;
-  margin-bottom: 50px;
-  background-position: 50% 10px !important;
-  background-repeat: no-repeat;
+  margin: 5px 10px 5px 50px;
   cursor: pointer;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
-  padding-top: 580px;
   vertical-align: top;
 }
-.model-list__item:hover {
-  background-position: 50% top !important;
+.model-list__item__image {
+  background-position: 50% 100% !important;
+  width: 190px;
+  height: 580px;
+  background-repeat: no-repeat;
+}
+.model-list__item__image:hover {
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
 .model-list__item__name {
   text-transform: capitalize;
