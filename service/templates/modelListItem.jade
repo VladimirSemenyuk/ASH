@@ -13,10 +13,11 @@ mixin media(selector, src, srcRetina)
                 }
             }
 
-- var href = (model.instruments.length > 1) ? (model.href) : (model.instruments[0].href);
+- var href = (model.instruments.length) ? ((model.instruments.length > 1) ? (model.href) : (model.instruments[0].href)) : '#';
 
-li.model-list__item(id='item-'+model.id  data-href=href)
+li.model-list__item(data-href=href)
     +media('#item-'+model.id, model.images.list, model.images.list2x)
+    .model-list__item__image(id='item-'+model.id)
     span.model-list__item__name= model.name || model.serial
 
 

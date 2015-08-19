@@ -9,9 +9,9 @@ function create(dataFile, Constr) {
     try {
         data = JSON.parse(fs.readFileSync('data/' + dataFile + '.json'));
     } catch(e) {
-        console.log(e)
+        console.log(e);
 
-        fs.writeFileSync('data/' + dataFile + '.json', '[]');
+        //fs.writeFileSync('data/' + dataFile + '.json', '[]');
     }
 
     if (data) {

@@ -3,7 +3,6 @@
     "id": "faberge",
     "name": "Faberge",
     "type": "guitar",
-    "href": "guitars/faberge.html",
     "images": {
       "list": "/img/150302/list.jpg",
       "list2x": "/img/150302/list.2x.jpg"
@@ -14,10 +13,22 @@
     }
   },
   {
+    "id": "punisher",
+    "name": "Punisher",
+    "type": "guitar",
+    "images": {
+      "list": "/img/150503/list.jpg",
+      "list2x": "/img/150503/list.2x.jpg"
+    },
+    "description": "Tradition, Luxury and Style.",
+    "specs": {
+
+    }
+  },
+  {
     "id": "dc_sb",
     "name": "DC(SB)",
     "type": "bass",
-    "href": "basses/dc_sb.html",
     "images": {
       "list": "/img/150805/list.jpg",
       "list2x": "/img/150805/list.2x.jpg"

@@ -16,8 +16,9 @@ mixin media(selector, src, srcRetina)
 - var type = (instrument.type === 'guitar') ? 'guitars' : 'basses';
 
 
-li.model-list__item(id='item-' + instrument.id  data-href=instrument.href)
+li.model-list__item(data-href=instrument.href)
     +media('#item-' + instrument.id, instrument.images.list, instrument.images.list2x)
+    .model-list__item__image(id='item-'+instrument.id)
     if (instrument.isAvailable)
         .model-list__item__info Available Now!
 
