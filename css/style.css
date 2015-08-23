@@ -282,7 +282,7 @@ i {
   list-style: none;
   padding: 0;
   text-align: center;
-  margin: 0;
+  margin: 10px 0 0;
 }
 .model-list_lined {
   display: flex;
