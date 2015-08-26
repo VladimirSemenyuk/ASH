@@ -20,5 +20,6 @@ li.model-list__item(data-href=instrument.href)
     +media('#item-' + instrument.id, instrument.images.list, instrument.images.list2x)
     div(id='item-'+instrument.id class='model-list__item__image model-list__item__image_' + scaleLength)
     if (instrument.isAvailable)
+        .model-list__item__name= instrument.model.name
         .model-list__item__info Available Now!
 

@@ -26,7 +26,7 @@ function save() {
 
 var Instrument = function(name, type) {
     var I = function() {
-        this.id = name.toUnderscore();
+        this.id = (name + '').toUnderscore();
 
         this.name = name;
         this.type = type;

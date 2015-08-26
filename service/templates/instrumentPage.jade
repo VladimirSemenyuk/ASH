@@ -2,7 +2,7 @@ mixin spec(spec, specText)
     if (spec)
         tr.spec
             td.spec__name= specText + ": "
-            if (typeof spec == 'string')
+            if (typeof spec !== 'object')
                 td.spec__value!= spec
             else
                 td.spec__value
@@ -35,7 +35,9 @@ mixin media(selector, src, srcRetina)
     .model__description!= description
 
     if (images.preview)
-        .model__preview_hor#preview
+        - var scaleText = specs.scaleLength.replace('"', '').replace('.', '-');
+
+        #preview(class="model__preview_hor model__preview_scale-" + scaleText)
             +media('#preview', images.preview, images.preview2x)
 
     if (isAvailable)
@@ -47,6 +49,7 @@ mixin media(selector, src, srcRetina)
             +spec(id, 'S/N')
             +spec(model.name, 'Model')
             +spec(specs.scaleLength, 'Scale length')
+            +spec(specs.construction, 'Construction')
             +spec(specs.fretsCount, 'Frets')
             +spec(specs.fingerboardRadius, 'FB radius')
             +spec(specs.bodyWood, 'Body wood')
@@ -54,12 +57,13 @@ mixin media(selector, src, srcRetina)
             +spec(specs.neckWood, 'Neck wood')
             +spec(specs.fingerboardWood, 'Fretboard wood')
             +spec(specs.dots, 'Dots')
-            +spec(specs.construction, 'Construction')
             +spec(specs.nut, 'Nut')
             +spec(specs.hardwareColor, 'Hardware Color')
             +spec(specs.tuners, 'Tuners')
             +spec(specs.bridge, 'Bridge')
             +spec(specs.pickups, 'Pickups')
+            +spec(specs.pickup, 'Pickup')
+            +spec(specs.preamp, 'Preamp')
             +spec(specs.electronics, 'Electronics')
             +spec(specs.knobs, 'Knobs')
             +spec(specs.switching, 'Switching')
@@ -88,14 +92,24 @@ mixin media(selector, src, srcRetina)
 
     if (model.instruments.length > 1)
         h3 More Instruments
+
+        -   var maxScale = 24.75, specScale;
+        -   for (var i = 0; i < model.instruments.length; i++) {
+        -       specScale = parseFloat(model.instruments[i].specs.scaleLength.replace('"', ''));
+        -       if (maxScale < specScale) {
+        -           maxScale = specScale;
+        -       }
+        -   }
+        -   var maxScaleText = (maxScale + '').replace('.', '-');
+
         .model-scroller
             if (model.instruments.length > 6)
-                ul.model-list.model-list_lined(style="width:" + model.instruments.length * 230 + "px;")
+                ul(class="model-list model-list_lined model-list_max-scale-" + maxScaleText style="width:" + model.instruments.length * 230 + "px;")
                     each instrument in model.instruments
                         if (instrument.id !== id)
                             include ./instrumentListItem.jade
             else
-                ul.model-list.model-list
+                ul(class="model-list model-list_max-scale-" + maxScaleText)
                     each instrument in model.instruments
                         if (instrument.id !== id)
                             include ./instrumentListItem.jade

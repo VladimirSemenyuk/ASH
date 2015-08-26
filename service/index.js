@@ -69,6 +69,10 @@ for (var j = 0; j < models.length; j++) {
     } else {
         models[j].href = '/basses/' + models[j].id + '.html';
     }
+
+    models[j].sampleInstrument = _.where(instruments, {id: models[j].sampleInstrument})[0];
+
+    console.log(models[j]);
 }
 
 var args = process.argv;

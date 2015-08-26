@@ -3,7 +3,16 @@
     .model__description!= description
 
     if (instruments.length)
-        ul.model-list.model-list
+        -   var maxScale = 24.75, specScale;
+        -   for (var i = 0; i < instruments.length; i++) {
+        -       specScale = parseFloat(instruments[i].specs.scaleLength.replace('"', ''));
+        -       if (maxScale < specScale) {
+        -           maxScale = specScale;
+        -       }
+        -   }
+        -   var maxScaleText = (maxScale + '').replace('.', '-');
+
+        ul(class="model-list model-list_max-scale-" + maxScaleText)
             each instrument in instruments
                 include ./instrumentListItem.jade
 

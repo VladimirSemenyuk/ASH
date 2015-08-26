@@ -1,3 +1,12 @@
-ul.model-list
+-   var maxScale = 33, specScale;
+-   for (var i = 0; i < _ash.bassModels.length; i++) {
+-       specScale = parseFloat(_ash.bassModels[i].sampleInstrument.specs.scaleLength.replace('"', ''));
+-       if (maxScale < specScale) {
+-           maxScale = specScale;
+-       }
+-   }
+-   var maxScaleText = (maxScale + '').replace('.', '-');
+
+ul(class="model-list model-list_max-scale-" + maxScaleText)
     each model in _ash.bassModels
         include ./modelListItem.jade

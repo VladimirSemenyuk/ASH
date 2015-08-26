@@ -4,7 +4,7 @@ var _ = require('lodash'),
     path = require('path');
 
 var Page = function(name, nameRus, templateName) {
-    this.id = name.toUnderscore();
+    this.id = (name + '').toUnderscore();
 
     this.name = name;
     this.nameRus = nameRus;

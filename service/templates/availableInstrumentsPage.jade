@@ -1,7 +1,17 @@
 .model-page
     if (_ash.availableInstruments.length)
-        ul.model-list.model-list
+
+        -   var maxScale = 24.75, specScale;
+        -   for (var i = 0; i < _ash.availableInstruments.length; i++) {
+        -       specScale = parseFloat(_ash.availableInstruments[i].specs.scaleLength.replace('"', ''));
+        -       if (maxScale < specScale) {
+        -           maxScale = specScale;
+        -       }
+        -   }
+        -   var maxScaleText = (maxScale + '').replace('.', '-');
+
+        ul(class="model-list model-list_max-scale-" + maxScaleText)
             each instrument in _ash.availableInstruments
-                include ./instrumentListItem.jade
+                include ./availableInstrumentListItem.jade
     else
         .model__info-text No instruments are available yet.

@@ -29,7 +29,7 @@ function save() {
 
 var Model = function(name, type) {
     var M = function() {
-        this.id = name.toUnderscore();
+        this.id = (name + '').toUnderscore();
 
         this.name = name;
         this.type = type;
