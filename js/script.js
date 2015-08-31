@@ -26,8 +26,4 @@ $(function() {
     $('.year').html(year);
 
     $('#order-title-field').val('New Order! [' + fullDate + ']');
-
-    var contactform =  document.getElementById('order-form');
-
-    contactform.setAttribute('action', '//formspree.io/' + 'shefff1981' + '@' + 'mail' + '.' + 'ru');
 });
