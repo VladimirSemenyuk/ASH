@@ -54,7 +54,7 @@ h3
   font-size: 20px;
   letter-spacing: 1px;
   font-weight: 400;
-  margin-top 40px
+  margin-top 20px
 
 i
   color: #666;
@@ -63,6 +63,7 @@ i
   text-align center
 
 #error404
+#thanks
   font-size: 50px;
   color: #555;
   text-align: center;
@@ -70,6 +71,7 @@ i
   margin: 150px;
 
 .text-404
+.text-thanks
   font-size: 26px;
 
 #page
@@ -413,10 +415,10 @@ i
     text-decoration none
 
   &__images
-    margin-top 30px
+    margin-top 10px
 
     &_small
-      margin-top 30px
+      margin-top 10px
 
   &__image
     width: 200px
@@ -441,10 +443,8 @@ i
   &__video
     width 800px
     height 450px
-    margin 30px auto
+    margin 30px auto 60px
     box-shadow 0 4px 10px rgba(0,0,0,0.3)
-
-
 
 .spec
   vertical-align top
@@ -479,9 +479,9 @@ i
   vertical-align top
 
 .right
-  width 550px
-  min-width: 550px
-  max-width: 550px
+  width 560px
+  min-width: 560px
+  max-width: 560px
   padding 20px
   display inline-block
   vertical-align top
@@ -491,3 +491,32 @@ i
 
 .lightboxOverlay
   position fixed !important
+
+.input
+  padding: 8px 10px
+  border 1px solid #aaa
+  border-radius: 3px;
+  margin 10px
+  resize: none
+  width: 300px;
+  font-size 13px;
+
+  &_100
+    width: 100%
+
+  &:focus
+    border-color #999;
+
+.submit
+  width: 150px
+  border-radius 3px
+  padding 8px
+  background-color #618faf
+  color: white
+  border: 1px solid #777
+  margin 0 10px 10px
+  cursor pointer
+
+  &:hover
+    background-color #4d88af
+

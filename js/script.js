@@ -16,11 +16,18 @@ $(function() {
     });
 
     var year = 2015,
-        date = new Date();
+        date = new Date(),
+        fullDate = date.getFullYear() + '.' + (date.getMonth() +1) + '.' + date.getDate() + ' - ' + date.getHours() + ':' + date.getMinutes() + ':' + date.getSeconds();
 
     if (date.getFullYear() !== year) {
         year += ' &mdash; ' + date.getFullYear();
     }
 
     $('.year').html(year);
+
+    $('#order-title-field').val('New Order! [' + fullDate + ']');
+
+    var contactform =  document.getElementById('order-form');
+
+    contactform.setAttribute('action', '//formspree.io/' + 'shefff1981' + '@' + 'mail' + '.' + 'ru');
 });
