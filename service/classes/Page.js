@@ -50,7 +50,7 @@ Page.prototype = {
         }
 
         var options = _.extend({
-            pretty: true
+
         }, this);
 
         return jade.renderFile(this.templatePath(), options);

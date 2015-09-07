@@ -24,22 +24,28 @@
     "templateName": "availableInstrumentsPage"
   },
   {
+    "id": "order",
+    "name": "Order",
+    "nameRus": "Заказать",
+    "templateName": "orderPage"
+  },
+  {
     "id": "about",
     "name": "About",
     "nameRus": "O мастере",
     "templateName": "about.md"
   },
   {
-    "id": "FAQ",
-    "name": "FAQ",
-    "nameRus": "FAQ",
-    "templateName": "bassModelsPage"
-  },
-  {
     "id": "404",
     "name": "404",
     "nameRus": "404",
     "templateName": "404"
+  },
+  {
+    "id": "thanks",
+    "name": "Thank You",
+    "nameRus": "Спасибо!",
+    "templateName": "thanksPage"
   }
 
 ]

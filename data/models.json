@@ -18,7 +18,7 @@
     "name": "DC(SB)",
     "type": "bass",
     "description": "Modern Bass.",
-    "sampleInstrument": 150805
+    "sampleInstrument": 150806
   },
   {
     "id": "sc",
@@ -26,5 +26,12 @@
     "type": "bass",
     "description": "Professional Premium Instrument For Demanding Players.",
     "sampleInstrument": 141204
+  },
+  {
+    "id": "tb",
+    "name": "TB",
+    "type": "bass",
+    "description": "Huge Sound In A Compact Package.",
+    "sampleInstrument": 150705
   }
 ]

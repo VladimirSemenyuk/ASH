@@ -1,20 +1,20 @@
 [
   {
-    "id": 150805,
+    "id": 150806,
     "model": "dc_sb",
     "type": "bass",
     "images": {
-      "list": "/img/150805/list.jpg",
-      "list2x": "/img/150805/list.2x.jpg",
-      "preview": "/img/150805/preview.jpg",
-      "preview2x": "/img/150805/preview.2x.jpg",
+      "list": "/img/150806/list.jpg",
+      "list2x": "/img/150806/list.2x.jpg",
+      "preview": "/img/150806/preview.jpg",
+      "preview2x": "/img/150806/preview.2x.jpg",
       "gallery": [
-        "/img/150805/g2.jpg",
-        "/img/150805/g3.jpg",
-        "/img/150805/g4.jpg",
-        "/img/150805/g5.jpg",
-        "/img/150805/g7.jpg",
-        "/img/150805/g8.jpg"
+        "/img/150806/g2.jpg",
+        "/img/150806/g3.jpg",
+        "/img/150806/g4.jpg",
+        "/img/150806/g5.jpg",
+        "/img/150806/g7.jpg",
+        "/img/150806/g8.jpg"
       ]
     },
     "description": "",
@@ -34,6 +34,50 @@
       "pickups": "EMG",
       "electronics": "Volume/Tone",
       "knobs": "Ebony/Padauk/Movingui",
+      "finish": "Frosted Transparent"
+    }
+  },
+  {
+    "id": 150705,
+    "model": "tb",
+    "type": "bass",
+    "images": {
+      "list": "/img/150705/list.jpg",
+      "list2x": "/img/150705/list.2x.jpg",
+      "preview": "/img/150705/preview.jpg",
+      "preview2x": "/img/150705/preview.2x.jpg",
+      "gallery": [
+        "/img/150705/g1.jpg",
+        "/img/150705/g2.jpg",
+        "/img/150705/g3.jpg",
+        "/img/150705/g4.jpg",
+        "/img/150705/g5.jpg",
+        "/img/150705/g6.jpg",
+        "/img/150705/g7.jpg",
+        "/img/150705/g8.jpg",
+        "/img/150705/g13.jpg",
+        "/img/150705/g11.jpg",
+        "/img/150705/g12.jpg"
+      ]
+    },
+    "description": "",
+    "specs": {
+      "scaleLength": "34\"",
+      "fretsCount": "24",
+      "fingerboardRadius": "20\"",
+      "bodyWood": "Alder (Alder Tone Block)",
+      "topWood": "Maple",
+      "neckWood": "3-ps. Hard Rock Maple",
+      "construction": "Through",
+      "fingerboardWood": "Ebony",
+      "nut": "",
+      "hardwareColor": "Black",
+      "tuners": "",
+      "bridge": "Hipshot",
+      "pickups": "Delano",
+      "preamp": "Delano",
+      "electronics": "",
+      "knobs": "Ebony",
       "finish": "Frosted Transparent"
     }
   },
@@ -187,7 +231,7 @@
     "description": "",
     "specs": {
       "scaleLength": "33\"",
-      "fretsCount": "24",
+      "fretsCount": "26",
       "fingerboardRadius": "20\"",
       "bodyWood": "Maple (Alder Tone Block)",
       "topWood": "Buckeye Burl",

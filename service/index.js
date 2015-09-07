@@ -34,7 +34,7 @@ var pages = create('pages', require('./classes/Page.js')),
 global.ash = {
     pages: pages,
     contentPages: _.filter(pages, function(page) {
-        return page.id !== '404';
+        return !(page.id == '404' || page.id == 'thanks');
     }),
     instruments: instruments,
     availableInstruments: _.where(instruments, {isAvailable: true}),

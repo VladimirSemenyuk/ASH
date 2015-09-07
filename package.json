@@ -4,6 +4,7 @@
   "description": "ASH Instruments Site Generator",
   "main": "service/generator.js",
   "scripts": {
+    "start": "grunt && grunt image_resize && grunt connect",
     "build": "grunt && grunt image_resize",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
