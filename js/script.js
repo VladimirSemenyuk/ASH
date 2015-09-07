@@ -3,8 +3,12 @@ $(function() {
         location.href = '/';
     });
 
+    var $body = $('body');
+
     $('.model-list__item').on('click', function(e) {
         location.href = $(this).data('href');
+    }).one('mouseenter', function(e) {
+        $body.append('<link rel="prerender" href="'+$(this).data('href')+'">');
     });
 
     $('.model-scroller').mCustomScrollbar({
