@@ -80,6 +80,7 @@ module.exports = {
                     pretty: true,
                     title: data.siteTitle + ' &mdash; ' + instrument.model.name + ' &mdash; ' + instrument.id ,
                     pages: ash.contentPages,
+                    images: instrument.images,
                     content: instrument.template()
                 });
 

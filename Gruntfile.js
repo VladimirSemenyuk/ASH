@@ -2,11 +2,16 @@ var proc = require('child_process');
 
 module.exports = function(grunt) {
 
-    var imgFiles = {};
+    var imgFiles = {},
+        originalFiles = {};
 
     var files = grunt.file.expand('output/img/**/g*.jpg');
 
     for (var i = 0; i < files.length; i++) {
+        originalFiles[files[i]] = files[i];
+    }
+
+    for (i = 0; i < files.length; i++) {
         imgFiles[files[i].replace('/g', '/small/g')] = files[i];
     }
 
@@ -47,6 +52,14 @@ module.exports = function(grunt) {
                     crop: true
                 },
                 files: imgFiles
+            },
+            resizeOriginal: {
+                options: {
+                    width: 1500,
+                    height: 1500,
+                    crop: false
+                },
+                files: originalFiles
             }
         }
     });

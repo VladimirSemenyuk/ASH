@@ -3,8 +3,17 @@ $(function() {
         location.href = '/';
     });
 
+    var $body = $('body');
+
     $('.model-list__item').on('click', function(e) {
         location.href = $(this).data('href');
+    }).one('mouseenter', function(e) {
+        var hint =document.createElement("link");
+
+        hint.setAttribute('rel', 'prerender');
+        hint.setAttribute('href', $(this).data('href'));
+
+        document.getElementsByTagName('head')[0].appendChild(hint);
     });
 
     $('.model-scroller').mCustomScrollbar({
@@ -26,4 +35,19 @@ $(function() {
     $('.year').html(year);
 
     $('#order-title-field').val('New Order! [' + fullDate + ']');
+
+    var prefetch = function(href) {
+        var hint = document.createElement("link");
+
+        hint.setAttribute('rel', 'prefetch');
+        hint.setAttribute('href', href);
+
+        document.getElementsByTagName('head')[0].appendChild(hint);
+    };
+
+    if (window.prefetched && window.prefetched.length) {
+        for (var i = 0; i < window.prefetched.length; i++) {
+            prefetch(window.prefetched[i]);
+        }
+    }
 });

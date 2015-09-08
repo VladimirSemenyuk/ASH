@@ -29,6 +29,14 @@ html(lang="ru")
         script(src='/js/script.js')
         script(src='/js/jquery.mCustomScrollbar.concat.min.js')
 
+        script.
+            window.prefetched = [];
+
+        if (images && images.gallery)
+            each src in images.gallery
+                script.
+                    window.prefetched.push('!{src}');
+
     body
         #page
             #logo
