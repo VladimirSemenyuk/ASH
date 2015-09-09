@@ -250,6 +250,45 @@
     }
   },
   {
+    "id": 141203,
+    "model": "sc",
+    "type": "bass",
+    "images": {
+      "list": "/img/141203/list.jpg",
+      "list2x": "/img/141203/list.2x.jpg",
+      "preview": "/img/141203/preview.jpg",
+      "preview2x": "/img/141203/preview.2x.jpg",
+      "gallery": [
+        "/img/141203/g2.jpg",
+        "/img/141203/g3.jpg",
+        "/img/141203/g4.jpg",
+        "/img/141203/g5.jpg",
+        "/img/141203/g6.jpg",
+        "/img/141203/g7.jpg",
+        "/img/141203/g8.jpg"
+      ]
+    },
+    "description": "",
+    "specs": {
+      "scaleLength": "34\"",
+      "fretsCount": "26",
+      "fingerboardRadius": "20\"",
+      "bodyWood": "Mahogany  (Alder Tone Block)",
+      "construction": "Through",
+      "neckWood": "3-ps. Hard Rock Maple",
+      "fingerboardWood": "Rosewood",
+      "nut": "",
+      "hardwareColor": "Black",
+      "tuners": "Gotoh GB 707",
+      "bridge": "Hipshot",
+      "pickups": "Nordstrand",
+      "preamp": "Mike Pope",
+      "electronics": "",
+      "knobs": "",
+      "finish": "Frosted Transparent"
+    }
+  },
+  {
     "id": 140502,
     "model": "faberge",
     "type": "guitar",
