@@ -3,35 +3,35 @@
     "id": "faberge",
     "name": "Faberge",
     "type": "guitar",
-    "description": "Tradition, Luxury and Style.",
+    "description": "Tradition, luxury and style.",
     "sampleInstrument": 150302
   },
   {
     "id": "punisher",
     "name": "Punisher",
     "type": "guitar",
-    "description": "Tradition, Luxury and Style.",
+    "description": "Brutal riff machine for pure metal.",
     "sampleInstrument": 150503
   },
   {
     "id": "dc_sb",
     "name": "DC(SB)",
     "type": "bass",
-    "description": "Modern Bass.",
+    "description": "Modern bass.",
     "sampleInstrument": 150806
   },
   {
     "id": "sc",
     "name": "SC",
     "type": "bass",
-    "description": "Professional Premium Instrument For Demanding Players.",
+    "description": "Professional premium instrument for demanding players.",
     "sampleInstrument": 141204
   },
   {
     "id": "tb",
     "name": "TB",
     "type": "bass",
-    "description": "Huge Sound In A Compact Package.",
+    "description": "Huge sound in a compact package.",
     "sampleInstrument": 150705
   }
 ]

@@ -259,13 +259,13 @@
       "preview": "/img/141203/preview.jpg",
       "preview2x": "/img/141203/preview.2x.jpg",
       "gallery": [
-        "/img/141203/g2.jpg",
         "/img/141203/g3.jpg",
         "/img/141203/g4.jpg",
         "/img/141203/g5.jpg",
         "/img/141203/g6.jpg",
         "/img/141203/g7.jpg",
-        "/img/141203/g8.jpg"
+        "/img/141203/g8.jpg",
+        "/img/141203/g10.jpg"
       ]
     },
     "description": "",

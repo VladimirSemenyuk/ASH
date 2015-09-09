@@ -18,7 +18,9 @@ mixin image(src)
 mixin media(selector, src, srcRetina)
     style.
         !{selector} {
-            background: url(!{src}) no-repeat;
+            background-image: url(!{src});
+            background-repeat: no-repeat;
+            background-position: center center;
         }
 
     if (srcRetina)
@@ -26,7 +28,7 @@ mixin media(selector, src, srcRetina)
             @media (-webkit-min-device-pixel-ratio: 2) {
                 !{selector} {
                     background-image: url(!{srcRetina});
-                    background-size: contain;
+                    background-size: cover;
                 }
             }
 
