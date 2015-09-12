@@ -377,6 +377,48 @@
     }
   },
   {
+    "id": 131208,
+    "model": "bassanova",
+    "type": "bass",
+    "video": "",
+    "images": {
+      "list": "/img/131208/list.jpg",
+      "list2x": "/img/131208/list.2x.jpg",
+      "preview": "/img/131208/preview.jpg",
+      "preview2x": "/img/131208/preview.2x.jpg",
+      "gallery": [
+        "/img/131208/g2.jpg",
+        "/img/131208/g3.jpg",
+        "/img/131208/g4.jpg",
+        "/img/131208/g5.jpg",
+        "/img/131208/g6.jpg",
+        "/img/131208/g7.jpg",
+        "/img/131208/g8.jpg",
+        "/img/131208/g9.jpg"
+      ]
+    },
+    "description": "",
+    "specs": {
+      "scaleLength": "34\"",
+      "fretsCount": "24",
+      "fingerboardRadius": "20\"",
+      "bodyWood": "Ash (Ash Tone Block)",
+      "topWood": "Birdseye Maple",
+      "neckWood": "3-ps. Hard Rock Maple",
+      "fingerboardWood": "Maple",
+      "construction": "Cut",
+      "dots": "",
+      "nut": "Bone",
+      "hardwareColor": "Chrome",
+      "tuners": "Gotoh GB 707",
+      "bridge": "Hipshot",
+      "pickups": "EMG",
+      "electronics": "",
+      "color": "",
+      "finish": "Frosted Transparent"
+    }
+  },
+  {
     "id": 130905,
     "model": "faberge",
     "type": "guitar",

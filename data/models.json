@@ -33,5 +33,12 @@
     "type": "bass",
     "description": "Huge sound in a compact package.",
     "sampleInstrument": 150705
+  },
+  {
+    "id": "bassanova",
+    "name": "Bassanova",
+    "type": "bass",
+    "description": "Grace and aesthetics in one instrument.",
+    "sampleInstrument": 131208
   }
 ]
