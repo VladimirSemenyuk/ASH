@@ -1,5 +1,54 @@
 [
   {
+    "id": 150907,
+    "model": "dark_soul",
+    "type": "guitar",
+    "video": "",
+    "images": {
+      "list": "/img/150907/list.jpg",
+      "list2x": "/img/150907/list.2x.jpg",
+      "preview": "/img/150907/preview.jpg",
+      "preview2x": "/img/150907/preview.2x.jpg",
+      "gallery": [
+        "/img/150907/g2.jpg",
+        "/img/150907/g3.jpg",
+        "/img/150907/g4.jpg",
+        "/img/150907/g5.jpg",
+        "/img/150907/g6.jpg",
+        "/img/150907/g7.jpg",
+        "/img/150907/g8.jpg",
+        "/img/150907/g9.jpg",
+        "/img/150907/g10.jpg"
+      ]
+    },
+    "description": "",
+    "specs": {
+      "scaleLength": "25.5\"",
+      "fretsCount": "24",
+      "fingerboardRadius": "20\"",
+      "bodyWood": "Ash",
+      "topWood": "5A Quilted Maple",
+      "neckWood": "5-ps. Wenge/Padouk",
+      "fingerboardWood": "Ebony",
+      "construction": "Bolt-on",
+      "nut": "Bone",
+      "hardwareColor": "Back",
+      "tuners": "Hipshot",
+      "bridge": "Hipshot",
+      "pickups": [
+        "Neck - Seymour Dunkan Sentient", 
+        "Bridge - Seymour Dunkan Pegasus"
+      ],
+      "electronics": "Volume/Tone",
+      "switching": [
+        "Neck Humbucker/Single Coil",
+        "Bridge Humbucker/Single Coil"
+      ],
+      "color": "Flying Blue",
+      "finish": "Frosted Transparent"
+    }
+  },
+  {
     "id": 150806,
     "model": "dc_sb",
     "type": "bass",
