@@ -5,15 +5,14 @@
     "type": "guitar",
     "description": "Tradition, luxury and style.",
     "sampleInstrument": 150302
-  }
-  ,
+  },
   {
     "id": "dark_soul",
     "name": "Dark Soul",
     "type": "guitar",
     "description": "Modern and progressive instrument for rock and metal players.",
     "sampleInstrument": 150907
-  },,
+  },
   {
     "id": "punisher",
     "name": "Punisher",

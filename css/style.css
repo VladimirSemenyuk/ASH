@@ -405,7 +405,7 @@ i {
   display: inline-block;
   box-shadow: 0 2px 4px rgba(0,0,0,0.3);
   border: 15px solid #fff;
-  margin: 10px;
+  margin: 10px 10px 3px 10px;
   background-size: cover;
   background-position: center center;
   cursor: pointer;
@@ -414,7 +414,7 @@ i {
   width: 150px;
   height: 150px;
   border: 10px solid #fff;
-  margin: 5px;
+  margin: 5px 5px -2px 5px;
 }
 .model__image:hover {
   box-shadow: 0 2px 4px rgba(0,0,0,0.6);
@@ -435,8 +435,13 @@ i {
   padding-right: 20px;
 }
 .spec__value__list {
-  padding-left: 18px;
+  list-style: none;
+  padding-left: 0px;
   margin: 0;
+}
+.spec_switching .spec__value__list {
+  list-style: decimal;
+  padding-left: 18px;
 }
 .left {
   width: 560px;

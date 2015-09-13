@@ -1,6 +1,6 @@
 mixin spec(spec, specText)
     if (spec)
-        tr.spec
+        tr(class='spec spec_' + specText.toLowerCase().replace(/\s/g, '-'))
             td.spec__name= specText + ": "
             if (typeof spec !== 'object')
                 td.spec__value!= spec

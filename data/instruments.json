@@ -10,15 +10,15 @@
       "preview": "/img/150907/preview.jpg",
       "preview2x": "/img/150907/preview.2x.jpg",
       "gallery": [
-        "/img/150907/g2.jpg",
-        "/img/150907/g3.jpg",
-        "/img/150907/g4.jpg",
-        "/img/150907/g5.jpg",
-        "/img/150907/g6.jpg",
-        "/img/150907/g7.jpg",
-        "/img/150907/g8.jpg",
+        "/img/150907/g10.jpg",
         "/img/150907/g9.jpg",
-        "/img/150907/g10.jpg"
+        "/img/150907/g6.jpg",
+        "/img/150907/g2.jpg",
+        "/img/150907/g5.jpg",
+        "/img/150907/g7.jpg",
+        "/img/150907/g4.jpg",
+        "/img/150907/g8.jpg",
+        "/img/150907/g3.jpg"
       ]
     },
     "description": "",
@@ -32,7 +32,7 @@
       "fingerboardWood": "Ebony",
       "construction": "Bolt-on",
       "nut": "Bone",
-      "hardwareColor": "Back",
+      "hardwareColor": "Black",
       "tuners": "Hipshot",
       "bridge": "Hipshot",
       "pickups": [
