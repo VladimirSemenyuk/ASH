@@ -1,6 +1,8 @@
 var proc = require('child_process');
+var fs = require('fs-extra');
 
 module.exports = function(grunt) {
+    "use strict";
 
     var imgFiles = {},
         originalFiles = {};
@@ -69,8 +71,29 @@ module.exports = function(grunt) {
 
     grunt.task.registerTask('default', [
         'compile',
-        'image'
+        'image',
+        'copy_previews'
     ]);
+
+    grunt.task.registerTask('copy_previews', function() {
+        var folders = fs.readdirSync('data/instruments').sort();
+
+        for (var i = 0; i < folders.length; i++) {
+            if (folders[i].indexOf('.DS')!== -1) {
+                continue;
+            }
+
+            let folder = 'data/instruments/' + folders[i],
+                dest = 'output/img/' + folders[i];
+
+            fs.copySync(folder + '/preview.jpg', dest + '/preview.jpg');
+            fs.copySync(folder + '/preview.2x.jpg', dest + '/preview.2x.jpg');
+            fs.copySync(folder + '/list.jpg', dest + '/list.jpg');
+            fs.copySync(folder + '/list.2x.jpg', dest + '/list.2x.jpg');
+
+            grunt.log.ok('Previews from ' + folder + ' were copied.');
+        }
+    });
 
     grunt.task.registerTask('compile', function() {
         return proc.execSync('node service/index.js compile');
