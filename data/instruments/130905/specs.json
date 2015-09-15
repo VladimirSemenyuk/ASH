@@ -1,0 +1,38 @@
+{
+  "id": 130905,
+  "model": "faberge",
+  "type": "guitar",
+  "video": "__jLzW4cVng",
+  "images": {
+    "list": "/img/130905/list.jpg",
+    "list2x": "/img/130905/list.2x.jpg",
+    "preview": "/img/130905/preview.jpg",
+    "preview2x": "/img/130905/preview.2x.jpg",
+    "gallery": [
+      "/img/130905/g2.jpg",
+      "/img/130905/g3.jpg",
+      "/img/130905/g4.jpg",
+      "/img/130905/g5.jpg"
+    ]
+  },
+  "description": "",
+  "specs": {
+    "scaleLength": "24.75\"",
+    "fretsCount": "22",
+    "fingerboardRadius": "12\"",
+    "bodyWood": "Mahogany",
+    "topWood": "Poplar Burl",
+    "neckWood": "Mahogany",
+    "fingerboardWood": "Pau Ferro",
+    "construction": "Set",
+    "dots": "Green Abalone Inlay",
+    "nut": "Bone",
+    "hardwareColor": "Gold",
+    "tuners": "Gotoh 510",
+    "bridge": "Schaller",
+    "pickups": "Gibson 490R/T",
+    "electronics": "Volume/Tone/Balance",
+    "color": "Green",
+    "finish": "Transparent High Gloss &mdash; Handpolished"
+  }
+}

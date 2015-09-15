@@ -1,0 +1,42 @@
+{
+  "id": 150704,
+  "model": "faberge",
+  "type": "guitar",
+  "video": "UUutr1a9ABQ",
+  "images": {
+    "list": "/img/150704/list.jpg",
+    "list2x": "/img/150704/list.2x.jpg",
+    "preview": "/img/150704/preview.jpg",
+    "preview2x": "/img/150704/preview.2x.jpg",
+    "gallery": [
+      "/img/150704/g2.jpg",
+      "/img/150704/g3.jpg",
+      "/img/150704/g5.jpg",
+      "/img/150704/g6.jpg",
+      "/img/150704/g12.jpg",
+      "/img/150704/g8.jpg",
+      "/img/150704/g9.jpg",
+      "/img/150704/g10.jpg"
+    ]
+  },
+  "description": "",
+  "specs": {
+    "scaleLength": "24.75\"",
+    "fretsCount": "22",
+    "fingerboardRadius": "12\"",
+    "bodyWood": "Alder",
+    "topWood": "Poplar Burl",
+    "neckWood": "Maple",
+    "construction": "Set",
+    "fingerboardWood": "Rosewood",
+    "nut": "Bone",
+    "hardwareColor": "Chrome",
+    "tuners": "Gotoh 510",
+    "bridge": "Gotoh",
+    "pickups": "Kinman",
+    "electronics": "Volume/Tone",
+    "switching": "3 Way Switch",
+    "color": "Purple",
+    "finish": "Transparent High Gloss &mdash; Handpolished"
+  }
+}

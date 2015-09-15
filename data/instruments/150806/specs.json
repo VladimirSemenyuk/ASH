@@ -1,0 +1,38 @@
+{
+  "id": 150806,
+  "model": "dc_sb",
+  "type": "bass",
+  "images": {
+    "list": "/img/150806/list.jpg",
+    "list2x": "/img/150806/list.2x.jpg",
+    "preview": "/img/150806/preview.jpg",
+    "preview2x": "/img/150806/preview.2x.jpg",
+    "gallery": [
+      "/img/150806/g2.jpg",
+      "/img/150806/g3.jpg",
+      "/img/150806/g4.jpg",
+      "/img/150806/g5.jpg",
+      "/img/150806/g7.jpg",
+      "/img/150806/g8.jpg"
+    ]
+  },
+  "description": "",
+  "specs": {
+    "scaleLength": "35\"",
+    "fretsCount": "24 (Fretless)",
+    "fingerboardRadius": "20\"",
+    "bodyWood": "Movingui",
+    "topWood": "Ash",
+    "neckWood": "5-ps. Venge/Padauk",
+    "construction": "Through",
+    "fingerboardWood": "Ebony",
+    "nut": "Bone",
+    "hardwareColor": "Black",
+    "tuners": "Gotoh GB 707",
+    "bridge": "Hipshot",
+    "pickups": "EMG",
+    "electronics": "Volume/Tone",
+    "knobs": "Ebony/Padauk/Movingui",
+    "finish": "Frosted Transparent"
+  }
+}

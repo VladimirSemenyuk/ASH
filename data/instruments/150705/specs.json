@@ -1,0 +1,44 @@
+{
+  "id": 150705,
+  "model": "tb",
+  "type": "bass",
+  "images": {
+    "list": "/img/150705/list.jpg",
+    "list2x": "/img/150705/list.2x.jpg",
+    "preview": "/img/150705/preview.jpg",
+    "preview2x": "/img/150705/preview.2x.jpg",
+    "gallery": [
+      "/img/150705/g1.jpg",
+      "/img/150705/g2.jpg",
+      "/img/150705/g3.jpg",
+      "/img/150705/g4.jpg",
+      "/img/150705/g5.jpg",
+      "/img/150705/g6.jpg",
+      "/img/150705/g7.jpg",
+      "/img/150705/g8.jpg",
+      "/img/150705/g13.jpg",
+      "/img/150705/g11.jpg",
+      "/img/150705/g12.jpg"
+    ]
+  },
+  "description": "",
+  "specs": {
+    "scaleLength": "34\"",
+    "fretsCount": "24",
+    "fingerboardRadius": "20\"",
+    "bodyWood": "Alder (Alder Tone Block)",
+    "topWood": "Maple",
+    "neckWood": "3-ps. Hard Rock Maple",
+    "construction": "Through",
+    "fingerboardWood": "Ebony",
+    "nut": "Brass",
+    "hardwareColor": "Black",
+    "tuners": "",
+    "bridge": "Hipshot",
+    "pickups": "Delano",
+    "preamp": "Delano",
+    "electronics": "",
+    "knobs": "Ebony",
+    "finish": "Frosted Transparent"
+  }
+}

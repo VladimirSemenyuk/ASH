@@ -1,0 +1,47 @@
+{
+  "id": 140502,
+  "model": "faberge",
+  "type": "guitar",
+  "video": "YpdBSGvhpwU",
+  "images": {
+    "list": "/img/140502/list.jpg",
+    "list2x": "/img/140502/list.2x.jpg",
+    "preview": "/img/140502/preview.jpg",
+    "preview2x": "/img/140502/preview.2x.jpg",
+    "gallery": [
+      "/img/140502/g2.jpg",
+      "/img/140502/g3.jpg",
+      "/img/140502/g4.jpg",
+      "/img/140502/g5.jpg",
+      "/img/140502/g6.jpg",
+      "/img/140502/g7.jpg",
+      "/img/140502/g8.jpg",
+      "/img/140502/g9.jpg",
+      "/img/140502/g10.jpg"
+    ]
+  },
+  "description": "",
+  "specs": {
+    "scaleLength": "24.75\"",
+    "fretsCount": "22",
+    "fingerboardRadius": "12\"",
+    "bodyWood": "Walnut",
+    "topWood": "Buckeye Burl",
+    "neckWood": "Walnut",
+    "fingerboardWood": "Black & White Ebony",
+    "construction": "Set",
+    "nut": "Bone",
+    "hardwareColor": "Gold",
+    "tuners": "Gotoh 510",
+    "bridge": "Schaller",
+    "pickups": "Lollar",
+    "electronics": "Volume/Tone/Balance",
+    "switching": [
+      "N+B parallel both coils on.",
+      "N+B outer coils on.",
+      "N+B inner coils on.",
+      "N+B series hamb."
+    ],
+    "finish": "Transparent High Gloss &mdash; Handpolished"
+  }
+}

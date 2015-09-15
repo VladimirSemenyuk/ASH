@@ -1,0 +1,40 @@
+{
+  "id": 141204,
+  "model": "sc",
+  "type": "bass",
+  "images": {
+    "list": "/img/141204/list.jpg",
+    "list2x": "/img/141204/list.2x.jpg",
+    "preview": "/img/141204/preview.jpg",
+    "preview2x": "/img/141204/preview.2x.jpg",
+    "gallery": [
+      "/img/141204/g2.jpg",
+      "/img/141204/g3.jpg",
+      "/img/141204/g4.jpg",
+      "/img/141204/g5.jpg",
+      "/img/141204/g6.jpg",
+      "/img/141204/g7.jpg",
+      "/img/141204/g8.jpg"
+    ]
+  },
+  "description": "",
+  "specs": {
+    "scaleLength": "33\"",
+    "fretsCount": "26",
+    "fingerboardRadius": "20\"",
+    "bodyWood": "Maple (Alder Tone Block)",
+    "topWood": "Buckeye Burl",
+    "construction": "Through",
+    "neckWood": "3-ps. Hard Rock Maple",
+    "fingerboardWood": "Rosewood",
+    "nut": "Brass",
+    "hardwareColor": "Black",
+    "tuners": "Gotoh GB 707",
+    "bridge": "Hipshot",
+    "pickups": "Nordstrand",
+    "preamp": "Aguilar",
+    "electronics": "",
+    "knobs": "Ash/Rosewood",
+    "finish": "Frosted Transparent"
+  }
+}

@@ -24,36 +24,12 @@ function save() {
     return this;
 }
 
-var Instrument = function(name, type) {
+var Instrument = function(data) {
     var I = function() {
-        this.id = (name + '').toUnderscore();
-
-        this.name = name;
-        this.type = type;
-
-        this.images = {
-            listImage: 'img/' + this.name + '/list.jpg'
-        }
-
-        this.href = "instruments/" + this.id + '.html';
-
-        this.specs = {
-            serial: '',
-            bodyWood: '',
-            topWood: '',
-            neckWood: '',
-            fingerboardWood: '',
-            fingerboardRadius: '',
-            fretsCount: '',
-            scaleLength: '',
-            bridge: '',
-            tuners: '',
-            pickups: '',
-            controls: ''
-        };
+        _.extend(this, data);
     };
 
-    I.prototype = new Page(name, name, 'instrumentPage');
+    I.prototype = new Page(data.id, data.id, 'instrumentPage');
     I.prototype.path = p;
     I.prototype.save = save;
 

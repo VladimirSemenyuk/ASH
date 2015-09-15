@@ -1,0 +1,43 @@
+{
+  "id": 150503,
+  "model": "punisher",
+  "type": "guitar",
+  "video": "",
+  "images": {
+    "list": "/img/150503/list.jpg",
+    "list2x": "/img/150503/list.2x.jpg",
+    "preview": "/img/150503/preview.jpg",
+    "preview2x": "/img/150503/preview.2x.jpg",
+    "gallery": [
+      "/img/150503/g2.jpg",
+      "/img/150503/g5.jpg",
+      "/img/150503/g6.jpg",
+      "/img/150503/g10.jpg",
+      "/img/150503/g7.jpg",
+      "/img/150503/g8.jpg",
+      "/img/150503/g3.jpg",
+      "/img/150503/g4.jpg",
+      "/img/150503/g9.jpg"
+    ]
+  },
+  "isAvailable": true,
+  "description": "",
+  "specs": {
+    "scaleLength": "25.5\"",
+    "fretsCount": "24",
+    "fingerboardRadius": "12\"",
+    "bodyWood": "Alder",
+    "topWood": "Walnut",
+    "neckWood": "Maple",
+    "fingerboardWood": "Ebony",
+    "construction": "Bolt-on",
+    "nut": "Hipshot Zero Friction",
+    "hardwareColor": "Black",
+    "tuners": "Gotoh",
+    "bridge": "Gotoh",
+    "pickup": "Seymour Dunkan SH-8B Invader",
+    "electronics": "Volume",
+    "color": "Translucent Brown",
+    "finish": "Frosted Transparent "
+  }
+}

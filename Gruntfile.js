@@ -5,14 +5,14 @@ module.exports = function(grunt) {
     var imgFiles = {},
         originalFiles = {};
 
-    var files = grunt.file.expand('output/img/**/g*.jpg');
+    var files = grunt.file.expand('data/instruments/**/g*.jpg');
 
     for (var i = 0; i < files.length; i++) {
-        originalFiles[files[i]] = files[i];
+        originalFiles[files[i].replace('data/instruments/', 'output/img/')] = files[i];
     }
 
     for (i = 0; i < files.length; i++) {
-        imgFiles[files[i].replace('/g', '/small/g')] = files[i];
+        imgFiles[files[i].replace('/g', '/small/g').replace('data/instruments/', 'output/img/')] = files[i];
     }
 
     // Project configuration.

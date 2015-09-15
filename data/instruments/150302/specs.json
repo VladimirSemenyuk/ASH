@@ -1,0 +1,43 @@
+{
+  "id": 150302,
+  "model": "faberge",
+  "type": "guitar",
+  "video": "d48U572bdvE",
+  "images": {
+    "list": "/img/150302/list.jpg",
+    "list2x": "/img/150302/list.2x.jpg",
+    "preview": "/img/150302/preview.jpg",
+    "preview2x": "/img/150302/preview.2x.jpg",
+    "gallery": [
+      "/img/150302/g2.jpg",
+      "/img/150302/g3.jpg",
+      "/img/150302/g4.jpg",
+      "/img/150302/g6.jpg",
+      "/img/150302/g7.jpg",
+      "/img/150302/g11.jpg",
+      "/img/150302/g5.jpg",
+      "/img/150302/g8.jpg",
+      "/img/150302/g10.jpg",
+      "/img/150302/g9.jpg"
+    ]
+  },
+  "description": "",
+  "specs": {
+    "scaleLength": "24.75\"",
+    "fretsCount": "22",
+    "fingerboardRadius": "12\"",
+    "bodyWood": "Sapele",
+    "topWood": "Buckeye Burl",
+    "neckWood": "Sapele",
+    "construction": "Set",
+    "fingerboardWood": "Black & White Ebony",
+    "nut": "Bone",
+    "hardwareColor": "Gold",
+    "tuners": "Gotoh 510",
+    "bridge": "Schaller",
+    "pickups": "Gibson 490R/T",
+    "electronics": "Volume/Tone/Balance",
+    "switching": "Hamb/Coils",
+    "finish": "Transparent High Gloss &mdash; Handpolished"
+  }
+}
