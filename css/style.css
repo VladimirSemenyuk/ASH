@@ -497,11 +497,22 @@ i {
   background-color: #618faf;
   color: #fff;
   border: 1px solid #777;
-  margin: 0 10px 10px;
+  margin: 15px 10px 10px;
   cursor: pointer;
 }
 .submit:hover {
   background-color: #4d88af;
+}
+.error {
+  margin-left: 21px;
+  color: #dc143c;
+  display: none;
+}
+.preloader {
+  background: url("/img/preloader.gif") no-repeat;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
 }
 @-moz-keyframes appear {
   0% {

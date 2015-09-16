@@ -1,6 +1,112 @@
+function validateEmail(email) {
+    if (!email || !email.length) {
+        return 'Email should not be empty';
+    }
+
+    if (email.length > 50) {
+        return 'Length should be less then 50 symbols';
+    }
+
+    var reg = /\S+@\S+\.\S+/;
+
+    return (reg.test(email) ? false : 'Email is in invalid format');
+}
+
+function validateName(name) {
+    if (name.length > 50) {
+        return 'Length should be less then 50 symbols';
+    }
+
+    return false;
+}
+
+function validateText(text) {
+    if (!text || !text.length) {
+        return 'Order text should not be empty';
+    }
+
+    if (text.length > 2000) {
+        return 'Length should be less then 2000 symbols';
+    }
+
+    return false;
+}
+
 $(function() {
     $('#logo').on('click', function() {
         location.href = '/';
+    });
+
+    var $inputs = {
+        $formEmail: {
+            $el: $('#form-email'),
+            validate: validateEmail
+        },
+        $formName: {
+            $el: $('#form-name'),
+            validate: validateName
+        },
+        $formText: {
+            $el: $('#form-text'),
+            validate: validateText
+        }
+    };
+
+    var $submit = $('#form-submit'),
+        $errors = $('.error'),
+        $preloader = $('#preloader');
+
+    $submit.on('click', function(e) {
+        e.preventDefault();
+
+        $submit.hide();
+        $errors.hide();
+        $preloader.show();
+
+        var errors = [];
+
+        for (var i in $inputs) {
+            if ($inputs.hasOwnProperty(i)) {
+                var $input = $inputs[i].$el;
+
+                var error = $inputs[i].validate($input.val());
+
+                if (error) {
+                    errors.push({
+                        input: i,
+                        error: error
+                    });
+                }
+            }
+        }
+
+        if (!errors.length && !$('#gtcha').val()) {
+            $.ajax({
+                url: '//formspree.io/' + 'vladimir.v.semenyuk' + '@' + 'gmail.com',
+                method: "POST",
+                data: {
+                    _subject: 'New Order!',
+                    name: $inputs.$formName.$el.val(),
+                    message: $inputs.$formText.$el.val()
+                },
+                dataType: "json"
+            }).then(function() {
+                document.location.pathname = '/thanks.html';
+            }).fail(function() {
+                $('#error-main').show();
+                //$submit.show();
+                $preloader.hide();
+            });
+        }
+
+        if (errors.length) {
+            for (var e = 0; e < errors.length; e++) {
+                $('#error-' + errors[e].input.replace('$', '')).text(errors[e].error).show();
+            }
+
+            $submit.show();
+            $preloader.hide();
+        }
     });
 
     var $body = $('body');
