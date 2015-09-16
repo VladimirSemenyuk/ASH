@@ -51,7 +51,7 @@ var fs = require('fs-extra'),
             let data = JSON.parse(fs.readFileSync(file)),
                 instrument = new Instrument(data);
 
-            res.push(instrument);
+            res.unshift(instrument);
         }
 
         return res;

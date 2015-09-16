@@ -207,7 +207,7 @@ i {
 .slider {
   position: relative;
   padding: 0;
-  margin: 0 auto 100px;
+  margin: 0 auto 80px;
   list-style: none;
   width: 1200px;
   height: 600px;
@@ -292,7 +292,7 @@ i {
 .model-list__item {
   display: inline-block;
   width: 190px;
-  margin: 5px 10px 5px 50px;
+  margin: 5px 25px 5px 25px;
   cursor: pointer;
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
@@ -497,11 +497,22 @@ i {
   background-color: #618faf;
   color: #fff;
   border: 1px solid #777;
-  margin: 0 10px 10px;
+  margin: 15px 10px 10px;
   cursor: pointer;
 }
 .submit:hover {
   background-color: #4d88af;
+}
+.error {
+  margin-left: 21px;
+  color: #dc143c;
+  display: none;
+}
+.preloader {
+  background: url("/img/preloader.gif") no-repeat;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
 }
 @-moz-keyframes appear {
   0% {

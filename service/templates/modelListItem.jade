@@ -15,10 +15,11 @@ mixin media(selector, src, srcRetina)
 
 - var href = (model.instruments.length) ? ((model.instruments.length > 1) ? (model.href) : (model.instruments[0].href)) : '#';
 - var scaleLength = model.sampleInstrument.specs.scaleLength.replace('"', '').replace('.', '-');
+- var title = (model.name ? (model.name + ' - ') : '') + model.sampleInstrument.id;
 
 li.model-list__item(data-href=href)
     +media('#item-'+model.id, model.sampleInstrument.images.list, model.sampleInstrument.images.list2x)
-    div(id='item-'+model.id class='model-list__item__image model-list__item__image_' + scaleLength)
+    div(id='item-'+model.id class='model-list__item__image model-list__item__image_' + scaleLength title=title)
     span.model-list__item__name= model.name || model.serial
 
 

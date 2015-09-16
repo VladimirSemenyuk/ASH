@@ -7,15 +7,25 @@
     h3 Order Form
 
     form#order-form(method="POST")
-        input.input(type="email" placeholder="Your email (Required)" name="email" required)
-        input.input(type="name" placeholder="Your name" name="name")
-        textarea.input.input_100(placeholder="Write about your dream instrument here (Required)" rows=20 name="text" required)
+        input.input#form-email(type="email" placeholder="Your email (Required)" name="email" required)
+
+        .error#error-formEmail
+
+        input.input#form-name(type="name" placeholder="Your name" name="name")
+
+        .error#error-formName
+
+        textarea.input.input_100#form-text(placeholder="Write about your dream instrument here (Required)" rows=20 name="text" required)
+
+        .error#error-formText
 
         input#order-title-field(type="hidden" name="_subject" value="New Order!")
         input(type="hidden" name="_next" value="//www.ash-instruments.com/thanks.html")
-        input(type="text" name="_gotcha" value="" style="display:none;")
+        input#gtcha(type="text" name="_gotcha" value="" style="display:none;")
 
-        input.submit(type="submit" value="Send My Order")
+        input.submit#form-submit(type="submit" value="Send My Order")
+        .error#error-main Somethimg went wrong. Please, send email to
+        .preloader#preloader(style='display:none')
 
 script.
     var contactform =  document.getElementById('order-form');

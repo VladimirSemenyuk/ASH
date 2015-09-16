@@ -14,11 +14,12 @@ mixin media(selector, src, srcRetina)
 
 - var type = (instrument.type === 'guitar') ? 'guitars' : 'basses';
 - var scaleLength = instrument.specs.scaleLength.replace('"', '').replace('.', '-');
+- var title = (instrument.model.name ? (instrument.model.name + ' - ') : '') + instrument.id;
 
 
 li.model-list__item(data-href=instrument.href)
     +media('#item-' + instrument.id, instrument.images.list, instrument.images.list2x)
-    div(id='item-'+instrument.id class='model-list__item__image model-list__item__image_' + scaleLength)
+    div(id='item-'+instrument.id class='model-list__item__image model-list__item__image_' + scaleLength title=title)
     if (instrument.isAvailable)
         .model-list__item__info Available Now!
 

@@ -36,3 +36,21 @@ script(src='/js/index.js')
             each slide, index in welcomeSlideshow
                 div.slider__dot.js-slider-dot(data-id='' + index + '')
 
+    - var instruments = _ash.instruments.splice(0, 5);
+
+    if (instruments.length)
+    -   var maxScale = 24.75, specScale;
+    -   for (var i = 0; i < 5; i++) {
+    -       specScale = parseFloat(instruments[i].specs.scaleLength.replace('"', ''));
+    -       if (maxScale < specScale) {
+    -           maxScale = specScale;
+    -       }
+    -   }
+    -   var maxScaleText = (maxScale + '').replace('.', '-');
+
+    h3 New Instruments
+
+    ul(class="model-list model-list_max-scale-" + maxScaleText)
+        each instrument in instruments
+            include ./instrumentListItem.jade
+
