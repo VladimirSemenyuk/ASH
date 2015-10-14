@@ -82,7 +82,7 @@ $(function() {
 
         if (!errors.length && !$('#gtcha').val()) {
             $.ajax({
-                url: '//formspree.io/' + 'vladimir.v.semenyuk' + '@' + 'gmail.com',
+                url: '//formspree.io/' + 'ashinstruments' + '@' + 'gmail.com',
                 method: "POST",
                 data: {
                     _subject: 'New Order!',
