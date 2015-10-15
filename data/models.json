@@ -35,6 +35,13 @@
     "sampleInstrument": 141204
   },
   {
+    "id": "sc_ab",
+    "name": "SC(AB)",
+    "type": "bass",
+    "description": "Professional premium instrument for demanding players.",
+    "sampleInstrument": 140201
+  },
+  {
     "id": "tb",
     "name": "TB",
     "type": "bass",
