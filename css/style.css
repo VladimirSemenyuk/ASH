@@ -319,6 +319,9 @@ i {
 .model-list_max-scale-35 .model-list__item__image {
   height: 664px;
 }
+.model-list_max-scale-36 .model-list__item__image {
+  height: 664px;
+}
 .model-list__item__image:hover {
   margin-top: -10px;
   margin-bottom: 10px;
