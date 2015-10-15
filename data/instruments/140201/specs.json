@@ -1,0 +1,43 @@
+{
+  "id": 140201,
+  "model": "sc_ab",
+  "type": "bass",
+  "video": "",
+  "images": {
+    "list": "/img/140201/list.jpg",
+    "list2x": "/img/140201/list.2x.jpg",
+    "preview": "",
+    "preview2x": "",
+    "gallery": [
+      "/img/140201/g1.jpg",
+      "/img/140201/g2.jpg",
+      "/img/140201/g3.jpg",
+      "/img/140201/g4.jpg",
+      "/img/140201/g5.jpg",
+      "/img/140201/g6.jpg",
+      "/img/140201/g7.jpg",
+      "/img/140201/g8.jpg",
+      "/img/140201/g9.jpg",
+      "/img/140201/g10.jpg"
+    ]
+  },
+  "description": "",
+  "specs": {
+    "scaleLength": "36\"",
+    "fretsCount": "28",
+    "fingerboardRadius": "20\"",
+    "bodyWood": "Mahogany (Ash Tone Block)",
+    "topWood": "Buckeye Burl",
+    "neckWood": "3-ps. Hard Rock Maple",
+    "fingerboardWood": "Ebony",
+    "construction": "Through",
+    "nut": "",
+    "hardwareColor": "Gold",
+    "tuners": "Gotoh GB 707",
+    "bridge": "Wilkinson",
+    "pickups": "EMG",
+    "electronics": "",
+    "switching": "",
+    "finish": "Frosted Transparent"
+  }
+}
