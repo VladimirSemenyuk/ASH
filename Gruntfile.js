@@ -86,8 +86,13 @@ module.exports = function(grunt) {
             let folder = 'data/instruments/' + folders[i],
                 dest = 'output/img/' + folders[i];
 
-            fs.copySync(folder + '/preview.jpg', dest + '/preview.jpg');
-            fs.copySync(folder + '/preview.2x.jpg', dest + '/preview.2x.jpg');
+            try {
+                fs.copySync(folder + '/preview.jpg', dest + '/preview.jpg');
+                fs.copySync(folder + '/preview.2x.jpg', dest + '/preview.2x.jpg');
+            } catch (e) {
+                
+            }
+            
             fs.copySync(folder + '/list.jpg', dest + '/list.jpg');
             fs.copySync(folder + '/list.2x.jpg', dest + '/list.2x.jpg');
 
