@@ -3,56 +3,56 @@
     "id": "faberge",
     "name": "Faberge",
     "type": "guitar",
-    "description": "Tradition, luxury and style.",
+    "description": "",
     "sampleInstrument": 150302
   },
   {
     "id": "dark_soul",
     "name": "Dark Soul",
     "type": "guitar",
-    "description": "Modern and progressive instrument for rock and metal players.",
+    "description": "",
     "sampleInstrument": 150907
   },
   {
     "id": "punisher",
     "name": "Punisher",
     "type": "guitar",
-    "description": "Brutal riff machine for pure metal.",
+    "description": "",
     "sampleInstrument": 150503
   },
   {
     "id": "dc_sb",
     "name": "DC(SB)",
     "type": "bass",
-    "description": "Modern bass.",
+    "description": "",
     "sampleInstrument": 150806
   },
   {
     "id": "sc",
     "name": "SC",
     "type": "bass",
-    "description": "Professional premium instrument for demanding players.",
+    "description": "",
     "sampleInstrument": 141204
-  },
-  {
-    "id": "sc_ab",
-    "name": "SC(AB)",
-    "type": "bass",
-    "description": "Professional premium instrument for demanding players.",
-    "sampleInstrument": 140201
   },
   {
     "id": "tb",
     "name": "TB",
     "type": "bass",
-    "description": "Huge sound in a compact package.",
+    "description": "",
     "sampleInstrument": 150705
   },
   {
     "id": "bassanova",
     "name": "Bassanova",
     "type": "bass",
-    "description": "Grace and aesthetics in one instrument.",
+    "description": "",
     "sampleInstrument": 131208
+  },
+  {
+    "id": "sc_ab",
+    "name": "SC(AB)",
+    "type": "bass",
+    "description": "",
+    "sampleInstrument": 140201
   }
 ]
