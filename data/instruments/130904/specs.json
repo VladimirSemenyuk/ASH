@@ -1,0 +1,42 @@
+{
+  "id": 130904,
+  "model": "sc",
+  "type": "bass",
+  "images": {
+    "list": "/img/130904/list.jpg",
+    "list2x": "/img/130904/list.2x.jpg",
+    "preview": "",
+    "preview2x": "",
+    "gallery": [
+      "/img/130904/g1.jpg",
+      "/img/130904/g2.jpg",
+      "/img/130904/g3.jpg",
+      "/img/130904/g4.jpg",
+      "/img/130904/g5.jpg",
+      "/img/130904/g6.jpg",
+      "/img/130904/g7.jpg",
+      "/img/130904/g8.jpg",
+      "/img/130904/g10.jpg",
+      "/img/130904/g11.jpg"
+    ]
+  },
+  "description": "",
+  "specs": {
+    "scaleLength": "33\"",
+    "fretsCount": "24",
+    "fingerboardRadius": "20\"",
+    "bodyWood": "Walnut (Ash Tone Block)",
+    "construction": "Through",
+    "neckWood": "3-ps. Hard Rock Maple",
+    "fingerboardWood": "Ebony",
+    "nut": "",
+    "hardwareColor": "Black",
+    "tuners": "Gotoh GB 707",
+    "bridge": "Hipshot",
+    "pickups": "Seymour Duncan NYC",
+    "preamp": "Mike Pope",
+    "electronics": "",
+    "knobs": "Ash/Rosewood",
+    "finish": "Frosted Transparent"
+  }
+}
