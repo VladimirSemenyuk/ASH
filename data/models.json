@@ -54,5 +54,13 @@
     "type": "bass",
     "description": "",
     "sampleInstrument": 140201
+  },
+  {
+    "id": "sc_sh",
+    "name": "SC(SH)",
+    "type": "bass",
+    "description": "",
+    "sampleInstrument": 131107
   }
+
 ]

@@ -1,0 +1,40 @@
+{
+  "id": 131107,
+  "model": "sc_sh",
+  "type": "bass",
+  "images": {
+    "list": "/img/131107/list.jpg",
+    "list2x": "/img/131107/list.2x.jpg",
+    "preview": "",
+    "preview2x": "",
+    "gallery": [
+      "/img/131107/g1.jpg",
+      "/img/131107/g2.jpg",
+      "/img/131107/g3.jpg",
+      "/img/131107/g4.jpg",
+      "/img/131107/g5.jpg",
+      "/img/131107/g7.jpg",
+      "/img/131107/g8.jpg",
+      "/img/131107/g9.jpg"
+    ]
+  },
+  "description": "",
+  "specs": {
+    "scaleLength": "34\"",
+    "fretsCount": "24",
+    "fingerboardRadius": "20\"",
+    "bodyWood": "Ash (Ash Tone Block)",
+    "construction": "Through",
+    "neckWood": "3-ps. Hard Rock Maple",
+    "fingerboardWood": "Maple",
+    "nut": "Bone",
+    "hardwareColor": "Gold",
+    "tuners": "Gotoh",
+    "bridge": "Gotoh",
+    "pickups": "Seymour Duncan",
+    "preamp": "Mike Pope",
+    "electronics": "",
+    "knobs": "",
+    "finish": "Frosted Transparent"
+  }
+}
