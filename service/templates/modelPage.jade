@@ -5,7 +5,7 @@
     if (instruments.length)
         -   var maxScale = 24.75, specScale;
         -   for (var i = 0; i < instruments.length; i++) {
-        -       specScale = parseFloat(instruments[i].specs.scaleLength.replace('"', ''));
+        -       specScale = parseFloat(instruments[i].specs.scaleLength.replace('"', '').replace(/-\d\d/g, ''));
         -       if (maxScale < specScale) {
         -           maxScale = specScale;
         -       }

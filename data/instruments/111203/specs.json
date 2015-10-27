@@ -1,0 +1,41 @@
+{
+  "id": 111203,
+  "model": "sc",
+  "type": "bass",
+  "images": {
+    "list": "/img/111203/list.jpg",
+    "list2x": "/img/111203/list.2x.jpg",
+    "preview": "",
+    "preview2x": "",
+    "gallery": [
+      "/img/111203/g1.jpg",
+      "/img/111203/g2.jpg",
+      "/img/111203/g3.jpg",
+      "/img/111203/g4.jpg",
+      "/img/111203/g5.jpg",
+      "/img/111203/g6.jpg",
+      "/img/111203/g8.jpg",
+      "/img/111203/g9.jpg"
+    ]
+  },
+  "description": "",
+  "specs": {
+    "scaleLength": "34\"",
+    "fretsCount": "24 (fretless)",
+    "fingerboardRadius": "20\"",
+    "bodyWood": "Maple (Ash Tone Block)",
+    "topWood": "Quilted Maple",
+    "construction": "Through",
+    "neckWood": "3-ps. Hard Rock Maple",
+    "fingerboardWood": "Ebony",
+    "nut": "Brass",
+    "hardwareColor": "Black",
+    "tuners": "Gotoh",
+    "bridge": "Hipshot",
+    "pickups": "Seymour Duncan",
+    "preamp": "Mike Pope",
+    "electronics": "",
+    "knobs": "",
+    "finish": "Frosted Transparent"
+  }
+}

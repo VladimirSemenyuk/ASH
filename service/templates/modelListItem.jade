@@ -14,7 +14,7 @@ mixin media(selector, src, srcRetina)
             }
 
 - var href = (model.instruments.length) ? ((model.instruments.length > 1) ? (model.href) : (model.instruments[0].href)) : '#';
-- var scaleLength = model.sampleInstrument.specs.scaleLength.replace('"', '').replace('.', '-');
+- var scaleLength = model.sampleInstrument.specs.scaleLength.replace('"', '').replace('.', '-').replace(/-\d\d/g, '');
 - var title = (model.name ? (model.name + ' - ') : '') + model.sampleInstrument.id;
 
 li.model-list__item(data-href=href)

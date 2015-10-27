@@ -61,6 +61,13 @@
     "type": "bass",
     "description": "",
     "sampleInstrument": 131107
+  },
+  {
+    "id": "k1",
+    "name": "K1",
+    "type": "bass",
+    "description": "",
+    "sampleInstrument": 130703
   }
 
 ]

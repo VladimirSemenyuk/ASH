@@ -1,0 +1,41 @@
+{
+  "id": 130703,
+  "model": "k1",
+  "type": "bass",
+  "images": {
+    "list": "/img/130703/list.jpg",
+    "list2x": "/img/130703/list.2x.jpg",
+    "preview": "",
+    "preview2x": "",
+    "gallery": [
+      "/img/130703/g1.jpg",
+      "/img/130703/g2.jpg",
+      "/img/130703/g3.jpg",
+      "/img/130703/g4.jpg",
+      "/img/130703/g5.jpg",
+      "/img/130703/g6.jpg",
+      "/img/130703/g8.jpg",
+      "/img/130703/g9.jpg"
+    ]
+  },
+  "description": "",
+  "specs": {
+    "scaleLength": "34\"",
+    "fretsCount": "24",
+    "fingerboardRadius": "20\"",
+    "bodyWood": "Mahogany ",
+    "topWood": "Poplar Burl",
+    "construction": "Bolt-on",
+    "neckWood": "3-ps. Hard Rock Maple",
+    "fingerboardWood": "Ebony",
+    "nut": "Bone",
+    "hardwareColor": "Black",
+    "tuners": "Gotoh GB 707",
+    "bridge": "Hipshot",
+    "pickups": "Bartolini",
+    "preamp": "Bartolini NTMB",
+    "electronics": "",
+    "knobs": "",
+    "finish": "Transparent High Gloss — Handpolished"
+  }
+}

@@ -1,6 +1,6 @@
 -   var maxScale = 33, specScale;
 -   for (var i = 0; i < _ash.bassModels.length; i++) {
--       specScale = parseFloat(_ash.bassModels[i].sampleInstrument.specs.scaleLength.replace('"', ''));
+-       specScale = parseFloat(_ash.bassModels[i].sampleInstrument.specs.scaleLength.replace('"', '').replace(/-\d\d/g, ''));
 -       if (maxScale < specScale) {
 -           maxScale = specScale;
 -       }

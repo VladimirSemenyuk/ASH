@@ -1,6 +1,6 @@
 -   var maxScale = 24.75, specScale;
 -   for (var i = 0; i < _ash.guitarModels.length; i++) {
--       specScale = parseFloat(_ash.guitarModels[i].sampleInstrument.specs.scaleLength.replace('"', ''));
+-       specScale = parseFloat(_ash.guitarModels[i].sampleInstrument.specs.scaleLength.replace('"', '').replace(/-\d\d/g, ''));
 -       if (maxScale < specScale) {
 -           maxScale = specScale;
 -       }

@@ -13,7 +13,7 @@ mixin media(selector, src, srcRetina)
             }
 
 - var type = (instrument.type === 'guitar') ? 'guitars' : 'basses';
-- var scaleLength = instrument.specs.scaleLength.replace('"', '').replace('.', '-');
+- var scaleLength = instrument.specs.scaleLength.replace('"', '').replace('.', '-').replace(/-\d\d/g, '');
 
 
 li.model-list__item(data-href=instrument.href)

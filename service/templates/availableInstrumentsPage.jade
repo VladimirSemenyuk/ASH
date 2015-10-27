@@ -3,7 +3,7 @@
 
         -   var maxScale = 24.75, specScale;
         -   for (var i = 0; i < _ash.availableInstruments.length; i++) {
-        -       specScale = parseFloat(_ash.availableInstruments[i].specs.scaleLength.replace('"', ''));
+        -       specScale = parseFloat(_ash.availableInstruments[i].specs.scaleLength.replace('"', '').replace(/-\d\d/g, ''));
         -       if (maxScale < specScale) {
         -           maxScale = specScale;
         -       }
