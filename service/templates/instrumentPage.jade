@@ -104,17 +104,17 @@ mixin media(selector, src, srcRetina)
         -   }
         -   var maxScaleText = (maxScale + '').replace('.', '-');
 
-        .model-scroller
-            if (model.instruments.length > 6)
+        if (model.instruments.length > 6)
+            .model-scroller
                 ul(class="model-list model-list_lined model-list_max-scale-" + maxScaleText style="width:" + model.instruments.length * 230 + "px;")
                     each instrument in model.instruments
                         if (instrument.id !== id)
                             include ./instrumentListItem.jade
-            else
-                ul(class="model-list model-list_max-scale-" + maxScaleText)
-                    each instrument in model.instruments
-                        if (instrument.id !== id)
-                            include ./instrumentListItem.jade
+        else
+            ul(class="model-list model-list_max-scale-" + maxScaleText)
+                each instrument in model.instruments
+                    if (instrument.id !== id)
+                        include ./instrumentListItem.jade
 
 script(src="/js/lightbox.min.js")
 script.
