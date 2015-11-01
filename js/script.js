@@ -126,7 +126,7 @@ $(function() {
         axis:"x",
         theme: "dark",
         mouseWheel:{
-            enable: false
+            enable: true
         }
     });
 
