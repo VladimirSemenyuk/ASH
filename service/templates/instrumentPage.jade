@@ -37,8 +37,11 @@ mixin media(selector, src, srcRetina)
                 }
             }
 
+- var modelText = model.name;
+- if (submodel) {modelText = modelText + '(' + submodel + ')'}
+
 .model-page
-    h2= model.name
+    h2= modelText
     .model__description!= description
 
     if (images.preview)
@@ -54,9 +57,10 @@ mixin media(selector, src, srcRetina)
     .left
         h3
             +i18n('Specs')
+
         table.model__specs
             +spec(id, 'S/N')
-            +spec(model.name, 'Model')
+            +spec(modelText, 'Model')
             +spec(specs.scaleLength, 'Scale length')
             +spec(specs.fretsCount, 'Frets')
             +spec(specs.fingerboardRadius, 'FB radius')
@@ -114,7 +118,7 @@ mixin media(selector, src, srcRetina)
 
         if (model.instruments.length > 6)
             .model-scroller
-                ul(class="model-list model-list_lined model-list_max-scale-" + maxScaleText style="width:" + model.instruments.length * 230 + "px;")
+                ul(class="model-list model-list_lined model-list_max-scale-" + maxScaleText style="width:" + model.instruments.length * 220 + "px;")
                     each instrument in model.instruments
                         if (instrument.id !== id)
                             include ./instrumentListItem.jade

@@ -21,8 +21,8 @@
     "sampleInstrument": 150503
   },
   {
-    "id": "dc_sb",
-    "name": "DC(SB)",
+    "id": "dc",
+    "name": "DC",
     "type": "bass",
     "description": "",
     "sampleInstrument": 150806
@@ -47,20 +47,6 @@
     "type": "bass",
     "description": "",
     "sampleInstrument": 131208
-  },
-  {
-    "id": "sc_ab",
-    "name": "SC(AB)",
-    "type": "bass",
-    "description": "",
-    "sampleInstrument": 140201
-  },
-  {
-    "id": "sc_sh",
-    "name": "SC(SH)",
-    "type": "bass",
-    "description": "",
-    "sampleInstrument": 131107
   },
   {
     "id": "k1",

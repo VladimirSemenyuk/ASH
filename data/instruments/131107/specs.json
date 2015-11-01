@@ -1,6 +1,7 @@
 {
   "id": 131107,
-  "model": "sc_sh",
+  "model": "sc",
+  "submodel": "SH",
   "type": "bass",
   "images": {
     "list": "/img/131107/list.jpg",
@@ -24,6 +25,7 @@
     "fretsCount": "24",
     "fingerboardRadius": "20\"",
     "bodyWood": "Ash (Ash Tone Block)",
+    "topWood": "Walnut",
     "construction": "Through",
     "neckWood": "3-ps. Hard Rock Maple",
     "fingerboardWood": "Maple",

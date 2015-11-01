@@ -1,6 +1,7 @@
 {
   "id": 150806,
-  "model": "dc_sb",
+  "model": "dc",
+  "submodel": "SB",
   "type": "bass",
   "images": {
     "list": "/img/150806/list.jpg",

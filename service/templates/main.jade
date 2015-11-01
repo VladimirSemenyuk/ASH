@@ -60,6 +60,13 @@ html(lang=lang)
                 .tree.tree_small
                 .instruments.instruments_small Instruments
 
+            #langs
+                each l in langs
+                    if (l !== lang)
+                        a(href = '/' + l + href)
+                            = l
+
+
             include ./navigation.jade
             #content!= content
 

@@ -5,6 +5,13 @@ var fs = require('fs-extra'),
 module.exports = {
     compile: function(lang) {
 
+        var dicts = fs.readJsonSync('service/dicts.json'),
+            langs = ['en'];
+
+        for (var l in dicts) {
+            langs.push(l);
+        }
+
         try {
             fs.mkdirSync('output/' + lang);
         } catch(e) {
@@ -35,11 +42,13 @@ module.exports = {
             var data = JSON.parse(fs.readFileSync('data/config.json')),
                 html = jade.renderFile('service/templates/main.jade', {
                     lang: lang,
+                    langs: langs,
                     currentPage: model.name,
                     pretty: true,
                     title: data.siteTitle + ' &mdash; ' + model.name,
                     pages: ash.contentPages,
-                    content: model.template(lang)
+                    content: model.template(lang),
+                    href: model.href
                 });
 
             fs.writeFileSync('output/' + lang + model.href, html);
@@ -58,11 +67,13 @@ module.exports = {
             var data = JSON.parse(fs.readFileSync('data/config.json')),
                 html = jade.renderFile('service/templates/main.jade', {
                     lang: lang,
+                    langs: langs,
                     currentPage: model.name,
                     pretty: true,
                     title: data.siteTitle + ' &mdash; ' + model.name,
                     pages: ash.contentPages,
-                    content: model.template(lang)
+                    content: model.template(lang),
+                    href: model.href
                 });
 
             fs.writeFileSync('output/' + lang + model.href, html);
@@ -85,12 +96,14 @@ module.exports = {
             var data = JSON.parse(fs.readFileSync('data/config.json')),
                 html = jade.renderFile('service/templates/main.jade', {
                     lang: lang,
+                    langs: langs,
                     currentPage: instrument.name,
                     pretty: true,
                     title: data.siteTitle + ' &mdash; ' + instrument.model.name + ' &mdash; ' + instrument.id ,
                     pages: ash.contentPages,
                     images: instrument.images,
-                    content: instrument.template(lang)
+                    content: instrument.template(lang),
+                    href: instrument.href
                 });
 
             fs.writeFileSync('output/' + lang + instrument.href, html);
@@ -106,11 +119,13 @@ module.exports = {
             var data = JSON.parse(fs.readFileSync('data/config.json')),
                 html = jade.renderFile('service/templates/main.jade', {
                     lang: lang,
+                    langs: langs,
                     currentPage: page.name,
                     pretty: true,
                     title: data.siteTitle + ' &mdash; ' + page.name,
                     pages: ash.contentPages,
-                    content: page.template(lang)
+                    content: page.template(lang),
+                    href: '/' + page.id + '.html'
                 });
 
             fs.writeFileSync('output/' + lang + '/' + page.id + '.html', html);

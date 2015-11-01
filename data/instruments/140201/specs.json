@@ -1,6 +1,7 @@
 {
   "id": 140201,
-  "model": "sc_ab",
+  "model": "sc",
+  "submodel": "AB",
   "type": "bass",
   "video": "",
   "images": {
