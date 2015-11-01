@@ -1,0 +1,40 @@
+{
+  "id": 121503,
+  "model": "sc",
+  "type": "bass",
+  "images": {
+    "list": "/img/121503/list.jpg",
+    "list2x": "/img/121503/list.2x.jpg",
+    "preview": "",
+    "preview2x": "",
+    "gallery": [
+      "/img/121503/g1.jpg",
+      "/img/121503/g2.jpg",
+      "/img/121503/g3.jpg",
+      "/img/121503/g4.jpg",
+      "/img/121503/g5.jpg",
+      "/img/121503/g6.jpg",
+      "/img/121503/g8.jpg"
+    ]
+  },
+  "description": "",
+  "specs": {
+    "scaleLength": "35-34\"",
+    "fretsCount": "26",
+    "fingerboardRadius": "20\"",
+    "bodyWood": "Ash (Ash Tone Block)",
+    "topWood": "Poplar Burl",
+    "construction": "Through",
+    "neckWood": "5-ps. Hard Rock Maple w/ Rosewood Stringers",
+    "fingerboardWood": "Black and White Ebony",
+    "nut": "Brass",
+    "hardwareColor": "Black",
+    "tuners": "Gotoh",
+    "bridge": "Hipshot Single Srting Bass Bridge",
+    "pickups": "Bartolini M56",
+    "preamp": "Bartolini NTMB",
+    "electronics": "",
+    "knobs": "",
+    "finish": "Frosted Transparent"
+  }
+}
