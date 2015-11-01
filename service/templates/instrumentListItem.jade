@@ -1,3 +1,5 @@
+include ./i18n.jade
+
 mixin media(selector, src, srcRetina)
     style.
         !{selector} {
@@ -17,9 +19,10 @@ mixin media(selector, src, srcRetina)
 - var title = (instrument.model.name ? (instrument.model.name + ' - ') : '') + instrument.id;
 
 
-li.model-list__item(data-href=instrument.href)
+li.model-list__item(data-href='/' + lang + instrument.href)
     +media('#item-' + instrument.id, instrument.images.list, instrument.images.list2x)
     div(id='item-'+instrument.id class='model-list__item__image model-list__item__image_' + scaleLength title=title)
     if (instrument.isAvailable)
-        .model-list__item__info Available Now!
+        .model-list__item__info
+            +i18n('Available Now!')
 

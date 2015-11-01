@@ -1,30 +1,39 @@
-.left
-    h3 About Order Process
+include ./i18n.jade
 
-    Some text about order process
+.left
+    h3
+        +i18n('About Order Process')
+
+    +i18n('Some text about order process')
 
 .right
-    h3 Order Form
+    h3
+        +i18n('Order Form')
 
     form#order-form(method="POST")
-        input.input#form-email(type="email" placeholder="Your email (Required)" name="email" required)
+        - var pl = ash.i18n('Your email (Required)', lang);
+        input.input#form-email(type="email" placeholder=pl  name="email" required)
 
         .error#error-formEmail
 
-        input.input#form-name(type="name" placeholder="Your name" name="name")
+        - var pl = ash.i18n('Your name', lang);
+        input.input#form-name(type="name" placeholder= pl name="name")
 
         .error#error-formName
 
-        textarea.input.input_100#form-text(placeholder="Write about your dream instrument here (Required)" rows=20 name="text" required)
+        - var pl = ash.i18n('Write about your dream instrument here (Required)', lang);
+        textarea.input.input_100#form-text(placeholder= pl rows=20 name="text" required)
 
         .error#error-formText
 
-        input#order-title-field(type="hidden" name="_subject" value="New Order!")
-        input(type="hidden" name="_next" value="//www.ash-instruments.com/thanks.html")
+        input#order-title-field(type="hidden" name="_subject" value="Новый заказ")
+        input(type="hidden" name="_next" value="//www.ash-instruments.com/" + lang + "/thanks.html")
         input#gtcha(type="text" name="_gotcha" value="" style="display:none;")
 
-        input.submit#form-submit(type="submit" value="Send My Order")
-        .error#error-main Somethimg went wrong. Please, send email to
+        - var val = ash.i18n('Send My Order', lang);
+        input.submit#form-submit(type="submit" value= val)
+        .error#error-main
+            +i18n('Something went wrong. Please, send email to')
         .preloader#preloader(style='display:none')
 
 script.

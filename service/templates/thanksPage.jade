@@ -1,4 +1,8 @@
+include ./i18n.jade
+
 #thanks
-    span.thanks-name Thank you!
-    .text-thanks Your message will be replied soon.
+    span.thanks-name
+        +i18n('Thank you!')
+    .text-thanks
+        +i18n('Your message will be replied soon.')
 

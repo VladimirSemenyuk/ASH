@@ -1,14 +1,19 @@
+include ./i18n.jade
+
 mixin spec(spec, specText)
     if (spec)
         tr(class='spec spec_' + specText.toLowerCase().replace(/\s/g, '-'))
-            td.spec__name= specText + ": "
+            td.spec__name
+                +i18n(specText) + ": "
             if (typeof spec !== 'object')
-                td.spec__value!= spec
+                td.spec__value
+                    +i18n(spec)
             else
                 td.spec__value
                     ol.spec__value__list
                         each s in spec
-                            li!= s
+                            li
+                                +i18n(s)
 
 mixin image(src)
     - var smallSrc = src.replace('/g', '/small/g');
@@ -43,10 +48,12 @@ mixin media(selector, src, srcRetina)
             +media('#preview', images.preview, images.preview2x)
 
     if (isAvailable)
-        .model__available-text This instrument is available now!
+        .model__available-text
+            +i18n('This instrument is available now!')
 
     .left
-        h3 Specs
+        h3
+            +i18n('Specs')
         table.model__specs
             +spec(id, 'S/N')
             +spec(model.name, 'Model')
@@ -93,7 +100,8 @@ mixin media(selector, src, srcRetina)
             iframe(width="800" height="450" src="https://www.youtube.com/embed/" + video frameborder="0" allowfullscreen)
 
     if (model.instruments.length > 1)
-        h3 More Instruments
+        h3
+            +i18n('More Instruments')
 
         -   var maxScale = 24.75, specScale;
         -   for (var i = 0; i < model.instruments.length; i++) {

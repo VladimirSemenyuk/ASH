@@ -1,8 +1,12 @@
+include ./i18n.jade
+
 ul.nav
     each page in pages
         if (page.name == currentPage)
             li.nav_item.nav_item_current
-                a(href='/' + page.id + '.html')= page.name
+                a(href='/' + lang + '/' + page.id + '.html')
+                    +i18n(page.name)
         else
             li.nav_item
-                a(href='/' + page.id + '.html')= page.name
+                a(href='/' + lang + '/' + page.id + '.html')
+                    +i18n(page.name)

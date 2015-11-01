@@ -42,7 +42,7 @@ Page.prototype = {
         return this;
     },
 
-    template: function() {
+    template: function(lang) {
         if (this.templateName.indexOf('.md') !== -1) {
             var markdown = require('jstransformer')(require('jstransformer-markdown'));
 
@@ -50,7 +50,7 @@ Page.prototype = {
         }
 
         var options = _.extend({
-
+            lang: lang
         }, this);
 
         return jade.renderFile(this.templatePath(), options);

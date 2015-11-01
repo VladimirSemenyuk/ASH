@@ -2,49 +2,41 @@
   {
     "id": "index",
     "name": "Home",
-    "nameRus": "index",
     "templateName": "welcomePage"
   },
   {
     "id": "guitars",
     "name": "Guitars",
-    "nameRus": "гитары",
     "templateName": "guitarModelsPage"
   },
   {
     "id": "basses",
     "name": "Basses",
-    "nameRus": "бассы",
     "templateName": "bassModelsPage"
   },
   {
     "id": "available",
     "name": "Available",
-    "nameRus": "Доступные сейчас",
     "templateName": "availableInstrumentsPage"
   },
   {
     "id": "order",
     "name": "Order",
-    "nameRus": "Заказать",
     "templateName": "orderPage"
   },
   {
     "id": "about",
     "name": "About",
-    "nameRus": "O мастере",
     "templateName": "about.md"
   },
   {
     "id": "404",
     "name": "404",
-    "nameRus": "404",
     "templateName": "404"
   },
   {
     "id": "thanks",
     "name": "Thank You",
-    "nameRus": "Спасибо!",
     "templateName": "thanksPage"
   }
 

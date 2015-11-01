@@ -1,0 +1,56 @@
+{
+  "ru": {
+    "Home": "Главная",
+    "Guitars": "Гитары",
+    "Basses": "Бассы",
+    "Available": "Приобрести",
+    "Order": "Заказать",
+    "About": "O мастере",
+    "Thank You": "Спасибо!",
+
+    "Page Not Found": "Страница не найдена",
+
+    "New Instruments": "Новые инструменты",
+
+    "Available Now!": "Продается",
+    "This instrument is available now!": "Этот инструмент сейчас продается!",
+    "No instruments are available yet.": "Доступных для покупки инструмент на текущий момент нет.",
+
+    "Specs": "Спецификация",
+    "S/N": "Серийный номер",
+    "Model": "Модель",
+    "Scale length": "Мензура",
+    "Frets": "Число ладов",
+    "FB radius": "Радиус накладки",
+    "Body wood": "Материал корпуса",
+    "Top wood": "Материал топа",
+    "Neck wood": "Материал грифа",
+    "Construction": "Крепление грифа",
+    "Fretboard wood": "Материал накладки",
+    "Dots": "Маркеры",
+    "Nut": "Верхний порожек",
+    "Hardware Color": "Цвет фурнитуры",
+    "Tuners": "Колки",
+    "Bridge": "Струнодержатель",
+    "Pickups": "Звукосниматели",
+    "Pickup": "Звукосниматель",
+    "Preamp": "Преамп",
+    "Electronics": "Электроника",
+    "Knobs": "Ручки",
+    "Switching": "Переключатели",
+    "Color": "Цвет",
+    "Finish": "Отделка",
+
+    "More Instruments": "Инструменты этой же модели",
+
+    "About Order Process": "О процессе заказа",
+    "Some text about order process": "Какой-то текст",
+
+    "Order Form": "Форма заказа",
+    "Your email (Required)": "Адрес электронной почты (обязательно)",
+    "Your name": "Ваше имя",
+    "Write about your dream instrument here (Required)": "Опишите инструмент вашей мечты.",
+    "Send My Order": "Заказать",
+    "Something went wrong. Please, send email to": "Что-то пошло не так. Пожалуйста, напишите письмо на"
+  }
+}

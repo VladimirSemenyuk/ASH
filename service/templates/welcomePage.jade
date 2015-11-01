@@ -1,3 +1,5 @@
+include ./i18n.jade
+
 style.welcome-style.
     .nav, .footer {
         width: 100%;
@@ -16,7 +18,6 @@ style.welcome-style.
     }
 
 
-
 script(src='/js/index.js')
 
 #welcome2
@@ -28,7 +29,7 @@ script(src='/js/index.js')
     .js-slider.slider
         ul#welcome-slideshow
             each slide, index in welcomeSlideshow
-                li.slide.js-slide(data-id='' + index + '', style='background-image: url(img/slider/' + slide + ')')
+                li.slide.js-slide(data-id='' + index + '', style='background-image: url(/img/slider/' + slide + ')')
 
         .js-prev.slider__prev!= '&#8249;'
         .js-next.slider__next!= '&#8250;'
@@ -36,7 +37,7 @@ script(src='/js/index.js')
             each slide, index in welcomeSlideshow
                 div.slider__dot.js-slider-dot(data-id='' + index + '')
 
-    - var instruments = _ash.instruments.splice(0, 5);
+    - var instruments = _ash.instruments.concat([]).splice(0, 5);
 
     if (instruments.length)
     -   var maxScale = 24.75, specScale;
@@ -48,7 +49,8 @@ script(src='/js/index.js')
     -   }
     -   var maxScaleText = (maxScale + '').replace('.', '-');
 
-    h3 New Instruments
+    h3
+        +i18n('New Instruments')
 
     ul(class="model-list model-list_max-scale-" + maxScaleText)
         each instrument in instruments

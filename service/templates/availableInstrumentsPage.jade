@@ -1,3 +1,5 @@
+include ./i18n.jade
+
 .model-page
     if (_ash.availableInstruments.length)
 
@@ -14,4 +16,5 @@
             each instrument in _ash.availableInstruments
                 include ./availableInstrumentListItem.jade
     else
-        .model__info-text No instruments are available yet.
+        .model__info-text
+            +i18n('No instruments are available yet.')

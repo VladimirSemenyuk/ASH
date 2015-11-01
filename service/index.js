@@ -58,7 +58,8 @@ var fs = require('fs-extra'),
     }
 
     var pages = create('pages', require('./classes/Page.js')),
-        instruments = createInstruments();
+        instruments = createInstruments(),
+        dicts = fs.readJsonSync(__dirname + '/dicts.json');
 
     global.ash = {
         pages: pages,
@@ -71,7 +72,14 @@ var fs = require('fs-extra'),
         basses: _.where(instruments, {type: 'bass'}),
         templates: _.map(fs.readdirSync('service/templates'), function(templateFile) {
             return templateFile.replace('.jade', '');
-        })
+        }),
+        i18n: function(text, lang) {
+            if (dicts[lang] && dicts[lang][text]) {
+                return dicts[lang][text];
+            }
+
+            return text;
+        }
     };
 
     var models = create('models', require('./classes/Model.js'));
@@ -114,7 +122,6 @@ var fs = require('fs-extra'),
         pageCompiler: require('./compilers/page_compiler.js')
     };
 
-
     if (args.length) {
         if (args[2] === 'compile') {
             fs.removeSync('output/*');
@@ -125,7 +132,13 @@ var fs = require('fs-extra'),
             fs.copySync('favicon.ico', 'output/favicon.ico');
             fs.writeFileSync('output/CNAME', 'ash-instruments.com');
 
-            compilers.pageCompiler.compile();
+            compilers.pageCompiler.compile('en');
+            compilers.pageCompiler.compile('ru');
+
+            var jade = require('jade');
+
+            fs.writeFileSync('output/index.html', jade.renderFile('service/templates/uIndex.jade'));
+            fs.writeFileSync('output/404.html', jade.renderFile('service/templates/u404.jade'));
         } else {
             for (var g in generators) {
                 if (generators.hasOwnProperty(g) && g === args[3] + 'Generator') {

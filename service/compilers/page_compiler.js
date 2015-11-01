@@ -3,16 +3,22 @@ var fs = require('fs-extra'),
     _ = require('lodash');
 
 module.exports = {
-    compile: function() {
+    compile: function(lang) {
 
         try {
-            fs.mkdirSync('output/guitars');
+            fs.mkdirSync('output/' + lang);
         } catch(e) {
 
         }
 
         try {
-            fs.mkdirSync('output/basses');
+            fs.mkdirSync('output/' + lang +'/guitars');
+        } catch(e) {
+
+        }
+
+        try {
+            fs.mkdirSync('output/' + lang +'/basses');
         } catch(e) {
 
         }
@@ -28,15 +34,16 @@ module.exports = {
 
             var data = JSON.parse(fs.readFileSync('data/config.json')),
                 html = jade.renderFile('service/templates/main.jade', {
+                    lang: lang,
                     currentPage: model.name,
                     pretty: true,
                     title: data.siteTitle + ' &mdash; ' + model.name,
                     pages: ash.contentPages,
-                    content: model.template()
+                    content: model.template(lang)
                 });
 
-            fs.writeFileSync('output/' + model.href, html);
-            fs.mkdirSync('output/guitars/' + model.id);
+            fs.writeFileSync('output/' + lang + model.href, html);
+            fs.mkdirSync('output/' + lang +'/guitars/' + model.id);
         }
 
         for (var i = 0; i < ash.bassModels.length; i++) {
@@ -50,19 +57,20 @@ module.exports = {
 
             var data = JSON.parse(fs.readFileSync('data/config.json')),
                 html = jade.renderFile('service/templates/main.jade', {
+                    lang: lang,
                     currentPage: model.name,
                     pretty: true,
                     title: data.siteTitle + ' &mdash; ' + model.name,
                     pages: ash.contentPages,
-                    content: model.template()
+                    content: model.template(lang)
                 });
 
-            fs.writeFileSync('output/' + model.href, html);
-            fs.mkdirSync('output/basses/' + model.id);
+            fs.writeFileSync('output/' + lang + model.href, html);
+            fs.mkdirSync('output/' + lang +'/basses/' + model.id);
         }
 
         try {
-            fs.mkdirSync('output/instruments');
+            fs.mkdirSync(lang + '/output/instruments');
         } catch(e) {
 
         }
@@ -76,15 +84,18 @@ module.exports = {
 
             var data = JSON.parse(fs.readFileSync('data/config.json')),
                 html = jade.renderFile('service/templates/main.jade', {
+                    lang: lang,
                     currentPage: instrument.name,
                     pretty: true,
                     title: data.siteTitle + ' &mdash; ' + instrument.model.name + ' &mdash; ' + instrument.id ,
                     pages: ash.contentPages,
                     images: instrument.images,
-                    content: instrument.template()
+                    content: instrument.template(lang)
                 });
 
-            fs.writeFileSync('output/' + instrument.href, html);
+            fs.writeFileSync('output/' + lang + instrument.href, html);
+
+            console.log('CREATE: output/' + lang + instrument.href);
         }
 
         for (var i = 0; i < ash.pages.length; i++) {
@@ -94,14 +105,16 @@ module.exports = {
 
             var data = JSON.parse(fs.readFileSync('data/config.json')),
                 html = jade.renderFile('service/templates/main.jade', {
+                    lang: lang,
                     currentPage: page.name,
                     pretty: true,
                     title: data.siteTitle + ' &mdash; ' + page.name,
                     pages: ash.contentPages,
-                    content: page.template()
+                    content: page.template(lang)
                 });
 
-            fs.writeFileSync('output/' + page.id + '.html', html);
+            fs.writeFileSync('output/' + lang + '/' + page.id + '.html', html);
+
         }
     }
 }
