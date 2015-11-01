@@ -72,6 +72,12 @@ i {
   width: 272px;
   cursor: pointer;
 }
+#langs {
+  position: absolute;
+  top: 45px;
+  right: 100px;
+  text-transform: uppercase;
+}
 #content {
   padding: 20px 0;
 }
@@ -277,7 +283,7 @@ i {
 }
 .model-scroller {
   overflow-x: auto;
-  width: 1150px;
+  width: 1200px;
   margin: 0 auto;
 }
 .model-scroller.mCS_no_scrollbar {
