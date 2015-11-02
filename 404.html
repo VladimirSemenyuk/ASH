@@ -1,2 +1,5 @@
-<!DOCTYPE html><html lang="en"><head><script>var language = window.navigator.userLanguage || window.navigator.language;
+<!DOCTYPE html><html lang="en"><head><script>var language = (window.navigator.userLanguage || window.navigator.language);
+if (language !== 'ru') {
+    language = 'en';
+}
 location.pathname = language + '/404.html';</script></head></html>
