@@ -20,6 +20,11 @@
     "templateName": "availableInstrumentsPage"
   },
   {
+    "id": "prototypes",
+    "name": "Prototypes",
+    "templateName": "prototypesPage"
+  },
+  {
     "id": "order",
     "name": "Order",
     "templateName": "orderPage"
@@ -27,7 +32,7 @@
   {
     "id": "about",
     "name": "About",
-    "templateName": "about.md"
+    "templateName": "about"
   },
   {
     "id": "404",

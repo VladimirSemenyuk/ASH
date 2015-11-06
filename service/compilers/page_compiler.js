@@ -122,7 +122,7 @@ module.exports = {
                     langs: langs,
                     currentPage: page.name,
                     pretty: true,
-                    title: data.siteTitle + ' &mdash; ' + page.name,
+                    title: data.siteTitle + ' &mdash; ' + ash.i18n(page.name, lang),
                     pages: ash.contentPages,
                     content: page.template(lang),
                     href: '/' + page.id + '.html'
