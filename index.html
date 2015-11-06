@@ -1,4 +1,11 @@
 <!DOCTYPE html><html lang="en"><head><script>var language = window.navigator.userLanguage || window.navigator.language;
+
+try {
+    language = language.split('-')[0].toLowerCase();
+} catch (e) {
+
+}
+
 if (language !== 'ru') {
     language = 'en';
 }

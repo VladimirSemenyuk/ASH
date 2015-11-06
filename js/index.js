@@ -171,7 +171,8 @@ function start() {
     var slider = new SlideShow($('.js-slider'));
 
     setCookie('hasVisited', true, {
-        expires: 0
+        expires: 0,
+        path: '/'
     });
 }
 
