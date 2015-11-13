@@ -34,7 +34,7 @@ script(src='/js/index.js')
     .js-slider.slider
         ul#welcome-slideshow
             each slide, index in welcomeSlideshow
-                li.slide.js-slide(data-id='' + index + '', style='background-image: url(/img/slider/' + slide + ')')
+                li.slide.js-slide(data-id='' + index + '', style='background-image: url(/img/' + slide + ')')
 
         .js-prev.slider__prev!= '&#8249;'
         .js-next.slider__next!= '&#8250;'
