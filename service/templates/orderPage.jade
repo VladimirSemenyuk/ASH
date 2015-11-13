@@ -26,6 +26,11 @@ include ./i18n.jade
         +i18n('Order Form')
 
     form#order-form(method="POST")
+        - var pl = ash.i18n('Write about your dream instrument here (Required)', lang);
+        textarea.input.input_100#form-text(placeholder= pl rows=13 name="text" required)
+
+        .error#error-formText
+
         - var pl = ash.i18n('Your email (Required)', lang);
         input.input#form-email(type="email" placeholder=pl  name="email" required)
 
@@ -36,16 +41,11 @@ include ./i18n.jade
 
         .error#error-formName
 
-        - var pl = ash.i18n('Write about your dream instrument here (Required)', lang);
-        textarea.input.input_100#form-text(placeholder= pl rows=20 name="text" required)
-
-        .error#error-formText
-
         input#order-title-field(type="hidden" name="_subject" value="Новый заказ")
         input(type="hidden" name="_next" value="//www.ash-instruments.com/" + lang + "/thanks.html")
         input#gtcha(type="text" name="_gotcha" value="" style="display:none;")
 
-        - var val = ash.i18n('Send My Order', lang);
+        - var val = ash.i18n('Send', lang);
         input.submit#form-submit(type="submit" value= val)
         .error#error-main
             +i18n('Something went wrong. Please, send email to')
