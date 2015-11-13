@@ -21,7 +21,8 @@
     "S/N": "Серийный номер",
     "Model": "Модель",
     "Scale length": "Мензура",
-    "Frets": "Число ладов",
+    "Number of frets": "Число ладов",
+    "Number of strings": "Число струн",
     "FB radius": "Радиус накладки",
     "Body wood": "Материал корпуса",
     "Top wood": "Материал топа",
@@ -66,7 +67,7 @@
     "Your email (Required)": "Адрес электронной почты (обязательно)",
     "Your name": "Ваше имя",
     "Write about your dream instrument here (Required)": "Опишите инструмент вашей мечты.",
-    "Send My Order": "Заказать",
+    "Send": "Отправить",
     "Something went wrong. Please, send email to": "Что-то пошло не так. Пожалуйста, напишите письмо на"
   }
 }

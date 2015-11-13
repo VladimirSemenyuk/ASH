@@ -9,16 +9,17 @@
     "preview": "/img/130905/preview.jpg",
     "preview2x": "/img/130905/preview.2x.jpg",
     "gallery": [
+      "/img/130905/g1.jpg",
       "/img/130905/g2.jpg",
       "/img/130905/g3.jpg",
-      "/img/130905/g4.jpg",
-      "/img/130905/g5.jpg"
+      "/img/130905/g4.jpg"
     ]
   },
   "description": "",
   "specs": {
     "scaleLength": "24.75\"",
     "fretsCount": "22",
+    "stringsCount": "6",
     "fingerboardRadius": "12\"",
     "bodyWood": "Mahogany",
     "topWood": "Poplar Burl",

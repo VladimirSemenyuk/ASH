@@ -25,6 +25,7 @@
   "specs": {
     "scaleLength": "25.5\"",
     "fretsCount": "24",
+    "stringsCount": "6",
     "fingerboardRadius": "12\"",
     "bodyWood": "Alder",
     "topWood": "Walnut",

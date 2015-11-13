@@ -42,11 +42,11 @@ script(src='/js/index.js')
             each slide, index in welcomeSlideshow
                 div.slider__dot.js-slider-dot(data-id='' + index + '')
 
-    - var instruments = _ash.instruments.concat([]).splice(0, 5);
+    - var instruments = _ash.instruments.concat([]).splice(0, 3);
 
     if (instruments.length)
     -   var maxScale = 24.75, specScale;
-    -   for (var i = 0; i < 5; i++) {
+    -   for (var i = 0; i < 3; i++) {
     -       specScale = parseFloat(instruments[i].specs.scaleLength.replace('"', '').replace(/-\d\d/g, ''));
     -       if (maxScale < specScale) {
     -           maxScale = specScale;

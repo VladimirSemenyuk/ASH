@@ -26,6 +26,7 @@
   "specs": {
     "scaleLength": "35\"",
     "fretsCount": "24",
+    "stringsCount": "6",
     "fingerboardRadius": "20\"",
     "bodyWood": "Ash (Maple Tone Block)",
     "topWood": "Buckeye Burl",
@@ -35,7 +36,7 @@
     "dots": "",
     "nut": "Bone",
     "hardwareColor": "Gold",
-    "tuners": "Gotoh GB 707",
+    "tuners": "Gotoh",
     "bridge": "Hipshot",
     "pickups": "Nordstrand ",
     "preamp": "Mike Pope",

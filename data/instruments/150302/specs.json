@@ -25,6 +25,7 @@
   "specs": {
     "scaleLength": "24.75\"",
     "fretsCount": "22",
+    "stringsCount": "6",
     "fingerboardRadius": "12\"",
     "bodyWood": "Sapele",
     "topWood": "Buckeye Burl",

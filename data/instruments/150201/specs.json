@@ -22,6 +22,7 @@
   "specs": {
     "scaleLength": "33\"",
     "fretsCount": "26",
+    "stringsCount": "5",
     "fingerboardRadius": "20\"",
     "bodyWood": "Walnut (Maple Tone Block)",
     "topWood": "Poplar Burl",
@@ -30,7 +31,7 @@
     "fingerboardWood": "Ebony",
     "nut": "Brass",
     "hardwareColor": "Black",
-    "tuners": "Gotoh GB 707",
+    "tuners": "Gotoh",
     "bridge": "Hipshot",
     "pickups": "Aguilar",
     "preamp": "Aguilar",

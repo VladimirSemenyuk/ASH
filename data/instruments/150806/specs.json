@@ -21,6 +21,7 @@
   "specs": {
     "scaleLength": "35\"",
     "fretsCount": "24 (Fretless)",
+    "stringsCount": "6",
     "fingerboardRadius": "20\"",
     "bodyWood": "Movingui",
     "topWood": "Ash",
@@ -29,7 +30,7 @@
     "fingerboardWood": "Ebony",
     "nut": "Bone",
     "hardwareColor": "Black",
-    "tuners": "Gotoh GB 707",
+    "tuners": "Gotoh",
     "bridge": "Hipshot",
     "pickups": "EMG",
     "electronics": "Volume/Tone",

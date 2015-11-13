@@ -24,6 +24,7 @@
   "specs": {
     "scaleLength": "25.5\"",
     "fretsCount": "24",
+    "stringsCount": "7",
     "fingerboardRadius": "16\"",
     "bodyWood": "Ash",
     "topWood": "5A Quilted Maple",

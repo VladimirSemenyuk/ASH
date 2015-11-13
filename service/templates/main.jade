@@ -64,7 +64,7 @@ html(lang=lang)
                 each l in langs
                     if (l !== lang)
                         a(href = '/' + l + href)
-                            = l
+                            img(src='/img/' + l + '.png' border=0 width=24 height=24)
 
 
             include ./navigation.jade

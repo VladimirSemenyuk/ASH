@@ -22,6 +22,7 @@
   "specs": {
     "scaleLength": "34\"",
     "fretsCount": "24 (fretless)",
+    "stringsCount": "4",
     "fingerboardRadius": "20\"",
     "bodyWood": "Maple (Alder Tone Block)",
     "topWood": "Quilted Maple",

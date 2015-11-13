@@ -21,6 +21,7 @@
   "specs": {
     "scaleLength": "35-34\"",
     "fretsCount": "26",
+    "stringsCount": "6",
     "fingerboardRadius": "20\"",
     "bodyWood": "Ash (Alder Tone Block)",
     "topWood": "Poplar Burl",

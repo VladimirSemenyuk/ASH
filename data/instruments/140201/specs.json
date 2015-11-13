@@ -26,6 +26,7 @@
   "specs": {
     "scaleLength": "36\"",
     "fretsCount": "28",
+    "stringsCount": "6",
     "fingerboardRadius": "20\"",
     "bodyWood": "Mahogany (Ash Tone Block)",
     "topWood": "Buckeye Burl",
@@ -34,7 +35,7 @@
     "construction": "Through",
     "nut": "",
     "hardwareColor": "Black",
-    "tuners": "Gotoh GB 707",
+    "tuners": "Gotoh",
     "bridge": "Wilkinson",
     "pickups": "EMG",
     "electronics": "",

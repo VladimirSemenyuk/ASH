@@ -23,6 +23,7 @@
   "specs": {
     "scaleLength": "33\"",
     "fretsCount": "24",
+    "stringsCount": "5",
     "fingerboardRadius": "20\"",
     "bodyWood": "Walnut (Ash Tone Block)",
     "construction": "Through",
@@ -30,7 +31,7 @@
     "fingerboardWood": "Ebony",
     "nut": "",
     "hardwareColor": "Black",
-    "tuners": "Gotoh GB 707",
+    "tuners": "Gotoh",
     "bridge": "Hipshot",
     "pickups": "Seymour Duncan NYC",
     "preamp": "Mike Pope",

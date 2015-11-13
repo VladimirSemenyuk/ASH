@@ -21,6 +21,7 @@
   "specs": {
     "scaleLength": "34\"",
     "fretsCount": "26",
+    "stringsCount": "5",
     "fingerboardRadius": "20\"",
     "bodyWood": "Mahogany  (Alder Tone Block)",
     "construction": "Through",
@@ -28,7 +29,7 @@
     "fingerboardWood": "Rosewood",
     "nut": "Brass",
     "hardwareColor": "Black",
-    "tuners": "Gotoh GB 707",
+    "tuners": "Gotoh",
     "bridge": "Hipshot",
     "pickups": "Nordstrand",
     "preamp": "Mike Pope",

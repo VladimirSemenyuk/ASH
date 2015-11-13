@@ -22,6 +22,7 @@
   "specs": {
     "scaleLength": "34\"",
     "fretsCount": "24",
+    "stringsCount": "5",
     "fingerboardRadius": "20\"",
     "bodyWood": "Mahogany ",
     "topWood": "Poplar Burl",
@@ -30,7 +31,7 @@
     "fingerboardWood": "Ebony",
     "nut": "Bone",
     "hardwareColor": "Black",
-    "tuners": "Gotoh GB 707",
+    "tuners": "Gotoh",
     "bridge": "Hipshot",
     "pickups": "Bartolini",
     "preamp": "Bartolini NTMB",

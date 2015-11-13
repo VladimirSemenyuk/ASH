@@ -21,6 +21,7 @@
   "specs": {
     "scaleLength": "33\"",
     "fretsCount": "26",
+    "stringsCount": "5",
     "fingerboardRadius": "20\"",
     "bodyWood": "Maple (Alder Tone Block)",
     "topWood": "Buckeye Burl",
@@ -29,7 +30,7 @@
     "fingerboardWood": "Rosewood",
     "nut": "Brass",
     "hardwareColor": "Black",
-    "tuners": "Gotoh GB 707",
+    "tuners": "Gotoh",
     "bridge": "Hipshot",
     "pickups": "Nordstrand",
     "preamp": "Aguilar",
