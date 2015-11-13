@@ -45,6 +45,8 @@ include ./i18n.jade
         input(type="hidden" name="_next" value="//www.ash-instruments.com/" + lang + "/thanks.html")
         input#gtcha(type="text" name="_gotcha" value="" style="display:none;")
 
+        br
+
         - var val = ash.i18n('Send', lang);
         input.submit#form-submit(type="submit" value= val)
         .error#error-main
