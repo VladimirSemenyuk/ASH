@@ -36,8 +36,8 @@
     "tuners": "Hipshot",
     "bridge": "Hipshot",
     "pickups": [
-      "Neck - Seymour Duncan Sentient",
-      "Bridge - Seymour Duncan Pegasus"
+      "Neck &mdash; Seymour Duncan Sentient",
+      "Bridge &mdash; Seymour Duncan Pegasus"
     ],
     "electronics": "Volume/Tone",
     "switching": [

@@ -24,7 +24,7 @@
     "fretsCount": "24",
     "stringsCount": "5",
     "fingerboardRadius": "20\"",
-    "bodyWood": "Mahogany ",
+    "bodyWood": "Mahogany",
     "topWood": "Poplar Burl",
     "construction": "Bolt-on",
     "neckWood": "3-ps. Hard Rock Maple",
@@ -37,6 +37,6 @@
     "preamp": "Bartolini NTMB",
     "electronics": "",
     "knobs": "",
-    "finish": "Transparent High Gloss — Handpolished"
+    "finish": "Transparent High Gloss &mdash; Handpolished"
   }
 }

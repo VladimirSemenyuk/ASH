@@ -61,6 +61,19 @@ var fs = require('fs-extra'),
         instruments = createInstruments(),
         dicts = fs.readJsonSync(__dirname + '/dicts.json');
 
+    /*var s = {};
+    for (var ins in instruments) {
+        if (instruments.hasOwnProperty(ins)) {
+            for (var sp in instruments[ins].specs) {
+                if (instruments[ins].specs.hasOwnProperty(sp)) {
+                    s[instruments[ins].specs[sp]] = "";
+                }
+            }
+        }
+    }
+
+    console.log(s);*/
+
     global.ash = {
         pages: pages,
         contentPages: _.filter(pages, function(page) {
