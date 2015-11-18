@@ -24,5 +24,11 @@ li.model-list__item(data-href= '/' + lang + instrument.href)
     if (instrument.isAvailable)
         .model-list__item__name= instrument.model.name
         .model-list__item__info
-            +i18n('Available Now!')
+            div
+                +i18n('Available Now!')
+            if (instrument.price)
+                if (lang === 'ru' && instrument.price[1])
+                    div= instrument.price[1]
+                else
+                    div= instrument.price[0]
 

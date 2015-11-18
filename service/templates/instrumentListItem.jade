@@ -24,5 +24,12 @@ li.model-list__item(data-href='/' + lang + instrument.href)
     div(id='item-'+instrument.id class='model-list__item__image model-list__item__image_' + scaleLength title=title)
     if (instrument.isAvailable)
         .model-list__item__info
-            +i18n('Available Now!')
+            div
+                +i18n('Available Now!')
+            if (instrument.price)
+                if (lang === 'ru' && instrument.price[1])
+                    div= instrument.price[1]
+                else
+                    div= instrument.price[0]
+
 
