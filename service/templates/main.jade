@@ -38,6 +38,7 @@ html(lang=lang)
         link(rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300&subset=latin,cyrillic-ext')
         link(href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css')
         link(rel="stylesheet" href="/css/style.css")
+        link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
         link(rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css")
 
         link(href="/css/lightbox.css" rel="stylesheet" type="text/css")
@@ -59,6 +60,14 @@ html(lang=lang)
                 .ash.ash_small Ash
                 .tree.tree_small
                 .instruments.instruments_small Instruments
+
+            #media-icons
+                if (lang === 'ru')
+                    a.social(href="https://vk.com/ash_instruments" title="VK")
+                        i.fa.fa-vk
+
+                a.social(href="https://www.facebook.com/ashinstruments/" title="Facebook")
+                    i.fa.fa-facebook-official
 
             #langs
                 each l in langs
