@@ -1,0 +1,37 @@
+include ./i18n.jade
+
+mixin media(selector, src, srcRetina)
+    style.
+        !{selector} {
+            background: url(!{src}) no-repeat;
+        }
+    if (srcRetina)
+        style.
+            @media (-webkit-min-device-pixel-ratio: 2) {
+                !{selector} {
+                    background-image: url(!{srcRetina});
+                    background-size: contain;
+                }
+            }
+
+- var type = (instrument.type === 'guitar') ? 'guitars' : 'basses';
+- var scaleLength = instrument.specs.scaleLength.replace('"', '').replace('.', '-').replace(/-\d\d/g, '');
+- var title = (instrument.model.name ? (instrument.model.name + ' - ') : '') + instrument.id;
+
+
+li.model-list__item(data-href='/' + lang + instrument.href)
+    +media('#item-' + instrument.id, instrument.images.list, instrument.images.list2x)
+    div(id='item-'+instrument.id class='model-list__item__image model-list__item__image_' + scaleLength title=title)
+    .model-list__item__model
+        div= instrument.model.name
+    if (instrument.isAvailable)
+        .model-list__item__info
+            div
+                +i18n('Available Now!')
+            if (instrument.price)
+                if (lang === 'ru' && instrument.price[1])
+                    div= instrument.price[1]
+                else
+                    div= instrument.price[0]
+
+
