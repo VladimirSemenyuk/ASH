@@ -52,13 +52,12 @@ mixin media(selector, src, srcRetina)
 
     if (isAvailable)
         .model__available-text
+            +i18n('This instrument is available now! ')
             if (price)
                 if (lang === 'ru' && price[1])
                     = price[1]
                 else
                     = price[0]
-            else
-                +i18n('This instrument is available now!')
 
     .left
         h3
