@@ -117,7 +117,7 @@ i {
   margin-right: 10px;
 }
 .ash_large {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   font-size: 40px;
@@ -141,7 +141,7 @@ i {
   margin-left: 10px;
 }
 .instruments_large {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   width: 164px;
@@ -163,7 +163,7 @@ i {
   display: inline-block;
 }
 .tree_large {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   opacity: 0;
