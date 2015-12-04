@@ -66,3 +66,11 @@ script(src='/js/index.js')
         each instrument in instruments
             include ./lastInstrumentListItem.jade
 
+    .empty(style="margin-top:50px;")
+
+    if (mainVideo)
+        h3
+            +i18n('Video')
+        .model__video
+            iframe(width="800" height="450" src="https://www.youtube.com/embed/" + mainVideo frameborder="0" allowfullscreen)
+

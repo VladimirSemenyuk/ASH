@@ -105,7 +105,8 @@ mixin media(selector, src, srcRetina)
             +media('#preview-back', images.previewBack, images.previewBack2x)
 
     if (video)
-        h3 Video
+        h3
+            +i18n('Video')
         .model__video
             iframe(width="800" height="450" src="https://www.youtube.com/embed/" + video frameborder="0" allowfullscreen)
 

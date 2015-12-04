@@ -10,7 +10,9 @@ var Page = function(name, nameRus, templateName) {
     this.nameRus = nameRus;
     this.templateName = templateName;
 
-    this.welcomeSlideshow = JSON.parse(fs.readFileSync('data/config.json')).welcomeSlideshow;
+    var data = JSON.parse(fs.readFileSync('data/config.json'));
+    this.welcomeSlideshow = data.welcomeSlideshow;
+    this.mainVideo = data.mainVideo;
 };
 
 Page.prototype = {
