@@ -5,9 +5,9 @@
   "main": "service/generator.js",
   "scripts": {
     "prestart": "grunt test",
-    "start": "grunt && grunt image_resize && grunt connect",
+    "start": "grunt compile copy_previews copy_images connect",
     "prebuild": "grunt test",
-    "build": "grunt && grunt image_resize"
+    "build": "grunt compile image copy_previews image_resize"
   },
   "repository": {
     "type": "git",

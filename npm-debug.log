@@ -1,22 +1,22 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'run', 'start' ]
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'run', 'build' ]
 2 info using npm@3.3.6
 3 info using node@v5.0.0
-4 verbose run-script [ 'prestart', 'start', 'poststart' ]
-5 info lifecycle ash@1.0.0~prestart: ash@1.0.0
-6 verbose lifecycle ash@1.0.0~prestart: unsafe-perm in lifecycle true
-7 verbose lifecycle ash@1.0.0~prestart: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/vladimir/Work/ASH/node_modules/.bin:/Users/vladimir/.rvm/gems/ruby-1.9.3-p545/bin:/Users/vladimir/.rvm/gems/ruby-1.9.3-p545@global/bin:/Users/vladimir/.rvm/rubies/ruby-1.9.3-p545/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/usr/local/git/bin:/usr/local/MacGPG2/bin:/Users/vladimir/.rvm/bin
-8 verbose lifecycle ash@1.0.0~prestart: CWD: /Users/vladimir/Work/ASH
-9 silly lifecycle ash@1.0.0~prestart: Args: [ '-c', 'grunt test' ]
-10 silly lifecycle ash@1.0.0~prestart: Returned: code: 0  signal: null
-11 info lifecycle ash@1.0.0~start: ash@1.0.0
-12 verbose lifecycle ash@1.0.0~start: unsafe-perm in lifecycle true
-13 verbose lifecycle ash@1.0.0~start: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/vladimir/Work/ASH/node_modules/.bin:/Users/vladimir/.rvm/gems/ruby-1.9.3-p545/bin:/Users/vladimir/.rvm/gems/ruby-1.9.3-p545@global/bin:/Users/vladimir/.rvm/rubies/ruby-1.9.3-p545/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/usr/local/git/bin:/usr/local/MacGPG2/bin:/Users/vladimir/.rvm/bin
-14 verbose lifecycle ash@1.0.0~start: CWD: /Users/vladimir/Work/ASH
-15 silly lifecycle ash@1.0.0~start: Args: [ '-c', 'grunt && grunt image_resize && grunt connect' ]
-16 silly lifecycle ash@1.0.0~start: Returned: code: 3  signal: null
-17 info lifecycle ash@1.0.0~start: Failed to exec start script
-18 verbose stack Error: ash@1.0.0 start: `grunt && grunt image_resize && grunt connect`
+4 verbose run-script [ 'prebuild', 'build', 'postbuild' ]
+5 info lifecycle ash@1.0.0~prebuild: ash@1.0.0
+6 verbose lifecycle ash@1.0.0~prebuild: unsafe-perm in lifecycle true
+7 verbose lifecycle ash@1.0.0~prebuild: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/vladimir/Work/ASH/node_modules/.bin:/Users/vladimir/.rvm/gems/ruby-1.9.3-p545/bin:/Users/vladimir/.rvm/gems/ruby-1.9.3-p545@global/bin:/Users/vladimir/.rvm/rubies/ruby-1.9.3-p545/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/usr/local/git/bin:/usr/local/MacGPG2/bin:/Users/vladimir/.rvm/bin
+8 verbose lifecycle ash@1.0.0~prebuild: CWD: /Users/vladimir/Work/ASH
+9 silly lifecycle ash@1.0.0~prebuild: Args: [ '-c', 'grunt test' ]
+10 silly lifecycle ash@1.0.0~prebuild: Returned: code: 0  signal: null
+11 info lifecycle ash@1.0.0~build: ash@1.0.0
+12 verbose lifecycle ash@1.0.0~build: unsafe-perm in lifecycle true
+13 verbose lifecycle ash@1.0.0~build: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/vladimir/Work/ASH/node_modules/.bin:/Users/vladimir/.rvm/gems/ruby-1.9.3-p545/bin:/Users/vladimir/.rvm/gems/ruby-1.9.3-p545@global/bin:/Users/vladimir/.rvm/rubies/ruby-1.9.3-p545/bin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/usr/local/git/bin:/usr/local/MacGPG2/bin:/Users/vladimir/.rvm/bin
+14 verbose lifecycle ash@1.0.0~build: CWD: /Users/vladimir/Work/ASH
+15 silly lifecycle ash@1.0.0~build: Args: [ '-c', 'grunt compile image copy_previews grunt image_resize' ]
+16 silly lifecycle ash@1.0.0~build: Returned: code: 3  signal: null
+17 info lifecycle ash@1.0.0~build: Failed to exec build script
+18 verbose stack Error: ash@1.0.0 build: `grunt compile image copy_previews grunt image_resize`
 18 verbose stack Exit status 3
 18 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:233:16)
 18 verbose stack     at emitTwo (events.js:87:13)
@@ -29,17 +29,17 @@
 19 verbose pkgid ash@1.0.0
 20 verbose cwd /Users/vladimir/Work/ASH
 21 error Darwin 15.0.0
-22 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "start"
+22 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "build"
 23 error node v5.0.0
 24 error npm  v3.3.6
 25 error code ELIFECYCLE
-26 error ash@1.0.0 start: `grunt && grunt image_resize && grunt connect`
+26 error ash@1.0.0 build: `grunt compile image copy_previews grunt image_resize`
 26 error Exit status 3
-27 error Failed at the ash@1.0.0 start script 'grunt && grunt image_resize && grunt connect'.
+27 error Failed at the ash@1.0.0 build script 'grunt compile image copy_previews grunt image_resize'.
 27 error This is most likely a problem with the ash package,
 27 error not with npm itself.
 27 error Tell the author that this fails on your system:
-27 error     grunt && grunt image_resize && grunt connect
+27 error     grunt compile image copy_previews grunt image_resize
 27 error You can get their info via:
 27 error     npm owner ls ash
 27 error There is likely additional logging output above.

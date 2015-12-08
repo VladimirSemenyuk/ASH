@@ -83,6 +83,24 @@ module.exports = function(grunt) {
         'copy_previews'
     ]);
 
+    grunt.task.registerTask('copy_images', function() {
+        var files = grunt.file.expand(['img/**/*']);
+
+        for (var i = 0; i < files.length; i++) {
+            fs.copySync(files[i], 'output/' + files[i]);
+        }
+
+        files = grunt.file.expand(['data/instruments/**/g*']);
+
+        for (i = 0; i < files.length; i++) {
+            var file = files[i].replace('data/instruments/', ''),
+                fileArr = file.split('/');
+
+            fs.copySync(files[i], 'output/img/' + file);
+            fs.copySync(files[i], 'output/img/' + fileArr.join('/small/'));
+        }
+    });
+
     grunt.task.registerTask('copy_previews', function() {
         var folders = fs.readdirSync('data/instruments').sort();
 
@@ -96,13 +114,27 @@ module.exports = function(grunt) {
 
             try {
                 fs.copySync(folder + '/preview.jpg', dest + '/preview.jpg');
+            } catch (e) {
+
+            }
+
+            try {
                 fs.copySync(folder + '/preview.2x.jpg', dest + '/preview.2x.jpg');
             } catch (e) {
-                
+
             }
-            
-            fs.copySync(folder + '/list.jpg', dest + '/list.jpg');
-            fs.copySync(folder + '/list.2x.jpg', dest + '/list.2x.jpg');
+
+            try {
+                fs.copySync(folder + '/list.jpg', dest + '/list.jpg');
+            } catch (e) {
+
+            }
+
+            try {
+                fs.copySync(folder + '/list.2x.jpg', dest + '/list.2x.jpg');
+            } catch (e) {
+
+            }
 
             grunt.log.ok('Previews from ' + folder + ' were copied.');
         }
