@@ -12,13 +12,13 @@ mixin spec(spec, specText)
             else
                 td.spec__value
                     if (spec.length == 1)
-                        td.spec__value
-                            +i18n(spec[0])
+                        +i18n(spec[0])
                     else
                         ol.spec__value__list
                             each s in spec
                                 li
                                     +i18n(s)
+
 
 mixin image(src)
     - src = '/img/' + id + '/' + src;

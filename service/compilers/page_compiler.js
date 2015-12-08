@@ -98,6 +98,7 @@ module.exports = {
                     lang: lang,
                     langs: langs,
                     currentPage: instrument.name,
+                    id: instrument.id,
                     pretty: true,
                     title: data.siteTitle + ' &mdash; ' + instrument.model.name + ' &mdash; ' + instrument.id ,
                     pages: ash.contentPages,

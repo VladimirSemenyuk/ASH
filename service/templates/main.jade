@@ -52,7 +52,7 @@ html(lang=lang)
         if (images && images.gallery)
             each src in images.gallery
                 script.
-                    window.prefetched.push('!{src}');
+                    window.prefetched.push('/img/!{id}/!{src}');
 
     body
         #page
