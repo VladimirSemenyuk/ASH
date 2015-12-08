@@ -4,19 +4,19 @@
   "type": "guitar",
   "video": "UUutr1a9ABQ",
   "images": {
-    "list": "/img/150704/list.jpg",
-    "list2x": "/img/150704/list.2x.jpg",
-    "preview": "/img/150704/preview.jpg",
-    "preview2x": "/img/150704/preview.2x.jpg",
+    "list": "list.jpg",
+    "list2x": "list.2x.jpg",
+    "preview": "preview.jpg",
+    "preview2x": "preview.2x.jpg",
     "gallery": [
-      "/img/150704/g2.jpg",
-      "/img/150704/g3.jpg",
-      "/img/150704/g5.jpg",
-      "/img/150704/g6.jpg",
-      "/img/150704/g12.jpg",
-      "/img/150704/g8.jpg",
-      "/img/150704/g9.jpg",
-      "/img/150704/g10.jpg"
+      "g2.jpg",
+      "g3.jpg",
+      "g5.jpg",
+      "g6.jpg",
+      "g12.jpg",
+      "g8.jpg",
+      "g9.jpg",
+      "g10.jpg"
     ]
   },
   "description": "",
@@ -34,9 +34,9 @@
     "hardwareColor": "Chrome",
     "tuners": "Gotoh 510",
     "bridge": "Gotoh",
-    "pickups": "Kinman",
+    "pickups": ["Kinman"],
     "electronics": "Volume/Tone",
-    "switching": "3 Way Switch",
+    "switching": ["3 Way Switch"],
     "color": "Purple",
     "finish": "Transparent High Gloss &mdash; Handpolished"
   }

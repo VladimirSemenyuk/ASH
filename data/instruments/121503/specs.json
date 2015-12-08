@@ -3,18 +3,18 @@
   "model": "sc",
   "type": "bass",
   "images": {
-    "list": "/img/121503/list.jpg",
-    "list2x": "/img/121503/list.2x.jpg",
+    "list": "list.jpg",
+    "list2x": "list.2x.jpg",
     "preview": "",
     "preview2x": "",
     "gallery": [
-      "/img/121503/g1.jpg",
-      "/img/121503/g2.jpg",
-      "/img/121503/g3.jpg",
-      "/img/121503/g4.jpg",
-      "/img/121503/g5.jpg",
-      "/img/121503/g6.jpg",
-      "/img/121503/g8.jpg"
+      "g1.jpg",
+      "g2.jpg",
+      "g3.jpg",
+      "g4.jpg",
+      "g5.jpg",
+      "g6.jpg",
+      "g8.jpg"
     ]
   },
   "description": "",
@@ -32,7 +32,7 @@
     "hardwareColor": "Black",
     "tuners": "Gotoh",
     "bridge": "Hipshot Single String Bass Bridge",
-    "pickups": "Bartolini M56",
+    "pickups": ["Bartolini M56"],
     "preamp": "Bartolini NTMB",
     "electronics": "",
     "knobs": "",

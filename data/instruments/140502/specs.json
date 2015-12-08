@@ -4,20 +4,20 @@
   "type": "guitar",
   "video": "YpdBSGvhpwU",
   "images": {
-    "list": "/img/140502/list.jpg",
-    "list2x": "/img/140502/list.2x.jpg",
-    "preview": "/img/140502/preview.jpg",
-    "preview2x": "/img/140502/preview.2x.jpg",
+    "list": "list.jpg",
+    "list2x": "list.2x.jpg",
+    "preview": "preview.jpg",
+    "preview2x": "preview.2x.jpg",
     "gallery": [
-      "/img/140502/g2.jpg",
-      "/img/140502/g3.jpg",
-      "/img/140502/g4.jpg",
-      "/img/140502/g5.jpg",
-      "/img/140502/g6.jpg",
-      "/img/140502/g7.jpg",
-      "/img/140502/g8.jpg",
-      "/img/140502/g9.jpg",
-      "/img/140502/g10.jpg"
+      "g2.jpg",
+      "g3.jpg",
+      "g4.jpg",
+      "g5.jpg",
+      "g6.jpg",
+      "g7.jpg",
+      "g8.jpg",
+      "g9.jpg",
+      "g10.jpg"
     ]
   },
   "description": "",
@@ -35,7 +35,7 @@
     "hardwareColor": "Gold",
     "tuners": "Gotoh 510",
     "bridge": "Schaller",
-    "pickups": "Lollar",
+    "pickups": ["Lollar"],
     "electronics": "Volume/Tone/Balance",
     "switching": [
       "N+B parallel both coils on.",

@@ -4,19 +4,19 @@
   "type": "bass",
   "video": "",
   "images": {
-    "list": "/img/131208/list.jpg",
-    "list2x": "/img/131208/list.2x.jpg",
-    "preview": "/img/131208/preview.jpg",
-    "preview2x": "/img/131208/preview.2x.jpg",
+    "list": "list.jpg",
+    "list2x": "list.2x.jpg",
+    "preview": "preview.jpg",
+    "preview2x": "preview.2x.jpg",
     "gallery": [
-      "/img/131208/g2.jpg",
-      "/img/131208/g3.jpg",
-      "/img/131208/g4.jpg",
-      "/img/131208/g5.jpg",
-      "/img/131208/g6.jpg",
-      "/img/131208/g7.jpg",
-      "/img/131208/g8.jpg",
-      "/img/131208/g9.jpg"
+      "g2.jpg",
+      "g3.jpg",
+      "g4.jpg",
+      "g5.jpg",
+      "g6.jpg",
+      "g7.jpg",
+      "g8.jpg",
+      "g9.jpg"
     ]
   },
   "description": "",
@@ -35,7 +35,7 @@
     "hardwareColor": "Chrome",
     "tuners": "Gotoh",
     "bridge": "Hipshot",
-    "pickups": "EMG",
+    "pickups": ["EMG"],
     "electronics": "",
     "color": "",
     "finish": "Frosted Transparent"

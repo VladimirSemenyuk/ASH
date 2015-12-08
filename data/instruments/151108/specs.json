@@ -5,19 +5,19 @@
   "type": "guitar",
   "video": "",
   "images": {
-    "list": "/img/151108/list.jpg",
-    "list2x": "/img/151108/list.2x.jpg",
-    "preview": "/img/151108/preview.jpg",
-    "preview2x": "/img/151108/preview.2x.jpg",
+    "list": "list.jpg",
+    "list2x": "list.2x.jpg",
+    "preview": "preview.jpg",
+    "preview2x": "preview.2x.jpg",
     "gallery": [
-      "/img/151108/g2.jpg",
-      "/img/151108/g3.jpg",
-      "/img/151108/g4.jpg",
-      "/img/151108/g5.jpg",
-      "/img/151108/g6.jpg",
-      "/img/151108/g7.jpg",
-      "/img/151108/g8.jpg",
-      "/img/151108/g9.jpg"
+      "g2.jpg",
+      "g3.jpg",
+      "g4.jpg",
+      "g5.jpg",
+      "g6.jpg",
+      "g7.jpg",
+      "g8.jpg",
+      "g9.jpg"
     ]
   },
   "description": "",
@@ -36,9 +36,9 @@
     "hardwareColor": "Gold",
     "tuners": "Gotoh 510",
     "bridge": "Schaller",
-    "pickups": "Lollar",
+    "pickups": ["Lollar"],
     "electronics": "Volume/Tone/Balance",
-    "switching": "Hamb/Coils",
+    "switching": ["Hamb/Coils"],
     "color": "",
     "finish": "Transparent High Gloss &mdash; Handpolished"
   }

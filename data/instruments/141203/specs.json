@@ -3,18 +3,18 @@
   "model": "sc",
   "type": "bass",
   "images": {
-    "list": "/img/141203/list.jpg",
-    "list2x": "/img/141203/list.2x.jpg",
-    "preview": "/img/141203/preview.jpg",
-    "preview2x": "/img/141203/preview.2x.jpg",
+    "list": "list.jpg",
+    "list2x": "list.2x.jpg",
+    "preview": "preview.jpg",
+    "preview2x": "preview.2x.jpg",
     "gallery": [
-      "/img/141203/g3.jpg",
-      "/img/141203/g4.jpg",
-      "/img/141203/g5.jpg",
-      "/img/141203/g6.jpg",
-      "/img/141203/g7.jpg",
-      "/img/141203/g8.jpg",
-      "/img/141203/g10.jpg"
+      "g3.jpg",
+      "g4.jpg",
+      "g5.jpg",
+      "g6.jpg",
+      "g7.jpg",
+      "g8.jpg",
+      "g10.jpg"
     ]
   },
   "description": "",
@@ -31,7 +31,7 @@
     "hardwareColor": "Black",
     "tuners": "Gotoh",
     "bridge": "Hipshot",
-    "pickups": "Nordstrand",
+    "pickups": ["Nordstrand"],
     "preamp": "Mike Pope",
     "electronics": "",
     "knobs": "",

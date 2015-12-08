@@ -4,20 +4,20 @@
   "type": "guitar",
   "video": "",
   "images": {
-    "list": "/img/150907/list.jpg",
-    "list2x": "/img/150907/list.2x.jpg",
-    "preview": "/img/150907/preview.jpg",
-    "preview2x": "/img/150907/preview.2x.jpg",
+    "list": "list.jpg",
+    "list2x": "list.2x.jpg",
+    "preview": "preview.jpg",
+    "preview2x": "preview.2x.jpg",
     "gallery": [
-      "/img/150907/g10.jpg",
-      "/img/150907/g9.jpg",
-      "/img/150907/g6.jpg",
-      "/img/150907/g2.jpg",
-      "/img/150907/g5.jpg",
-      "/img/150907/g7.jpg",
-      "/img/150907/g4.jpg",
-      "/img/150907/g8.jpg",
-      "/img/150907/g3.jpg"
+      "g10.jpg",
+      "g9.jpg",
+      "g6.jpg",
+      "g2.jpg",
+      "g5.jpg",
+      "g7.jpg",
+      "g4.jpg",
+      "g8.jpg",
+      "g3.jpg"
     ]
   },
   "description": "",

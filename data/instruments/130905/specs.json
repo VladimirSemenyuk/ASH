@@ -4,15 +4,15 @@
   "type": "guitar",
   "video": "__jLzW4cVng",
   "images": {
-    "list": "/img/130905/list.jpg",
-    "list2x": "/img/130905/list.2x.jpg",
-    "preview": "/img/130905/preview.jpg",
-    "preview2x": "/img/130905/preview.2x.jpg",
+    "list": "list.jpg",
+    "list2x": "list.2x.jpg",
+    "preview": "preview.jpg",
+    "preview2x": "preview.2x.jpg",
     "gallery": [
-      "/img/130905/g1.jpg",
-      "/img/130905/g2.jpg",
-      "/img/130905/g3.jpg",
-      "/img/130905/g4.jpg"
+      "g1.jpg",
+      "g2.jpg",
+      "g3.jpg",
+      "g4.jpg"
     ]
   },
   "description": "",
@@ -31,7 +31,7 @@
     "hardwareColor": "Gold",
     "tuners": "Gotoh 510",
     "bridge": "Schaller",
-    "pickups": "Gibson 490R/T",
+    "pickups": ["Gibson 490R/T"],
     "electronics": "Volume/Tone/Balance",
     "color": "Green",
     "finish": "Transparent High Gloss &mdash; Handpolished"

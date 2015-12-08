@@ -1,0 +1,14 @@
+mixin media(selector, src, srcRetina, id)
+    - src = '/img/' + id + '/' + src;
+    style.
+        !{selector} {
+            background: url(!{src}) no-repeat;
+        }
+    if (srcRetina)
+        style.
+            @media (-webkit-min-device-pixel-ratio: 2) {
+                !{selector} {
+                    background-image: url(!{srcRetina});
+                    background-size: contain;
+                }
+            }

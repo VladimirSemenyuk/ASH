@@ -4,19 +4,19 @@
   "submodel": "SH",
   "type": "bass",
   "images": {
-    "list": "/img/131107/list.jpg",
-    "list2x": "/img/131107/list.2x.jpg",
+    "list": "list.jpg",
+    "list2x": "list.2x.jpg",
     "preview": "",
     "preview2x": "",
     "gallery": [
-      "/img/131107/g1.jpg",
-      "/img/131107/g2.jpg",
-      "/img/131107/g3.jpg",
-      "/img/131107/g4.jpg",
-      "/img/131107/g5.jpg",
-      "/img/131107/g7.jpg",
-      "/img/131107/g8.jpg",
-      "/img/131107/g9.jpg"
+      "g1.jpg",
+      "g2.jpg",
+      "g3.jpg",
+      "g4.jpg",
+      "g5.jpg",
+      "g7.jpg",
+      "g8.jpg",
+      "g9.jpg"
     ]
   },
   "description": "",
@@ -34,7 +34,7 @@
     "hardwareColor": "Gold",
     "tuners": "Gotoh",
     "bridge": "Gotoh",
-    "pickups": "Seymour Duncan",
+    "pickups": ["Seymour Duncan"],
     "preamp": "Mike Pope",
     "electronics": "",
     "knobs": "",

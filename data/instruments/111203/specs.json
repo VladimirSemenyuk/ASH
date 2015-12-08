@@ -3,19 +3,19 @@
   "model": "sc",
   "type": "bass",
   "images": {
-    "list": "/img/111203/list.jpg",
-    "list2x": "/img/111203/list.2x.jpg",
+    "list": "list.jpg",
+    "list2x": "list.2x.jpg",
     "preview": "",
     "preview2x": "",
     "gallery": [
-      "/img/111203/g1.jpg",
-      "/img/111203/g2.jpg",
-      "/img/111203/g3.jpg",
-      "/img/111203/g4.jpg",
-      "/img/111203/g5.jpg",
-      "/img/111203/g6.jpg",
-      "/img/111203/g8.jpg",
-      "/img/111203/g9.jpg"
+      "g1.jpg",
+      "g2.jpg",
+      "g3.jpg",
+      "g4.jpg",
+      "g5.jpg",
+      "g6.jpg",
+      "g8.jpg",
+      "g9.jpg"
     ]
   },
   "description": "",
@@ -33,7 +33,7 @@
     "hardwareColor": "Black",
     "tuners": "Gotoh",
     "bridge": "Hipshot",
-    "pickups": "Seymour Duncan",
+    "pickups": ["Seymour Duncan"],
     "preamp": "Mike Pope",
     "electronics": "",
     "knobs": "",

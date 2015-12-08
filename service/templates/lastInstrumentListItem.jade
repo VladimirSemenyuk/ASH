@@ -1,18 +1,5 @@
 include ./i18n.jade
-
-mixin media(selector, src, srcRetina)
-    style.
-        !{selector} {
-            background: url(!{src}) no-repeat;
-        }
-    if (srcRetina)
-        style.
-            @media (-webkit-min-device-pixel-ratio: 2) {
-                !{selector} {
-                    background-image: url(!{srcRetina});
-                    background-size: contain;
-                }
-            }
+include ./media.jade
 
 - var type = (instrument.type === 'guitar') ? 'guitars' : 'basses';
 - var scaleLength = instrument.specs.scaleLength.replace('"', '').replace('.', '-').replace(/-\d\d/g, '');
@@ -20,7 +7,7 @@ mixin media(selector, src, srcRetina)
 
 
 li.model-list__item(data-href='/' + lang + instrument.href)
-    +media('#item-' + instrument.id, instrument.images.list, instrument.images.list2x)
+    +media('#item-' + instrument.id, instrument.images.list, instrument.images.list2x, instrument.id)
     div(id='item-'+instrument.id class='model-list__item__image model-list__item__image_' + scaleLength title=title)
     .model-list__item__model
         div= instrument.model.name

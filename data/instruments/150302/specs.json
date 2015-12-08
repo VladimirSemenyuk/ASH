@@ -4,21 +4,21 @@
   "type": "guitar",
   "video": "d48U572bdvE",
   "images": {
-    "list": "/img/150302/list.jpg",
-    "list2x": "/img/150302/list.2x.jpg",
-    "preview": "/img/150302/preview.jpg",
-    "preview2x": "/img/150302/preview.2x.jpg",
+    "list": "list.jpg",
+    "list2x": "list.2x.jpg",
+    "preview": "preview.jpg",
+    "preview2x": "preview.2x.jpg",
     "gallery": [
-      "/img/150302/g2.jpg",
-      "/img/150302/g3.jpg",
-      "/img/150302/g4.jpg",
-      "/img/150302/g6.jpg",
-      "/img/150302/g7.jpg",
-      "/img/150302/g11.jpg",
-      "/img/150302/g5.jpg",
-      "/img/150302/g8.jpg",
-      "/img/150302/g10.jpg",
-      "/img/150302/g9.jpg"
+      "g2.jpg",
+      "g3.jpg",
+      "g4.jpg",
+      "g6.jpg",
+      "g7.jpg",
+      "g11.jpg",
+      "g5.jpg",
+      "g8.jpg",
+      "g10.jpg",
+      "g9.jpg"
     ]
   },
   "description": "",
@@ -36,9 +36,9 @@
     "hardwareColor": "Gold",
     "tuners": "Gotoh 510",
     "bridge": "Schaller",
-    "pickups": "Gibson 490R/T",
+    "pickups": ["Gibson 490R/T"],
     "electronics": "Volume/Tone/Balance",
-    "switching": "Hamb/Coils",
+    "switching": ["Hamb/Coils"],
     "finish": "Transparent High Gloss &mdash; Handpolished"
   }
 }

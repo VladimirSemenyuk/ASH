@@ -1,4 +1,5 @@
 include ./i18n.jade
+include ./media.jade
 
 mixin spec(spec, specText)
     if (spec)
@@ -10,32 +11,20 @@ mixin spec(spec, specText)
                     +i18n(spec)
             else
                 td.spec__value
-                    ol.spec__value__list
-                        each s in spec
-                            li
-                                +i18n(s)
+                    if (spec.length == 1)
+                        td.spec__value
+                            +i18n(spec[0])
+                    else
+                        ol.spec__value__list
+                            each s in spec
+                                li
+                                    +i18n(s)
 
 mixin image(src)
+    - src = '/img/' + id + '/' + src;
     - var smallSrc = src.replace('/g', '/small/g');
     a.model__image-link(data-lightbox="model_image" href=src)
         .model__image(style="background-image: url("+smallSrc+")")
-
-mixin media(selector, src, srcRetina)
-    style.
-        !{selector} {
-            background-image: url(!{src});
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
-
-    if (srcRetina)
-        style.
-            @media (-webkit-min-device-pixel-ratio: 2) {
-                !{selector} {
-                    background-image: url(!{srcRetina});
-                    background-size: cover;
-                }
-            }
 
 - var modelText = model.name;
 - if (submodel) {modelText = modelText + ' (' + submodel + ')'}
@@ -48,7 +37,7 @@ mixin media(selector, src, srcRetina)
         - var scaleText = specs.scaleLength.replace('"', '').replace('.', '-');
 
         #preview(class="model__preview_hor model__preview_scale-" + scaleText)
-            +media('#preview', images.preview, images.preview2x)
+            +media('#preview', images.preview, images.preview2x, id)
 
     if (isAvailable)
         .model__available-text
@@ -102,7 +91,7 @@ mixin media(selector, src, srcRetina)
 
     if (images.previewBack || images.previewBack2x)
         .model__preview_hor#preview-back
-            +media('#preview-back', images.previewBack, images.previewBack2x)
+            +media('#preview-back', images.previewBack, images.previewBack2x, id)
 
     if (video)
         h3

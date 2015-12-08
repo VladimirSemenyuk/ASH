@@ -5,21 +5,21 @@
   "type": "bass",
   "video": "",
   "images": {
-    "list": "/img/140201/list.jpg",
-    "list2x": "/img/140201/list.2x.jpg",
+    "list": "list.jpg",
+    "list2x": "list.2x.jpg",
     "preview": "",
     "preview2x": "",
     "gallery": [
-      "/img/140201/g1.jpg",
-      "/img/140201/g2.jpg",
-      "/img/140201/g3.jpg",
-      "/img/140201/g4.jpg",
-      "/img/140201/g5.jpg",
-      "/img/140201/g6.jpg",
-      "/img/140201/g7.jpg",
-      "/img/140201/g8.jpg",
-      "/img/140201/g9.jpg",
-      "/img/140201/g10.jpg"
+      "g1.jpg",
+      "g2.jpg",
+      "g3.jpg",
+      "g4.jpg",
+      "g5.jpg",
+      "g6.jpg",
+      "g7.jpg",
+      "g8.jpg",
+      "g9.jpg",
+      "g10.jpg"
     ]
   },
   "description": "",
@@ -37,9 +37,8 @@
     "hardwareColor": "Black",
     "tuners": "Gotoh",
     "bridge": "Wilkinson",
-    "pickups": "EMG",
+    "pickups": ["EMG"],
     "electronics": "",
-    "switching": "",
     "finish": "Frosted Transparent"
   }
 }
