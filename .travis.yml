@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - '4.1'
+install:
+  - npm i
+script:
+  - npm test
+  - bash ./deploy.sh
+cache:
+  directories:
+    - node_modules
+env:
+  global:
+    - GH_REF: github.com/VladimirSemenyuk/ASH.git
+    - secure: kvbaX7GH0p/67FoxDWPJIJowf5AeSQtILwVT4PjR8jhP+sdSz/fAkRoKhxHzODXmdlykJlJWDEPptXhuk9BgcqhSXBvqGiN9p8zHRfxMasYlq1s0HlzjcQvmX7v8MVCtlAdbiYzqISbF3lV1cGRWUGXszsA9+sF0+qk0c0+kr7Fboi2xeyLDcIy8K8qtG+PGQmh04KcNtCTCS+V445vsMwGuWzEEAwJqlxkhkQwsNljqwgFgMxQYxkDTCR3KbYW9rlSp9e5hGOitgoHhKcuHCddc5E35N7NzehrV5DnpP3rIfOz5lBTEsfxsMn4d9xqfEg9tN+2/HYmWsFnC5qKYR8AMYX/BFbwVBd+8uhb2QHvf9c6DSRR+cFeQAGbySrkcEvVs2Kx4Hqp91ASLRsVYWHvvvM7JYc+wSTFTryNKHC4ePGw+fmKG7ubmZEbj+OzgDSOSOS2CEiS6Wlh/0CYPiEQ/+XiYjYKnMVpHNcvH5ij9bHZbphOjHI+cdIQHORcgfvS0eSyO/iErpd6QetM7L7lbekEaXS7HuGbICHizgPwtLTEH6xy1n9armZYcaElYSlEYsFSo6iF/i4HZP+eCsuNCHZqKPNE/WCcRDkr8sJY0WhRR5hEDTUmQGqDuOteIVX9ILz7Ldpb1mxBz3iuUumZp5mlFq4CV3hcOsYROKks=
