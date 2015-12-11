@@ -1,5 +1,6 @@
 mixin media(selector, src, srcRetina, id)
     - src = '/img/' + id + '/' + src;
+    - srcRetina = '/img/' + id + '/' + srcRetina;
     style.
         !{selector} {
             background: url(!{src}) no-repeat;
