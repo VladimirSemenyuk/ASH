@@ -91,7 +91,19 @@ $(function() {
                 },
                 dataType: "json"
             }).then(function() {
-                document.location.pathname = '/thanks.html';
+                var language = window.navigator.userLanguage || window.navigator.language;
+
+                try {
+                    language = language.split('-')[0].toLowerCase();
+                } catch (e) {
+
+                }
+
+                if (language !== 'ru') {
+                    language = 'en';
+                }
+
+                document.location.pathname = language + '/thanks.html';
             }).fail(function() {
                 $('#error-main').show();
                 //$submit.show();
