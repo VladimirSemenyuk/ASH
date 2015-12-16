@@ -97,7 +97,7 @@ mixin image(src)
         h3
             +i18n('Video')
         .model__video
-            iframe(width="800" height="450" src="https://www.youtube.com/embed/" + video frameborder="0" allowfullscreen)
+            iframe(width="800" height="450" src="https://www.youtube.com/embed/" + video + "?vq=hd720" frameborder="0" allowfullscreen)
 
     if (model.instruments.length > 1)
         h3
