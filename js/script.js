@@ -86,6 +86,7 @@ $(function() {
                 method: "POST",
                 data: {
                     _subject: 'New Order!',
+                    _replyto: $inputs.$formEmail.$el.val(),
                     name: $inputs.$formName.$el.val(),
                     message: $inputs.$formText.$el.val()
                 },
