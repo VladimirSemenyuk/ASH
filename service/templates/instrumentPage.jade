@@ -52,31 +52,7 @@ mixin image(src)
         h3
             +i18n('Specs')
 
-        table.model__specs
-            +spec(id, 'S/N')
-            +spec(modelText, 'Model')
-            +spec(specs.scaleLength, 'Scale length')
-            +spec(specs.fretsCount, 'Number of frets')
-            +spec(specs.stringsCount, 'Number of strings')
-            +spec(specs.fingerboardRadius, 'FB radius')
-            +spec(specs.bodyWood, 'Body wood')
-            +spec(specs.topWood, 'Top wood')
-            +spec(specs.neckWood, 'Neck wood')
-            +spec(specs.construction, 'Construction')
-            +spec(specs.fingerboardWood, 'Fretboard wood')
-            +spec(specs.dots, 'Dots')
-            +spec(specs.nut, 'Nut')
-            +spec(specs.hardwareColor, 'Hardware Color')
-            +spec(specs.tuners, 'Tuners')
-            +spec(specs.bridge, 'Bridge')
-            +spec(specs.pickups, 'Pickups')
-            +spec(specs.pickup, 'Pickup')
-            +spec(specs.preamp, 'Preamp')
-            +spec(specs.electronics, 'Electronics')
-            +spec(specs.knobs, 'Knobs')
-            +spec(specs.switching, 'Switching')
-            +spec(specs.color, 'Color')
-            +spec(specs.finish, 'Finish')
+        include ./specList.jade
 
     .right
         if (images.gallery && images.gallery.length)

@@ -1,7 +1,3 @@
-include ./i18n.jade
-include ./media.jade
-include ./spec.jade
-
 - var modelText = model.name;
 - if (submodel) {modelText = modelText + ' (' + submodel + ')'}
 
@@ -39,7 +35,7 @@ style.
     }
 
     .tree-main {
-        margin: 100px auto 25px;
+        margin: 100px auto 20px;
         display: block;
         width: 150px;
         height: 141px;
@@ -49,11 +45,11 @@ style.
         text-align: center;
         width: 225px;
         display: block;
-        margin: 0 auto 75px;
+        margin: 0 auto 70px;
     }
 
     .model__specs {
-        margin: 30px auto;
+        margin: 25px auto;
     }
 
     .spec__name {
@@ -82,7 +78,7 @@ style.
     }
 
     .qr {
-        margin: 60px auto;
+        margin: 55px auto;
         display: block;
         width: 200px;
         height: 200px;
@@ -103,6 +99,16 @@ style.
         margin-left: 400px;
     }
 
+    .link {
+        position: absolute;
+        top: 1510px;
+        left: 400px;
+        text-align: center;
+        width: 400px;
+        color: #777777;
+    }
+
+
 .model-page
     img.tree-main(src='./tree.png')
 
@@ -121,4 +127,8 @@ style.
         p.sign &nbsp;
         p.sign Andrey Shevchenko
         p.sign luthier
+
+
+    .link www.ash-instruments.com
+
 

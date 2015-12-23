@@ -19,6 +19,7 @@
 
     "Specs": "Спецификация",
     "S/N": "Серийный номер",
+    "Date of birth": "Дата рождения",
     "Model": "Модель",
     "Scale length": "Мензура",
     "Number of frets": "Число ладов",
@@ -135,6 +136,20 @@
     "Alder (Ash Tone Block)": "Ольха (Тон-блок ясень)",
     "Aspen Burl": "Осина",
     "Jacaranda": "Джакаранда",
-    "Quilted Maple": "Клён"
+    "Quilted Maple": "Клён",
+
+    "January": "Январь",
+    "February": "Февраль",
+    "March": "Март",
+    "April": "Апрель",
+    "May": "Май",
+    "June": "Июнь",
+    "July": "Июль",
+    "August": "Август",
+    "September": "Сентябрь",
+    "October": "Октябрь",
+    "November": "Ноябрь",
+    "December": "Декабрь"
+
   }
 }

@@ -1,3 +1,5 @@
+include ./i18n.jade
+
 mixin spec(spec, specText)
     if (spec)
         tr(class='spec spec_' + specText.toLowerCase().replace(/\s/g, '-'))

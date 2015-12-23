@@ -1,5 +1,14 @@
+- var monthText = (id+'')[2] + (id+'')[3];
+- var month = parseInt(monthText, 10) -1;
+- var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+- var year = '20' + (id+'')[0] + (id+'')[1];
+- var date = _ash.i18n(months[month], lang) + ' ' + year ;
+
+include ./spec.jade
+
 table.model__specs
     +spec(id, 'S/N')
+    +spec(date, 'Date of birth')
     +spec(modelText, 'Model')
     +spec(specs.scaleLength, 'Scale length')
     +spec(specs.fretsCount, 'Number of frets')
