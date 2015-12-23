@@ -28,6 +28,10 @@ Page.prototype = {
         return path.join('service/templates/' + this.templateName + '.jade');
     },
 
+    templatePrintPath: function() {
+        return path.join('service/templates/' + this.templateName + 'Print.jade');
+    },
+
     save: function() {
         if (_.where(ash.pages, {id: this.id}).length) {
             throw new Error('Страница уже существует');
@@ -56,6 +60,14 @@ Page.prototype = {
         }, this);
 
         return jade.renderFile(this.templatePath(), options);
+    },
+
+    templatePrint: function(lang) {
+        var options = _.extend({
+            lang: lang
+        }, this);
+
+        return jade.renderFile(this.templatePrintPath(), options);
     }
 };
 

@@ -140,8 +140,18 @@ module.exports = function(grunt) {
         }
     });
 
+    grunt.task.registerTask('pdf', function() {
+        var files = grunt.file.expand('output/print/en/**/*.html');
+
+        return proc.execSync('phantomjs service/rasterize.js ' + files.join(','));
+    });
+
     grunt.task.registerTask('compile', function() {
         return proc.execSync('node service/index.js compile');
+    });
+
+    grunt.task.registerTask('remove_print', function() {
+        fs.removeSync('output/print');
     });
 
     function testJson(json, schema, path) {

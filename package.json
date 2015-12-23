@@ -5,9 +5,10 @@
   "main": "service/generator.js",
   "scripts": {
     "prestart": "grunt test",
-    "start": "grunt compile copy_previews copy_images connect",
+    "start": "grunt compile copy_previews copy_images remove_print connect",
     "prebuild": "grunt test",
-    "build": "grunt compile image copy_previews image_resize"
+    "build": "grunt compile pdf image copy_previews image_resize",
+    "pdf": "grunt compile pdf"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
     "jsonschema": "^1.0.2",
     "jstransformer": "0.0.3",
     "jstransformer-markdown": "^1.1.0",
-    "lodash": "^3.10.1"
+    "lodash": "^3.10.1",
+    "qr-image": "^3.1.0"
   }
 }

@@ -1,0 +1,17 @@
+mixin spec(spec, specText)
+    if (spec)
+        tr(class='spec spec_' + specText.toLowerCase().replace(/\s/g, '-'))
+            td.spec__name
+                +i18n(specText) + ": "
+            if (typeof spec !== 'object')
+                td.spec__value
+                    +i18n(spec)
+            else
+                td.spec__value
+                    if (spec.length == 1)
+                        +i18n(spec[0])
+                    else
+                        ol.spec__value__list
+                            each s in spec
+                                li
+                                    +i18n(s)

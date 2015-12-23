@@ -1,6 +1,7 @@
 var fs = require('fs-extra'),
     jade = require('jade'),
-    _ = require('lodash');
+    _ = require('lodash'),
+    qr = require('qr-image');
 
 module.exports = {
     compile: function(lang) {
@@ -29,6 +30,32 @@ module.exports = {
         } catch(e) {
 
         }
+
+        try {
+            fs.mkdirSync('output/print');
+        } catch(e) {
+
+        }
+
+        try {
+            fs.mkdirSync('output/print/' + lang);
+        } catch(e) {
+
+        }
+
+        try {
+            fs.copySync('img/tree.png', 'output/print/' + lang + '/tree.png');
+        } catch(e) {
+
+        }
+
+        try {
+            fs.copySync('img/ash_instruments.png', 'output/print/' + lang + '/ash_instruments.png');
+        } catch(e) {
+
+        }
+
+
 
         for (var i = 0; i < ash.guitarModels.length; i++) {
             var model = ash.guitarModels[i];
@@ -108,6 +135,25 @@ module.exports = {
                 });
 
             fs.writeFileSync('output/' + lang + instrument.href, html);
+            fs.writeFileSync('output/print/' + lang + '/' + instrument.id + '.html', jade.renderFile('service/templates/print.jade', {
+                lang: lang,
+                langs: langs,
+                currentPage: instrument.name,
+                id: instrument.id,
+                pretty: true,
+                title: data.siteTitle + ' &mdash; ' + instrument.model.name + ' &mdash; ' + instrument.id ,
+                pages: ash.contentPages,
+                images: instrument.images,
+                content: instrument.templatePrint(lang),
+                href: instrument.href
+            }));
+
+            var qrPng = qr.image('http://www.ash-instruments.com/' + lang + instrument.href, {
+                type: 'png',
+                size: 12
+            });
+            qrPng.pipe(fs.createWriteStream('output/print/' + lang + '/' + instrument.id + '.png'));
+
 
             console.log('CREATE: output/' + lang + instrument.href);
         }
