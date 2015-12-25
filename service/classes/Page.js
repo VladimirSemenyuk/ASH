@@ -28,6 +28,14 @@ Page.prototype = {
         return path.join('service/templates/' + this.templateName + '.jade');
     },
 
+    templateA5Path: function() {
+        if (this.templateName.indexOf('.md') !== -1) {
+            return path.join('service/templates/' + this.templateName);
+        }
+
+        return path.join('service/templates/' + this.templateName + 'A5.jade');
+    },
+
     templatePrintPath: function() {
         return path.join('service/templates/' + this.templateName + 'Print.jade');
     },
@@ -68,6 +76,14 @@ Page.prototype = {
         }, this);
 
         return jade.renderFile(this.templatePrintPath(), options);
+    },
+
+    templateA5: function(lang) {
+        var options = _.extend({
+            lang: lang
+        }, this);
+
+        return jade.renderFile(this.templateA5Path(), options);
     }
 };
 

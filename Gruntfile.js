@@ -141,9 +141,13 @@ module.exports = function(grunt) {
     });
 
     grunt.task.registerTask('pdf', function() {
-        var files = grunt.file.expand('output/print/en/**/*.html');
+        var files = grunt.file.expand('output/print/en/**/a4_*.html');
 
-        return proc.execSync('phantomjs service/rasterize.js ' + files.join(','));
+        proc.execSync('phantomjs service/rasterize.js ' + files.join(','));
+
+        files = grunt.file.expand('output/print/en/**/a5_*.html');
+
+        proc.execSync('phantomjs service/rasterize_a5.js ' + files.join(','));
     });
 
     grunt.task.registerTask('compile', function() {

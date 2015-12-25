@@ -135,7 +135,7 @@ module.exports = {
                 });
 
             fs.writeFileSync('output/' + lang + instrument.href, html);
-            fs.writeFileSync('output/print/' + lang + '/' + instrument.id + '.html', jade.renderFile('service/templates/print.jade', {
+            fs.writeFileSync('output/print/' + lang + '/a4_' + instrument.id + '.html', jade.renderFile('service/templates/print.jade', {
                 lang: lang,
                 langs: langs,
                 currentPage: instrument.name,
@@ -145,6 +145,18 @@ module.exports = {
                 pages: ash.contentPages,
                 images: instrument.images,
                 content: instrument.templatePrint(lang),
+                href: instrument.href
+            }))
+            fs.writeFileSync('output/print/' + lang + '/a5_' + instrument.id + '.html', jade.renderFile('service/templates/print.jade', {
+                lang: lang,
+                langs: langs,
+                currentPage: instrument.name,
+                id: instrument.id,
+                pretty: true,
+                title: data.siteTitle + ' &mdash; ' + instrument.model.name + ' &mdash; ' + instrument.id ,
+                pages: ash.contentPages,
+                images: instrument.images,
+                content: instrument.templateA5(lang),
                 href: instrument.href
             }));
 
