@@ -44,7 +44,7 @@ module.exports = {
         }
 
         try {
-            fs.copySync('img/tree.png', 'output/print/' + lang + '/tree.png');
+            fs.copySync('img/tree-large.png', 'output/print/' + lang + '/tree-large.png');
         } catch(e) {
 
         }
