@@ -21,13 +21,6 @@
     "sampleInstrument": 150503
   },
   {
-    "id": "dc",
-    "name": "DC",
-    "type": "bass",
-    "description": "",
-    "sampleInstrument": 150806
-  },
-  {
     "id": "sc",
     "name": "SC",
     "type": "bass",
@@ -49,11 +42,24 @@
     "sampleInstrument": 131208
   },
   {
+    "id": "dc",
+    "name": "DC",
+    "type": "bass",
+    "description": "",
+    "sampleInstrument": 150806
+  },
+  {
+    "id": "violanta",
+    "name": "Violanta",
+    "type": "bass",
+    "description": "",
+    "sampleInstrument": 160101
+  },
+  {
     "id": "k1",
     "name": "K1",
     "type": "bass",
     "description": "",
     "sampleInstrument": 130703
   }
-
 ]

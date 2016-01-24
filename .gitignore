@@ -3,3 +3,5 @@ node_modules
 output
 print
 .DS_Store
+npm-debug.log
+

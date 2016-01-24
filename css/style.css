@@ -332,6 +332,9 @@ i {
 .model-list_max-scale-25-5 .model-list__item__image {
   height: 573px;
 }
+.model-list_max-scale-30 .model-list__item__image {
+  height: 621px;
+}
 .model-list_max-scale-33 .model-list__item__image {
   height: 641px;
 }

@@ -1,0 +1,45 @@
+{
+  "id": 160101,
+  "model": "violanta",
+  "submodel": "",
+  "type": "bass",
+  "video": "",
+  "images": {
+    "list": "list.jpg",
+    "list2x": "list.2x.jpg",
+    "preview": "preview.jpg",
+    "preview2x": "preview.2x.jpg",
+    "gallery": [
+      "g4.jpg",
+      "g2.jpg",
+      "g3.jpg",
+      "g5.jpg",
+      "g6.jpg",
+      "g7.jpg",
+      "g8.jpg",
+      "g11.jpg",
+      "g12.jpg"
+    ]
+  },
+  "description": "",
+  "specs": {
+    "scaleLength": "30\"",
+    "fretsCount": "20",
+    "stringsCount": "4",
+    "fingerboardRadius": "16\"",
+    "bodyWood": "Black Limba",
+    "topWood": "Maple 5A",
+    "neckWood": "3-ps. Hard Rock Maple",
+    "fingerboardWood": "Rosewood",
+    "construction": "Through",
+    "dots": "",
+    "nut": "Bone",
+    "hardwareColor": "Chrome",
+    "tuners": "Schaller",
+    "bridge": "Hipshot",
+    "pickups": ["EMG"],
+    "electronics": "Volume/Tone/Balance/3-way switch/Piezo",
+    "color": "",
+    "finish": "Frosted Transparent"
+  }
+}
