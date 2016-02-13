@@ -86,12 +86,25 @@ $(function() {
                 method: "POST",
                 data: {
                     _subject: 'New Order!',
+                    _replyto: $inputs.$formEmail.$el.val(),
                     name: $inputs.$formName.$el.val(),
                     message: $inputs.$formText.$el.val()
                 },
                 dataType: "json"
             }).then(function() {
-                document.location.pathname = '/thanks.html';
+                var language = window.navigator.userLanguage || window.navigator.language;
+
+                try {
+                    language = language.split('-')[0].toLowerCase();
+                } catch (e) {
+
+                }
+
+                if (language !== 'ru') {
+                    language = 'en';
+                }
+
+                document.location.pathname = language + '/thanks.html';
             }).fail(function() {
                 $('#error-main').show();
                 //$submit.show();
