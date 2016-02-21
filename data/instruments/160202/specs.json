@@ -1,0 +1,46 @@
+{
+  "id": 160202,
+  "model": "faberge",
+  "submodel": "",
+  "type": "guitar",
+  "video": "",
+  "images": {
+    "list": "list.jpg",
+    "list2x": "list.2x.jpg",
+    "preview": "preview.jpg",
+    "preview2x": "preview.2x.jpg",
+    "gallery": [
+      "g2.jpg",
+      "g3.jpg",
+      "g4.jpg",
+      "g5.jpg",
+      "g6.jpg",
+      "g7.jpg",
+      "g8.jpg",
+      "g9.jpg",
+      "g10.jpg"
+    ]
+  },
+  "description": "",
+  "specs": {
+    "scaleLength": "24.75\"",
+    "fretsCount": "22",
+    "stringsCount": "6",
+    "fingerboardRadius": "12\"",
+    "bodyWood": "Mahogany",
+    "topWood": "Buckeye Burl",
+    "neckWood": "Mahogany",
+    "fingerboardWood": "Black & White Ebony",
+    "construction": "Set",
+    "dots": "",
+    "nut": "Bone",
+    "hardwareColor": "Gold",
+    "tuners": "Schaller",
+    "bridge": "Schaller",
+    "pickups": ["Fokin"],
+    "electronics": "Volume/Killswitch",
+    "switching": ["3 Way Switch"],
+    "color": "",
+    "finish": "Transparent High Gloss &mdash; Handpolished"
+  }
+}
