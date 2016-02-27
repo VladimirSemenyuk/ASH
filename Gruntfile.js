@@ -115,7 +115,7 @@ module.exports = function(grunt) {
             try {
                 fs.copySync(folder + '/preview.jpg', dest + '/preview.jpg');
             } catch (e) {
-
+                
             }
 
             try {
