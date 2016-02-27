@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
@@ -22,6 +23,24 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,300&amp;subset=latin,cyrillic-ext">
     <link href="http://fonts.googleapis.com/css?family=Rochester" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/450.css" media="screen and (max-device-height: 450px)">
+    <link rel="stylesheet" href="/css/451-480.css" media="screen and (min-device-height: 451px) and (max-device-height: 480px)">
+    <link rel="stylesheet" href="/css/451-480-p.css" media="screen and (max-device-height: 480px) and (orientation: portrait)">
+    <link rel="stylesheet" href="/css/481-568.css" media="screen and (min-device-height : 481px) and (max-device-height : 568px)">
+    <link rel="stylesheet" href="/css/481-568-p.css" media="screen and (min-device-height: 481px) and (max-device-height: 568px) and (orientation: portrait)">
+    <link rel="stylesheet" href="/css/569-667.css" media="screen and (min-device-height: 569px) and (max-device-height: 667px)">
+    <link rel="stylesheet" href="/css/569-667-p.css" media="screen and (min-device-height: 569px) and (max-device-height: 667px) and (orientation: portrait)">
+    <link rel="stylesheet" href="/css/668-767.css" media="screen and (min-device-height: 668px) and (max-device-height: 767px)">
+    <link rel="stylesheet" href="/css/668-767-p.css" media="screen and (min-device-height: 668px) and (max-device-height: 767px) and (orientation: portrait)">
+    <!--link(rel="stylesheet" href="/css/768-1280.css" media="screen and (min-device-height: 768px) and (max-device-height: 1280px)")-->
+    <!--link(rel="stylesheet" href="/css/320x480-l.css" media="only screen and (max-device-width: 480px) and (orientation: landscape)")-->
+    <!--link(rel="stylesheet" href="/css/320x480-p.css" media="only screen and (max-device-width: 365px) and (orientation: portrait)")-->
+    <!--link(rel="stylesheet" href="/css/320x568-l.css" media="only screen and (min-device-width : 481px) and (max-device-width : 568px) and (orientation: landscape)")-->
+    <!--//link(rel="stylesheet" href="/css/320x568-p.css" media="only screen and (min-device-width : 366px) and (max-device-width : 568px) and (orientation: portrait)")-->
+    <!--link(rel="stylesheet" href="/css/375x667-l.css" media="only screen and (min-device-width: 569px) and (max-device-width: 667px) and (orientation : landscape)")-->
+    <!--link(rel="stylesheet" href="/css/375x667-p.css" media="only screen and (min-device-width: 366px) and (max-device-width: 375px) and (orientation: portrait)")-->
+    <!--link(rel="stylesheet" href="/css/414x736-l.css" media="only screen and (min-device-width: 668px) and (max-device-width: 736px) and (orientation : landscape)")-->
+    <!--link(rel="stylesheet" href="/css/414x736-p.css" media="only screen and (min-device-width: 376px) and (max-device-width: 414px) and (orientation : portrait)")-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css">
     <link href="/css/lightbox.css" rel="stylesheet" type="text/css">
@@ -89,13 +108,42 @@
         <li class="nav_item"><a href="/ru/about.html">O мастере</a></li>
       </ul>
       <div id="content"><div class="model-page"><h2>Punisher</h2><div class="model__description"></div><div id="preview" class="model__preview_hor model__preview_scale-25-5"><style>#preview {
-    background: url(/img/150503/preview.jpg) no-repeat;
-}</style><style>@media (-webkit-min-device-pixel-ratio: 2) {
+    background-image: url(/img/150503/preview.jpg);
+}
+
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: portrait) {
     #preview {
-        background-image: url(/img/150503/preview.2x.jpg);
-        background-size: contain;
+            background-image: url(/img/150503/list.jpg);
+            background-size: contain;
+        }
     }
-}</style></div><div class="model__available-text">Этот инструмент сейчас продается! 46 000 р.</div><div class="left"><h3>Спецификация</h3><table class="model__specs"><tr class="spec spec_s/n"><td class="spec__name">Серийный номер</td><td class="spec__value">150503</td></tr><tr class="spec spec_date-of-birth"><td class="spec__name">Дата рождения</td><td class="spec__value">Май 2015</td></tr><tr class="spec spec_model"><td class="spec__name">Модель</td><td class="spec__value">Punisher</td></tr><tr class="spec spec_scale-length"><td class="spec__name">Мензура</td><td class="spec__value">25.5"</td></tr><tr class="spec spec_number-of-frets"><td class="spec__name">Число ладов</td><td class="spec__value">24</td></tr><tr class="spec spec_number-of-strings"><td class="spec__name">Число струн</td><td class="spec__value">6</td></tr><tr class="spec spec_fb-radius"><td class="spec__name">Радиус накладки</td><td class="spec__value">12"</td></tr><tr class="spec spec_body-wood"><td class="spec__name">Материал корпуса</td><td class="spec__value">Ольха</td></tr><tr class="spec spec_top-wood"><td class="spec__name">Материал топа</td><td class="spec__value">Орех</td></tr><tr class="spec spec_neck-wood"><td class="spec__name">Материал грифа</td><td class="spec__value">Клён</td></tr><tr class="spec spec_construction"><td class="spec__name">Крепление грифа</td><td class="spec__value">На болтах</td></tr><tr class="spec spec_fretboard-wood"><td class="spec__name">Материал&nbsp;накладки</td><td class="spec__value">Чёрное дерево</td></tr><tr class="spec spec_nut"><td class="spec__name">Верхний порожек</td><td class="spec__value">Hipshot Zero Friction</td></tr><tr class="spec spec_hardware-color"><td class="spec__name">Цвет фурнитуры</td><td class="spec__value">Чёрный</td></tr><tr class="spec spec_tuners"><td class="spec__name">Колки</td><td class="spec__value">Gotoh</td></tr><tr class="spec spec_bridge"><td class="spec__name">Струнодержатель</td><td class="spec__value">Gotoh</td></tr><tr class="spec spec_pickup"><td class="spec__name">Звукосниматель</td><td class="spec__value">Seymour Duncan SH-8B Invader</td></tr><tr class="spec spec_electronics"><td class="spec__name">Электроника</td><td class="spec__value">Громкость</td></tr><tr class="spec spec_color"><td class="spec__name">Цвет</td><td class="spec__value">Коричневый</td></tr><tr class="spec spec_finish"><td class="spec__name">Отделка</td><td class="spec__value">Матовый лак</td></tr></table></div><div class="right"><div class="model__images_small"><a data-lightbox="model_image" href="/img/150503/g2.jpg" class="model__image-link"><div style="background-image: url(/img/150503/small/g2.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150503/g5.jpg" class="model__image-link"><div style="background-image: url(/img/150503/small/g5.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150503/g6.jpg" class="model__image-link"><div style="background-image: url(/img/150503/small/g6.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150503/g10.jpg" class="model__image-link"><div style="background-image: url(/img/150503/small/g10.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150503/g7.jpg" class="model__image-link"><div style="background-image: url(/img/150503/small/g7.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150503/g8.jpg" class="model__image-link"><div style="background-image: url(/img/150503/small/g8.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150503/g3.jpg" class="model__image-link"><div style="background-image: url(/img/150503/small/g3.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150503/g4.jpg" class="model__image-link"><div style="background-image: url(/img/150503/small/g4.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150503/g9.jpg" class="model__image-link"><div style="background-image: url(/img/150503/small/g9.jpg)" class="model__image"></div></a></div></div></div><script src="/js/lightbox.min.js"></script><script>lightbox.option({
+    
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: landscape) {
+    #preview {
+            background-image: url(/img/150503/preview.jpg);
+            background-size: contain;
+        }
+    }    
+</style><style>@media (-webkit-min-device-pixel-ratio: 2) {
+        #preview {
+            background-image: url(/img/150503/preview.2x.jpg);
+            background-size: contain;
+        }
+    }
+
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {          
+        #preview {
+            background-image: url(/img/150503/list.2x.jpg);
+            background-size: contain;
+        }
+    }
+
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    #preview {
+            background-image: url(/img/150503/preview.2x.jpg);
+            background-size: contain;
+        }
+    }  </style></div><div class="model__available-text">Этот инструмент сейчас продается! 46 000 р.</div><div class="left"><h3>Спецификация</h3><table class="model__specs"><tr class="spec spec_s/n"><td class="spec__name">Серийный номер</td><td class="spec__value">150503</td></tr><tr class="spec spec_date-of-birth"><td class="spec__name">Дата рождения</td><td class="spec__value">Май 2015</td></tr><tr class="spec spec_model"><td class="spec__name">Модель</td><td class="spec__value">Punisher</td></tr><tr class="spec spec_scale-length"><td class="spec__name">Мензура</td><td class="spec__value">25.5"</td></tr><tr class="spec spec_number-of-frets"><td class="spec__name">Число ладов</td><td class="spec__value">24</td></tr><tr class="spec spec_number-of-strings"><td class="spec__name">Число струн</td><td class="spec__value">6</td></tr><tr class="spec spec_fb-radius"><td class="spec__name">Радиус накладки</td><td class="spec__value">12"</td></tr><tr class="spec spec_body-wood"><td class="spec__name">Материал корпуса</td><td class="spec__value">Ольха</td></tr><tr class="spec spec_top-wood"><td class="spec__name">Материал топа</td><td class="spec__value">Орех</td></tr><tr class="spec spec_neck-wood"><td class="spec__name">Материал грифа</td><td class="spec__value">Клён</td></tr><tr class="spec spec_construction"><td class="spec__name">Крепление грифа</td><td class="spec__value">На болтах</td></tr><tr class="spec spec_fretboard-wood"><td class="spec__name">Материал&nbsp;накладки</td><td class="spec__value">Чёрное дерево</td></tr><tr class="spec spec_nut"><td class="spec__name">Верхний порожек</td><td class="spec__value">Hipshot Zero Friction</td></tr><tr class="spec spec_hardware-color"><td class="spec__name">Цвет фурнитуры</td><td class="spec__value">Чёрный</td></tr><tr class="spec spec_tuners"><td class="spec__name">Колки</td><td class="spec__value">Gotoh</td></tr><tr class="spec spec_bridge"><td class="spec__name">Струнодержатель</td><td class="spec__value">Gotoh</td></tr><tr class="spec spec_pickup"><td class="spec__name">Звукосниматель</td><td class="spec__value">Seymour Duncan SH-8B Invader</td></tr><tr class="spec spec_electronics"><td class="spec__name">Электроника</td><td class="spec__value">Громкость</td></tr><tr class="spec spec_color"><td class="spec__name">Цвет</td><td class="spec__value">Коричневый</td></tr><tr class="spec spec_finish"><td class="spec__name">Отделка</td><td class="spec__value">Матовый лак</td></tr></table></div><div class="right"><div class="model__images model__images_small"><a data-lightbox="model_image" href="/img/150503/g2.jpg" class="model__image-link"><div style="background-image: url(/img/150503/small/g2.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150503/g5.jpg" class="model__image-link"><div style="background-image: url(/img/150503/small/g5.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150503/g6.jpg" class="model__image-link"><div style="background-image: url(/img/150503/small/g6.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150503/g10.jpg" class="model__image-link"><div style="background-image: url(/img/150503/small/g10.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150503/g7.jpg" class="model__image-link"><div style="background-image: url(/img/150503/small/g7.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150503/g8.jpg" class="model__image-link"><div style="background-image: url(/img/150503/small/g8.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150503/g3.jpg" class="model__image-link"><div style="background-image: url(/img/150503/small/g3.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150503/g4.jpg" class="model__image-link"><div style="background-image: url(/img/150503/small/g4.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/150503/g9.jpg" class="model__image-link"><div style="background-image: url(/img/150503/small/g9.jpg)" class="model__image"></div></a></div></div></div><script src="/js/lightbox.min.js"></script><script>lightbox.option({
     'resizeDuration': 0,
     'fadeDuration': 0
 })</script></div>

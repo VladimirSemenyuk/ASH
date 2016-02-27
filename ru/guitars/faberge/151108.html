@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
@@ -22,6 +23,24 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,300&amp;subset=latin,cyrillic-ext">
     <link href="http://fonts.googleapis.com/css?family=Rochester" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/450.css" media="screen and (max-device-height: 450px)">
+    <link rel="stylesheet" href="/css/451-480.css" media="screen and (min-device-height: 451px) and (max-device-height: 480px)">
+    <link rel="stylesheet" href="/css/451-480-p.css" media="screen and (max-device-height: 480px) and (orientation: portrait)">
+    <link rel="stylesheet" href="/css/481-568.css" media="screen and (min-device-height : 481px) and (max-device-height : 568px)">
+    <link rel="stylesheet" href="/css/481-568-p.css" media="screen and (min-device-height: 481px) and (max-device-height: 568px) and (orientation: portrait)">
+    <link rel="stylesheet" href="/css/569-667.css" media="screen and (min-device-height: 569px) and (max-device-height: 667px)">
+    <link rel="stylesheet" href="/css/569-667-p.css" media="screen and (min-device-height: 569px) and (max-device-height: 667px) and (orientation: portrait)">
+    <link rel="stylesheet" href="/css/668-767.css" media="screen and (min-device-height: 668px) and (max-device-height: 767px)">
+    <link rel="stylesheet" href="/css/668-767-p.css" media="screen and (min-device-height: 668px) and (max-device-height: 767px) and (orientation: portrait)">
+    <!--link(rel="stylesheet" href="/css/768-1280.css" media="screen and (min-device-height: 768px) and (max-device-height: 1280px)")-->
+    <!--link(rel="stylesheet" href="/css/320x480-l.css" media="only screen and (max-device-width: 480px) and (orientation: landscape)")-->
+    <!--link(rel="stylesheet" href="/css/320x480-p.css" media="only screen and (max-device-width: 365px) and (orientation: portrait)")-->
+    <!--link(rel="stylesheet" href="/css/320x568-l.css" media="only screen and (min-device-width : 481px) and (max-device-width : 568px) and (orientation: landscape)")-->
+    <!--//link(rel="stylesheet" href="/css/320x568-p.css" media="only screen and (min-device-width : 366px) and (max-device-width : 568px) and (orientation: portrait)")-->
+    <!--link(rel="stylesheet" href="/css/375x667-l.css" media="only screen and (min-device-width: 569px) and (max-device-width: 667px) and (orientation : landscape)")-->
+    <!--link(rel="stylesheet" href="/css/375x667-p.css" media="only screen and (min-device-width: 366px) and (max-device-width: 375px) and (orientation: portrait)")-->
+    <!--link(rel="stylesheet" href="/css/414x736-l.css" media="only screen and (min-device-width: 668px) and (max-device-width: 736px) and (orientation : landscape)")-->
+    <!--link(rel="stylesheet" href="/css/414x736-p.css" media="only screen and (min-device-width: 376px) and (max-device-width: 414px) and (orientation : portrait)")-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css">
     <link href="/css/lightbox.css" rel="stylesheet" type="text/css">
@@ -85,48 +104,222 @@
         <li class="nav_item"><a href="/ru/about.html">O мастере</a></li>
       </ul>
       <div id="content"><div class="model-page"><h2>Faberge (Double Cut)</h2><div class="model__description"></div><div id="preview" class="model__preview_hor model__preview_scale-24-75"><style>#preview {
-    background: url(/img/151108/preview.jpg) no-repeat;
-}</style><style>@media (-webkit-min-device-pixel-ratio: 2) {
+    background-image: url(/img/151108/preview.jpg);
+}
+
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: portrait) {
     #preview {
-        background-image: url(/img/151108/preview.2x.jpg);
-        background-size: contain;
+            background-image: url(/img/151108/list.jpg);
+            background-size: contain;
+        }
     }
-}</style></div><div class="left"><h3>Спецификация</h3><table class="model__specs"><tr class="spec spec_s/n"><td class="spec__name">Серийный номер</td><td class="spec__value">151108</td></tr><tr class="spec spec_date-of-birth"><td class="spec__name">Дата рождения</td><td class="spec__value">Ноябрь 2015</td></tr><tr class="spec spec_model"><td class="spec__name">Модель</td><td class="spec__value">Faberge (Double Cut)</td></tr><tr class="spec spec_scale-length"><td class="spec__name">Мензура</td><td class="spec__value">24.75"</td></tr><tr class="spec spec_number-of-frets"><td class="spec__name">Число ладов</td><td class="spec__value">22</td></tr><tr class="spec spec_number-of-strings"><td class="spec__name">Число струн</td><td class="spec__value">6</td></tr><tr class="spec spec_fb-radius"><td class="spec__name">Радиус накладки</td><td class="spec__value">12"</td></tr><tr class="spec spec_body-wood"><td class="spec__name">Материал корпуса</td><td class="spec__value">Ольха</td></tr><tr class="spec spec_top-wood"><td class="spec__name">Материал топа</td><td class="spec__value">Каштан</td></tr><tr class="spec spec_neck-wood"><td class="spec__name">Материал грифа</td><td class="spec__value">Клён</td></tr><tr class="spec spec_construction"><td class="spec__name">Крепление грифа</td><td class="spec__value">Вклеен</td></tr><tr class="spec spec_fretboard-wood"><td class="spec__name">Материал&nbsp;накладки</td><td class="spec__value">Палисандр</td></tr><tr class="spec spec_nut"><td class="spec__name">Верхний порожек</td><td class="spec__value">Кость</td></tr><tr class="spec spec_hardware-color"><td class="spec__name">Цвет фурнитуры</td><td class="spec__value">Золото</td></tr><tr class="spec spec_tuners"><td class="spec__name">Колки</td><td class="spec__value">Gotoh 510</td></tr><tr class="spec spec_bridge"><td class="spec__name">Струнодержатель</td><td class="spec__value">Schaller</td></tr><tr class="spec spec_pickups"><td class="spec__name">Звукосниматели</td><td class="spec__value">Lollar</td></tr><tr class="spec spec_electronics"><td class="spec__name">Электроника</td><td class="spec__value">Громкость/Тон/Баланс</td></tr><tr class="spec spec_switching"><td class="spec__name">Переключатели</td><td class="spec__value">Хамбакеры/Синглы</td></tr><tr class="spec spec_finish"><td class="spec__name">Отделка</td><td class="spec__value">Глянцевый лак</td></tr></table></div><div class="right"><div class="model__images_small"><a data-lightbox="model_image" href="/img/151108/g2.jpg" class="model__image-link"><div style="background-image: url(/img/151108/small/g2.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/151108/g3.jpg" class="model__image-link"><div style="background-image: url(/img/151108/small/g3.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/151108/g4.jpg" class="model__image-link"><div style="background-image: url(/img/151108/small/g4.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/151108/g5.jpg" class="model__image-link"><div style="background-image: url(/img/151108/small/g5.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/151108/g6.jpg" class="model__image-link"><div style="background-image: url(/img/151108/small/g6.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/151108/g7.jpg" class="model__image-link"><div style="background-image: url(/img/151108/small/g7.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/151108/g8.jpg" class="model__image-link"><div style="background-image: url(/img/151108/small/g8.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/151108/g9.jpg" class="model__image-link"><div style="background-image: url(/img/151108/small/g9.jpg)" class="model__image"></div></a></div></div><h3>Инструменты этой же модели</h3><ul class="model-list model-list_max-scale-24-75"><li data-href="/ru/guitars/faberge/160202.html" class="model-list__item"><style>#item-160202 {
-    background: url(/img/160202/list.jpg) no-repeat;
-}</style><style>@media (-webkit-min-device-pixel-ratio: 2) {
+    
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: landscape) {
+    #preview {
+            background-image: url(/img/151108/preview.jpg);
+            background-size: contain;
+        }
+    }    
+</style><style>@media (-webkit-min-device-pixel-ratio: 2) {
+        #preview {
+            background-image: url(/img/151108/preview.2x.jpg);
+            background-size: contain;
+        }
+    }
+
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {          
+        #preview {
+            background-image: url(/img/151108/list.2x.jpg);
+            background-size: contain;
+        }
+    }
+
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    #preview {
+            background-image: url(/img/151108/preview.2x.jpg);
+            background-size: contain;
+        }
+    }  </style></div><div class="left"><h3>Спецификация</h3><table class="model__specs"><tr class="spec spec_s/n"><td class="spec__name">Серийный номер</td><td class="spec__value">151108</td></tr><tr class="spec spec_date-of-birth"><td class="spec__name">Дата рождения</td><td class="spec__value">Ноябрь 2015</td></tr><tr class="spec spec_model"><td class="spec__name">Модель</td><td class="spec__value">Faberge (Double Cut)</td></tr><tr class="spec spec_scale-length"><td class="spec__name">Мензура</td><td class="spec__value">24.75"</td></tr><tr class="spec spec_number-of-frets"><td class="spec__name">Число ладов</td><td class="spec__value">22</td></tr><tr class="spec spec_number-of-strings"><td class="spec__name">Число струн</td><td class="spec__value">6</td></tr><tr class="spec spec_fb-radius"><td class="spec__name">Радиус накладки</td><td class="spec__value">12"</td></tr><tr class="spec spec_body-wood"><td class="spec__name">Материал корпуса</td><td class="spec__value">Ольха</td></tr><tr class="spec spec_top-wood"><td class="spec__name">Материал топа</td><td class="spec__value">Каштан</td></tr><tr class="spec spec_neck-wood"><td class="spec__name">Материал грифа</td><td class="spec__value">Клён</td></tr><tr class="spec spec_construction"><td class="spec__name">Крепление грифа</td><td class="spec__value">Вклеен</td></tr><tr class="spec spec_fretboard-wood"><td class="spec__name">Материал&nbsp;накладки</td><td class="spec__value">Палисандр</td></tr><tr class="spec spec_nut"><td class="spec__name">Верхний порожек</td><td class="spec__value">Кость</td></tr><tr class="spec spec_hardware-color"><td class="spec__name">Цвет фурнитуры</td><td class="spec__value">Золото</td></tr><tr class="spec spec_tuners"><td class="spec__name">Колки</td><td class="spec__value">Gotoh 510</td></tr><tr class="spec spec_bridge"><td class="spec__name">Струнодержатель</td><td class="spec__value">Schaller</td></tr><tr class="spec spec_pickups"><td class="spec__name">Звукосниматели</td><td class="spec__value">Lollar</td></tr><tr class="spec spec_electronics"><td class="spec__name">Электроника</td><td class="spec__value">Громкость/Тон/Баланс</td></tr><tr class="spec spec_switching"><td class="spec__name">Переключатели</td><td class="spec__value">Хамбакеры/Синглы</td></tr><tr class="spec spec_finish"><td class="spec__name">Отделка</td><td class="spec__value">Глянцевый лак</td></tr></table></div><div class="right"><div class="model__images model__images_small"><a data-lightbox="model_image" href="/img/151108/g2.jpg" class="model__image-link"><div style="background-image: url(/img/151108/small/g2.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/151108/g3.jpg" class="model__image-link"><div style="background-image: url(/img/151108/small/g3.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/151108/g4.jpg" class="model__image-link"><div style="background-image: url(/img/151108/small/g4.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/151108/g5.jpg" class="model__image-link"><div style="background-image: url(/img/151108/small/g5.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/151108/g6.jpg" class="model__image-link"><div style="background-image: url(/img/151108/small/g6.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/151108/g7.jpg" class="model__image-link"><div style="background-image: url(/img/151108/small/g7.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/151108/g8.jpg" class="model__image-link"><div style="background-image: url(/img/151108/small/g8.jpg)" class="model__image"></div></a><a data-lightbox="model_image" href="/img/151108/g9.jpg" class="model__image-link"><div style="background-image: url(/img/151108/small/g9.jpg)" class="model__image"></div></a></div></div><div class="more-instruments-link"><a href="/ru/guitars/faberge.html">Инструменты этой же модели</a></div><div class="more-instruments"><h3>Инструменты этой же модели</h3><ul class="model-list model-list_max-scale-24-75"><li data-href="/ru/guitars/faberge/160202.html" class="model-list__item"><style>#item-160202 {
+    background-image: url(/img/160202/list.jpg);
+}
+
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: portrait) {
     #item-160202 {
-        background-image: url(/img/160202/list.2x.jpg);
-        background-size: contain;
+            background-image: url(/img/160202/list.jpg);
+            background-size: contain;
+        }
     }
-}</style><div id="item-160202" title="Faberge - 160202" class="model-list__item__image model-list__item__image_24"></div></li><li data-href="/ru/guitars/faberge/150704.html" class="model-list__item"><style>#item-150704 {
-    background: url(/img/150704/list.jpg) no-repeat;
-}</style><style>@media (-webkit-min-device-pixel-ratio: 2) {
+    
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: landscape) {
+    #item-160202 {
+            background-image: url(/img/160202/preview.jpg);
+            background-size: contain;
+        }
+    }    
+</style><style>@media (-webkit-min-device-pixel-ratio: 2) {
+        #item-160202 {
+            background-image: url(/img/160202/list.2x.jpg);
+            background-size: contain;
+        }
+    }
+
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {          
+        #item-160202 {
+            background-image: url(/img/160202/list.2x.jpg);
+            background-size: contain;
+        }
+    }
+
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    #item-160202 {
+            background-image: url(/img/160202/preview.2x.jpg);
+            background-size: contain;
+        }
+    }  </style><div id="item-160202" title="Faberge - 160202" class="model-list__item__image model-list__item__image_24"></div></li><li data-href="/ru/guitars/faberge/150704.html" class="model-list__item"><style>#item-150704 {
+    background-image: url(/img/150704/list.jpg);
+}
+
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: portrait) {
     #item-150704 {
-        background-image: url(/img/150704/list.2x.jpg);
-        background-size: contain;
+            background-image: url(/img/150704/list.jpg);
+            background-size: contain;
+        }
     }
-}</style><div id="item-150704" title="Faberge - 150704" class="model-list__item__image model-list__item__image_24"></div></li><li data-href="/ru/guitars/faberge/150302.html" class="model-list__item"><style>#item-150302 {
-    background: url(/img/150302/list.jpg) no-repeat;
-}</style><style>@media (-webkit-min-device-pixel-ratio: 2) {
+    
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: landscape) {
+    #item-150704 {
+            background-image: url(/img/150704/preview.jpg);
+            background-size: contain;
+        }
+    }    
+</style><style>@media (-webkit-min-device-pixel-ratio: 2) {
+        #item-150704 {
+            background-image: url(/img/150704/list.2x.jpg);
+            background-size: contain;
+        }
+    }
+
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {          
+        #item-150704 {
+            background-image: url(/img/150704/list.2x.jpg);
+            background-size: contain;
+        }
+    }
+
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    #item-150704 {
+            background-image: url(/img/150704/preview.2x.jpg);
+            background-size: contain;
+        }
+    }  </style><div id="item-150704" title="Faberge - 150704" class="model-list__item__image model-list__item__image_24"></div></li><li data-href="/ru/guitars/faberge/150302.html" class="model-list__item"><style>#item-150302 {
+    background-image: url(/img/150302/list.jpg);
+}
+
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: portrait) {
     #item-150302 {
-        background-image: url(/img/150302/list.2x.jpg);
-        background-size: contain;
+            background-image: url(/img/150302/list.jpg);
+            background-size: contain;
+        }
     }
-}</style><div id="item-150302" title="Faberge - 150302" class="model-list__item__image model-list__item__image_24"></div></li><li data-href="/ru/guitars/faberge/140502.html" class="model-list__item"><style>#item-140502 {
-    background: url(/img/140502/list.jpg) no-repeat;
-}</style><style>@media (-webkit-min-device-pixel-ratio: 2) {
+    
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: landscape) {
+    #item-150302 {
+            background-image: url(/img/150302/preview.jpg);
+            background-size: contain;
+        }
+    }    
+</style><style>@media (-webkit-min-device-pixel-ratio: 2) {
+        #item-150302 {
+            background-image: url(/img/150302/list.2x.jpg);
+            background-size: contain;
+        }
+    }
+
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {          
+        #item-150302 {
+            background-image: url(/img/150302/list.2x.jpg);
+            background-size: contain;
+        }
+    }
+
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    #item-150302 {
+            background-image: url(/img/150302/preview.2x.jpg);
+            background-size: contain;
+        }
+    }  </style><div id="item-150302" title="Faberge - 150302" class="model-list__item__image model-list__item__image_24"></div></li><li data-href="/ru/guitars/faberge/140502.html" class="model-list__item"><style>#item-140502 {
+    background-image: url(/img/140502/list.jpg);
+}
+
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: portrait) {
     #item-140502 {
-        background-image: url(/img/140502/list.2x.jpg);
-        background-size: contain;
+            background-image: url(/img/140502/list.jpg);
+            background-size: contain;
+        }
     }
-}</style><div id="item-140502" title="Faberge - 140502" class="model-list__item__image model-list__item__image_24"></div></li><li data-href="/ru/guitars/faberge/130905.html" class="model-list__item"><style>#item-130905 {
-    background: url(/img/130905/list.jpg) no-repeat;
-}</style><style>@media (-webkit-min-device-pixel-ratio: 2) {
+    
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: landscape) {
+    #item-140502 {
+            background-image: url(/img/140502/preview.jpg);
+            background-size: contain;
+        }
+    }    
+</style><style>@media (-webkit-min-device-pixel-ratio: 2) {
+        #item-140502 {
+            background-image: url(/img/140502/list.2x.jpg);
+            background-size: contain;
+        }
+    }
+
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {          
+        #item-140502 {
+            background-image: url(/img/140502/list.2x.jpg);
+            background-size: contain;
+        }
+    }
+
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    #item-140502 {
+            background-image: url(/img/140502/preview.2x.jpg);
+            background-size: contain;
+        }
+    }  </style><div id="item-140502" title="Faberge - 140502" class="model-list__item__image model-list__item__image_24"></div></li><li data-href="/ru/guitars/faberge/130905.html" class="model-list__item"><style>#item-130905 {
+    background-image: url(/img/130905/list.jpg);
+}
+
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: portrait) {
     #item-130905 {
-        background-image: url(/img/130905/list.2x.jpg);
-        background-size: contain;
+            background-image: url(/img/130905/list.jpg);
+            background-size: contain;
+        }
     }
-}</style><div id="item-130905" title="Faberge - 130905" class="model-list__item__image model-list__item__image_24"></div></li></ul></div><script src="/js/lightbox.min.js"></script><script>lightbox.option({
+    
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: landscape) {
+    #item-130905 {
+            background-image: url(/img/130905/preview.jpg);
+            background-size: contain;
+        }
+    }    
+</style><style>@media (-webkit-min-device-pixel-ratio: 2) {
+        #item-130905 {
+            background-image: url(/img/130905/list.2x.jpg);
+            background-size: contain;
+        }
+    }
+
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {          
+        #item-130905 {
+            background-image: url(/img/130905/list.2x.jpg);
+            background-size: contain;
+        }
+    }
+
+@media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    #item-130905 {
+            background-image: url(/img/130905/preview.2x.jpg);
+            background-size: contain;
+        }
+    }  </style><div id="item-130905" title="Faberge - 130905" class="model-list__item__image model-list__item__image_24"></div></li></ul></div></div><script src="/js/lightbox.min.js"></script><script>lightbox.option({
     'resizeDuration': 0,
     'fadeDuration': 0
 })</script></div>
