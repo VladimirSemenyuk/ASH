@@ -1,22 +1,10 @@
 include ./i18n.jade
-
-mixin media(selector, src, srcRetina)
-    style.
-        !{selector} {
-            background: url(!{src}) no-repeat;
-        }
-    if (srcRetina)
-        style.
-            @media (-webkit-min-device-pixel-ratio: 2) {
-                !{selector} {
-                    background-image: url(!{srcRetina});
-                    background-size: contain;
-                }
-            }
+include ./media.jade
 
 doctype html
 html(lang=lang)
     head
+        meta(name="viewport" content="width=device-width, initial-scale=1")
         link(rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png")
         link(rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png")
         link(rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png")
@@ -38,6 +26,26 @@ html(lang=lang)
         link(rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300&subset=latin,cyrillic-ext')
         link(href='http://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css')
         link(rel="stylesheet" href="/css/style.css")
+        
+        link(rel="stylesheet" href="/css/450.css" media="screen and (max-device-height: 450px)")
+        link(rel="stylesheet" href="/css/451-480.css" media="screen and (min-device-height: 451px) and (max-device-height: 480px)")
+        link(rel="stylesheet" href="/css/451-480-p.css" media="screen and (max-device-height: 480px) and (orientation: portrait)")
+        link(rel="stylesheet" href="/css/481-568.css" media="screen and (min-device-height : 481px) and (max-device-height : 568px)")
+        link(rel="stylesheet" href="/css/481-568-p.css" media="screen and (min-device-height: 481px) and (max-device-height: 568px) and (orientation: portrait)")
+        link(rel="stylesheet" href="/css/569-667.css" media="screen and (min-device-height: 569px) and (max-device-height: 667px)")
+        link(rel="stylesheet" href="/css/569-667-p.css" media="screen and (min-device-height: 569px) and (max-device-height: 667px) and (orientation: portrait)")
+        link(rel="stylesheet" href="/css/668-767.css" media="screen and (min-device-height: 668px) and (max-device-height: 767px)")
+        link(rel="stylesheet" href="/css/668-767-p.css" media="screen and (min-device-height: 668px) and (max-device-height: 767px) and (orientation: portrait)")
+        link(rel="stylesheet" href="/css/768-1280.css" media="screen and (min-device-height: 768px) and (max-device-height: 1280px)")
+        
+        //link(rel="stylesheet" href="/css/320x480-l.css" media="only screen and (max-device-width: 480px) and (orientation: landscape)")
+        //link(rel="stylesheet" href="/css/320x480-p.css" media="only screen and (max-device-width: 365px) and (orientation: portrait)")
+        //link(rel="stylesheet" href="/css/320x568-l.css" media="only screen and (min-device-width : 481px) and (max-device-width : 568px) and (orientation: landscape)")
+        ////link(rel="stylesheet" href="/css/320x568-p.css" media="only screen and (min-device-width : 366px) and (max-device-width : 568px) and (orientation: portrait)")
+        //link(rel="stylesheet" href="/css/375x667-l.css" media="only screen and (min-device-width: 569px) and (max-device-width: 667px) and (orientation : landscape)")
+        //link(rel="stylesheet" href="/css/375x667-p.css" media="only screen and (min-device-width: 366px) and (max-device-width: 375px) and (orientation: portrait)")
+        //link(rel="stylesheet" href="/css/414x736-l.css" media="only screen and (min-device-width: 668px) and (max-device-width: 736px) and (orientation : landscape)")
+        //link(rel="stylesheet" href="/css/414x736-p.css" media="only screen and (min-device-width: 376px) and (max-device-width: 414px) and (orientation : portrait)")
         link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
         link(rel="stylesheet" href="/css/jquery.mCustomScrollbar.min.css")
 
@@ -45,6 +53,7 @@ html(lang=lang)
         script(type='text/javascript' src='//code.jquery.com/jquery-1.11.3.min.js')
         script(src='/js/script.js')
         script(src='/js/jquery.mCustomScrollbar.concat.min.js')
+           
 
         script.
             window.prefetched = [];

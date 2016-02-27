@@ -57,7 +57,7 @@ mixin image(src)
     .right
         if (images.gallery && images.gallery.length)
             if (images.gallery.length > 6)
-                .model__images_small
+                .model__images.model__images_small
                     each src in images.gallery
                         +image(src)
             else
@@ -76,29 +76,36 @@ mixin image(src)
             iframe(width="800" height="450" src="https://www.youtube.com/embed/" + video + "?vq=hd720" frameborder="0" allowfullscreen)
 
     if (model.instruments.length > 1)
-        h3
-            +i18n('More Instruments')
+        .more-instruments-link
+            a(href= '/' + lang + model.href)
+                +i18n('More Instruments')
+    
+        .more-instruments
+            h3
+                +i18n('More Instruments') 
 
-        -   var maxScale = 24.75, specScale;
-        -   for (var i = 0; i < model.instruments.length; i++) {
-        -       specScale = parseFloat(model.instruments[i].specs.scaleLength.replace('"', '').replace(/-\d\d/g, ''));
-        -       if (maxScale < specScale) {
-        -           maxScale = specScale;
-        -       }
-        -   }
-        -   var maxScaleText = (maxScale + '').replace('.', '-');
+            -   var maxScale = 24.75, specScale;
+            -   for (var i = 0; i < model.instruments.length; i++) {
+            -       specScale = parseFloat(model.instruments[i].specs.scaleLength.replace('"', '').replace(/-\d\d/g, ''));
+            -       if (maxScale < specScale) {
+            -           maxScale = specScale;
+            -       }
+            -   }
+            -   var maxScaleText = (maxScale + '').replace('.', '-');
 
-        if (model.instruments.length > 6)
-            .model-scroller
-                ul(class="model-list model-list_lined model-list_max-scale-" + maxScaleText style="width:" + model.instruments.length * 220 + "px;")
+            if (model.instruments.length > 6)
+                .model-scroller
+                    ul(class="model-list model-list_lined model-list_max-scale-" + maxScaleText style="width:" + model.instruments.length * 220 + "px;")
+                        each instrument in model.instruments
+                            if (instrument.id !== id)
+                                include ./instrumentListItem.jade
+            else
+                ul(class="model-list model-list_max-scale-" + maxScaleText)
                     each instrument in model.instruments
                         if (instrument.id !== id)
                             include ./instrumentListItem.jade
-        else
-            ul(class="model-list model-list_max-scale-" + maxScaleText)
-                each instrument in model.instruments
-                    if (instrument.id !== id)
-                        include ./instrumentListItem.jade
+                            
+            
 
 script(src="/js/lightbox.min.js")
 script.

@@ -1,15 +1,51 @@
 mixin media(selector, src, srcRetina, id)
     - src = '/img/' + id + '/' + src;
     - srcRetina = '/img/' + id + '/' + srcRetina;
+    - var list = src.replace('preview', 'list');
+    - var preview = src.replace('list', 'preview');
+    - var listRetina = srcRetina.replace('preview', 'list');
+    - var previewRetina = srcRetina.replace('list', 'preview');
+    
     style.
         !{selector} {
-            background: url(!{src}) no-repeat;
+            background-image: url(!{src});
         }
-    if (srcRetina)
-        style.
-            @media (-webkit-min-device-pixel-ratio: 2) {
-                !{selector} {
-                    background-image: url(!{srcRetina});
+        
+        @media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: portrait) {
+            !{selector} {
+                    background-image: url(!{list});
                     background-size: contain;
                 }
             }
+            
+        @media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: landscape) {
+            !{selector} {
+                    background-image: url(!{preview});
+                    background-size: contain;
+                }
+            }    
+  
+    if (srcRetina)
+        style.
+            @media (-webkit-min-device-pixel-ratio: 2) {
+                    !{selector} {
+                        background-image: url(!{srcRetina});
+                        background-size: contain;
+                    }
+                }
+            
+            @media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {          
+                    !{selector} {
+                        background-image: url(!{listRetina});
+                        background-size: contain;
+                    }
+                }
+            
+            @media only screen and (min-device-height: 451px) and (max-device-height: 765px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+                !{selector} {
+                        background-image: url(!{previewRetina});
+                        background-size: contain;
+                    }
+                }  
+
+           

@@ -4,10 +4,11 @@
   "description": "ASH Instruments Site Generator",
   "main": "service/generator.js",
   "scripts": {
+    "styl": "find ./css -type f -name \"*.styl\" | xargs stylus",
     "prestart": "grunt test",
-    "start": "grunt compile copy_previews copy_images remove_print connect",
+    "start": "npm run styl && grunt compile copy_previews copy_images remove_print && cp -R css output && grunt connect",
     "prebuild": "grunt test",
-    "build": "grunt compile pdf image copy_previews image_resize",
+    "build": "npm run styl && grunt compile pdf image copy_previews image_resize && cp -R css output",
     "pdf": "grunt compile pdf"
   },
   "repository": {
