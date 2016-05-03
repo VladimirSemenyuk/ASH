@@ -1,0 +1,43 @@
+{
+  "id": 160403,
+  "model": "tb",
+  "type": "bass",
+  "video": "",
+  "images": {
+    "list": "list.jpg",
+    "list2x": "list.2x.jpg",
+    "preview": "preview.jpg",
+    "preview2x": "preview.2x.jpg",
+    "gallery": [
+      "g2.jpg",
+      "g3.jpg",
+      "g4.jpg",
+      "g5.jpg",
+      "g6.jpg",
+      "g7.jpg",
+      "g8.jpg",
+      "g8.jpg"
+    ]
+  },
+  "description": "",
+  "specs": {
+    "scaleLength": "34\"",
+    "fretsCount": "24 (Fretless)",
+    "stringsCount": "5",
+    "fingerboardRadius": "20\"",
+    "bodyWood": "Mahogany  (Alder Tone Block)",
+    "topWood": "Maple",
+    "neckWood": "3-ps. Hard Rock Maple",
+    "construction": "Through",
+    "fingerboardWood": "Ebony",
+    "nut": "Ebony",
+    "hardwareColor": "Black",
+    "tuners": "",
+    "bridge": "Hipshot",
+    "pickups": ["Delano"],
+    "preamp": "Bartolini",
+    "electronics": "",
+    "knobs": "Ebony",
+    "finish": "Frosted Transparent"
+  }
+}
