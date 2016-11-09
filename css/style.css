@@ -477,6 +477,12 @@ i {
   list-style: decimal;
   padding-left: 18px;
 }
+.order-info {
+  width: 650px;
+  padding: 20px;
+  margin: 0 auto;
+  vertical-align: top;
+}
 .left {
   width: 560px;
   min-width: 560px;
