@@ -1,8 +1,8 @@
 include ./i18n.jade
 
-.left
+.order-info
     h3
-        +i18n('Order')
+        +i18n('Order')    
 
     p
         +i18n('Each instrument is handmade according to your specifications.')
@@ -16,39 +16,18 @@ include ./i18n.jade
         +i18n('If you would like to order an instrument please email us and we will be happy to answer all your questions.')
 
     h3
+        +i18n('Contacts')
+
+    p
+        +i18n('To order an instrument just send an email to')
+        a(href='mailto:ashinstruments@gmail.com') ashinstruments@gmail.com
+
+
+    h3
         +i18n('Shipping')
 
     p
         +i18n('We ship worldwide for free.')
-
-.right
-    form#order-form(method="POST")
-        - var pl = ash.i18n('Write about your dream instrument here (Required)', lang);
-        textarea.input.input_100#form-text(placeholder= pl rows=16 name="text" required)
-
-        .error#error-formText
-
-        - var pl = ash.i18n('Your email (Required)', lang);
-        input.input#form-email(type="email" placeholder=pl  name="email" required)
-
-        .error#error-formEmail
-
-        - var pl = ash.i18n('Your name', lang);
-        input.input#form-name(type="name" placeholder= pl name="name")
-
-        .error#error-formName
-
-        input#order-title-field(type="hidden" name="_subject" value="Новый заказ")
-        input(type="hidden" name="_next" value="//www.ash-instruments.com/" + lang + "/thanks.html")
-        input#gtcha(type="text" name="_gotcha" value="" style="display:none;")
-
-        .empty
-
-        - var val = ash.i18n('Send', lang);
-        input.submit#form-submit(type="submit" value= val)
-        .error#error-main
-            +i18n('Something went wrong. Please, send email to')
-        .preloader#preloader(style='display:none')
 
 script.
     var contactform =  document.getElementById('order-form');
