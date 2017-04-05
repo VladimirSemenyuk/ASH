@@ -4,7 +4,7 @@
   "description": "ASH Instruments Site Generator",
   "main": "service/generator.js",
   "scripts": {
-    "styl": "find ./css -type f -name \"*.styl\" | ./node_modules/.bin/stylus",
+    "styl": "find ./css -type f -name \"*.styl\" | xargs ./node_modules/.bin/stylus",
     "prestart": "grunt test",
     "start": "npm run styl && grunt compile copy_previews copy_images remove_print && cp -R css output && grunt connect",
     "prebuild": "grunt test",
