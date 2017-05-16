@@ -61,5 +61,12 @@
     "type": "bass",
     "description": "",
     "sampleInstrument": 160504
+  },
+  {
+    "id": "singulus",
+    "name": "Singulus",
+    "type": "bass",
+    "description": "",
+    "sampleInstrument": 170402
   }
 ]

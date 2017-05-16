@@ -1,0 +1,42 @@
+{
+  "id": 170402,
+  "model": "tb",
+  "type": "bass",
+  "video": "",
+  "images": {
+    "list": "list.jpg",
+    "list2x": "list.2x.jpg",
+    "preview": "preview.jpg",
+    "preview2x": "preview.2x.jpg",
+    "gallery": [
+      "g2.jpg",
+      "g3.jpg",
+      "g4.jpg",
+      "g5.jpg",
+      "g6.jpg"
+    ]
+  },
+  "description": "",
+  "specs": {
+    "scaleLength": "34\"",
+    "fretsCount": "24",
+    "stringsCount": "5",
+    "fingerboardRadius": "20\"",
+    "bodyWood": "30 years old Pine",
+    "topWood": "Poplar Burl",
+    "neckWood": "3-ps. Padauk (2008)",
+    "construction": "Set",
+    "fingerboardWood": "Padauk (2008)",
+    "nut": "Bone",
+    "hardwareColor": "Chrome",
+    "tuners": "Gotoh RES-O-LITE",
+    "bridge": "Hipshot",
+    "pickups": ["Nordstrand"],
+    "preamp": "Aguilar OBP-3TK/PP",
+    "electronics": "Volume / Blend / Treble / Mid / Bass",
+    "knobs": "",
+    "switching": ["Active/Passive", "Humb/Coils", "Mute"],
+    "color": "Flying Blue",
+    "finish": "Frosted Transparent"
+  }
+}
