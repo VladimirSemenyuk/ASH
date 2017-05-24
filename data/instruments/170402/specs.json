@@ -1,6 +1,6 @@
 {
   "id": 170402,
-  "model": "tb",
+  "model": "singulus",
   "type": "bass",
   "video": "",
   "images": {
@@ -24,9 +24,9 @@
     "fingerboardRadius": "20\"",
     "bodyWood": "30 years old Pine",
     "topWood": "Poplar Burl",
-    "neckWood": "3-ps. Padauk (2008)",
+    "neckWood": "3-ps. Padauk",
     "construction": "Set",
-    "fingerboardWood": "Padauk (2008)",
+    "fingerboardWood": "Padauk",
     "nut": "Bone",
     "hardwareColor": "Chrome",
     "tuners": "Gotoh RES-O-LITE",
@@ -35,7 +35,7 @@
     "preamp": "Aguilar OBP-3TK/PP",
     "electronics": "Volume / Blend / Treble / Mid / Bass",
     "knobs": "",
-    "switching": ["Active/Passive", "Humb/Coils", "Mute"],
+    "switching": ["Active / Passive", "Humb / Coils", "Mute"],
     "color": "Flying Blue",
     "finish": "Frosted Transparent"
   }
