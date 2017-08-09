@@ -7,8 +7,7 @@
     "styl": "find ./css -type f -name \"*.styl\" | xargs ./node_modules/.bin/stylus",
     "prestart": "grunt test",
     "start": "npm run styl && grunt compile copy_previews copy_images remove_print && cp -R css output && grunt connect",
-    "prebuild": "grunt test",
-    "build": "npm run styl && grunt compile pdf image copy_previews image_resize && cp -R css output",
+    "build": "[ ! -z $(docker images -q ash:latest) ] || docker build -t ash . ; docker run --rm -v $(pwd):/ash -w /ash ash sh build.sh",
     "pdf": "grunt compile pdf"
   },
   "repository": {
