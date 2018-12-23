@@ -28,13 +28,6 @@
     "sampleInstrument": 170402
   },
   {
-    "id": "sc",
-    "name": "SC",
-    "type": "bass",
-    "description": "",
-    "sampleInstrument": 141204
-  },
-  {
     "id": "tb",
     "name": "TB",
     "type": "bass",

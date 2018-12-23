@@ -92,7 +92,7 @@ module.exports = function(grunt) {
 
         files = grunt.file.expand(['data/instruments/**/g*']);
 
-        for (i = 0; i < files.length; i++) {
+        for (i = 0; i < files.length; i++) {ƒ
             var file = files[i].replace('data/instruments/', ''),
                 fileArr = file.split('/');
 
@@ -328,7 +328,10 @@ module.exports = function(grunt) {
 
         if (flag) {
             grunt.fail.fatal('Tests failed');
+
+            return 1;
         }
+        
     });
 
     grunt.loadNpmTasks('grunt-image');
